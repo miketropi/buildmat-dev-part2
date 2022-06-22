@@ -1,0 +1,141 @@
+<style>
+.page-product_specifications {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+.page-product_specifications .section-container{
+  max-width: 1262px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .page-product_specifications {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.page-product_specifications
+  .section_title {
+  margin-bottom: 25px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+.page-product_specifications
+    .section_title {
+    margin-bottom: 8px;
+  }
+}
+.page-product_specifications
+  .block_specifications {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+.page-product_specifications
+  .block_specifications
+  .block_item {
+  margin-top: 28px;
+  flex: 0 0 calc((100% - 96px) / 4);
+}
+@media (max-width: 768px) {
+.page-product_specifications
+    .block_specifications
+    .block_item {
+    margin-top: 16px;
+    flex: 0 0 calc((100% - 16px) / 2);
+  }
+}
+.page-product_specifications
+  .block_specifications
+  .block_item
+  .block_title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+  margin-bottom: 8px;
+}
+@media (max-width: 768px) {
+.page-product_specifications
+    .block_specifications
+    .block_item
+    .block_title {
+    font-size: 13px;
+  }
+}
+.page-product_specifications
+  .block_specifications
+  .block_item
+  .block_text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #6d6d6d;
+}
+@media (max-width: 768px) {
+.page-product_specifications
+    .block_specifications
+    .block_item
+    .block_text {
+    font-size: 12px;
+  }
+}
+
+
+</style>
+<section class="page-section page-product_specifications">
+  <div class="subsection">
+    <div class="section-container">
+      {% if section.settings.title != blank %}
+        <h2 class="section_title">{{ section.settings.title }}</h2>
+      {% endif %}
+      <div class="block_specifications">
+      {% for block in section.blocks %}
+        <div class="block_item">
+          <h4 class="block_title">{{ block.settings.block_title }}</h4>
+          <div class="block_text">{{ block.settings.block_text }}</div>
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "Product Specifications",
+    "settings": [
+		{
+          "type": "html",
+          "id": "title",
+          "label": "Title"
+      	}
+	],
+    "blocks": [
+      {
+		"type": "block",
+		"name": "Block",
+		"settings": [
+          {
+            "type": "text",
+            "id": "block_title",
+            "label": "Title"
+          },
+          {
+            "type": "html",
+            "id": "block_text",
+            "label": "Text"
+          }
+		]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,37 @@
+<div class="footer__mobile-section">
+  <div class="footer__blocks--mobile">
+    <div class="footer__block--mobile">
+      <div class="footer__title">
+        {%- if block.settings.heading_link != blank -%} <a href="{{ block.settings.heading_link }}" rel="nofollow"> {%- endif -%}
+            {{ block.settings.heading_text }}
+        {%- if block.settings.heading_link != blank -%} </a> {%- endif -%}
+      </div>
+
+      <ul class="footer__menu">
+        {%- if block.settings.phone != blank -%}
+          <li><a href="tel:{{ block.settings.phone | replace: " ", "" }}">
+            <span class="icon-and-text">
+              <span>{{ block.settings.phone }}</span>
+            </span>
+          </a></li>
+        {%- endif -%}
+        {%- if block.settings.email != blank -%}
+          <li><a href="mailto:{{ block.settings.email }}">
+            <span class="icon-and-text">
+              <span>{{ block.settings.email }}</span>
+            </span>
+          </a></li>
+        {%- endif -%}
+        {%- if block.settings.address_text != blank -%}
+          <li>
+            {%- if block.settings.address_link != blank -%} <a href="{{ block.settings.address_link }}" target="_blank"> {%- endif -%}
+              <span class="icon-and-text">
+                <span>{{ block.settings.address_text }}</span>
+              </span>
+            {%- if block.settings.address_link != blank -%} </a> {%- endif -%}
+          </li>
+        {%- endif -%}
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,81 @@
+{
+  "sections": {
+    "main": {
+      "type": "blog-template",
+      "settings": {
+        "blog_show_rss": false,
+        "blog_show_date": true,
+        "blog_show_author": false,
+        "blog_show_excerpt": true,
+        "blog_image_size": "natural"
+      }
+    },
+    "sidebar": {
+      "type": "blog-sidebar",
+      "disabled": true,
+      "blocks": {
+        "35f79a16-ce73-4a46-b53d-923d4faa52a4": {
+          "type": "article",
+          "settings": {
+            "title": "Expert Picks",
+            "article": "building-renovating-tips\/kitchen-sink-made-of-thick-steel",
+            "blog_show_tags": false,
+            "blog_show_date": true,
+            "blog_show_comments": false,
+            "blog_show_author": false,
+            "blog_image_size": "wide"
+          }
+        },
+        "7a2cf7a0-0afd-4143-876c-abadc2a368e4": {
+          "type": "article",
+          "settings": {
+            "title": "",
+            "article": "building-renovating-tips\/draining-board-with-my-kitchen-sink",
+            "blog_show_tags": false,
+            "blog_show_date": true,
+            "blog_show_comments": false,
+            "blog_show_author": false,
+            "blog_image_size": "wide"
+          }
+        },
+        "6330bffc-292c-4196-8822-56ccc312c751": {
+          "type": "article",
+          "settings": {
+            "title": "",
+            "article": "building-renovating-tips\/undermount-or-topmount-sinks",
+            "blog_show_tags": false,
+            "blog_show_date": true,
+            "blog_show_comments": false,
+            "blog_show_author": false,
+            "blog_image_size": "wide"
+          }
+        },
+        "5277c655-2608-45a3-b48a-152e036e4927": {
+          "type": "article",
+          "settings": {
+            "title": "",
+            "article": "building-renovating-tips\/single-bowl-or-double-bowl-sink",
+            "blog_show_tags": false,
+            "blog_show_date": true,
+            "blog_show_comments": false,
+            "blog_show_author": false,
+            "blog_image_size": "wide"
+          }
+        }
+      },
+      "block_order": [
+        "35f79a16-ce73-4a46-b53d-923d4faa52a4",
+        "7a2cf7a0-0afd-4143-876c-abadc2a368e4",
+        "6330bffc-292c-4196-8822-56ccc312c751",
+        "5277c655-2608-45a3-b48a-152e036e4927"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sidebar"
+  ],
+  "wrapper": "div.page-width.page-content.blog-layout"
+}

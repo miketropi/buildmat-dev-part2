@@ -1,0 +1,297 @@
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header-boost-pfs-filter",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": true,
+        "parallax": false
+      }
+    },
+    "promo-grid": {
+      "type": "promo-grid",
+      "disabled": true,
+      "blocks": {
+        "banner": {
+          "type": "banner",
+          "disabled": true,
+          "settings": {
+            "heading": "Banner promotion",
+            "text": "Add the details of your promotion in smaller text",
+            "link": "",
+            "label": "Shop now",
+            "color_scheme": "1"
+          }
+        }
+      },
+      "block_order": [
+        "banner"
+      ],
+      "settings": {
+        "full_width": true,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": false
+      }
+    },
+    "164789884304ca456d": {
+      "type": "featured-collections",
+      "blocks": {
+        "164789884377baaee1-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "single-bowl-sinks",
+            "title": ""
+          }
+        },
+        "164789884377baaee1-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "double-bowl-sinks",
+            "title": ""
+          }
+        },
+        "164789884377baaee1-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "drainboard-sinks",
+            "title": ""
+          }
+        },
+        "164789884377baaee1-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "tap-landing-sinks",
+            "title": ""
+          }
+        },
+        "164789884377baaee1-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "brushed-gunmetal",
+            "title": "Brushed Gunmetal Sinks"
+          }
+        },
+        "164789884377baaee1-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "brushed-brass-gold",
+            "title": "Brushed Brass Gold Sinks"
+          }
+        }
+      },
+      "block_order": [
+        "164789884377baaee1-0",
+        "164789884377baaee1-1",
+        "164789884377baaee1-2",
+        "164789884377baaee1-3",
+        "164789884377baaee1-4",
+        "164789884377baaee1-5"
+      ],
+      "settings": {
+        "title": "Shop By Sink Configuration",
+        "divider": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection-boost-pfs-filter",
+      "blocks": {
+        "09a41b40-e4d3-4178-be2b-066b1fa1c7e0": {
+          "type": "subcollections",
+          "settings": {
+          }
+        },
+        "24778801-d94b-412e-8a02-def8c31391a9": {
+          "type": "collection_description",
+          "settings": {
+          }
+        },
+        "d7f013a1-d66c-4c21-b9e0-8260e1618ac3": {
+          "type": "product_grid",
+          "settings": {
+            "grid_style": "small"
+          }
+        }
+      },
+      "block_order": [
+        "09a41b40-e4d3-4178-be2b-066b1fa1c7e0",
+        "24778801-d94b-412e-8a02-def8c31391a9",
+        "d7f013a1-d66c-4c21-b9e0-8260e1618ac3"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "enable_color_swatches": true,
+        "enable_sort": true
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1647899089ad10e061": {
+      "type": "rich-text",
+      "blocks": {
+        "164789908988eee9a6-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>When choosing a kitchen sink or laundry sink for your home, you can't go past our range of single and double bowl options. You can buy our sinks online with complete peace of mind, confident in the knowledge that the contemporary style and first-class manufacturing of our stainless steel kitchen sink will stand the test of time. The Kitchen Sink is the most used fixture in your home so it is important that you choose a quality kitchen sink that suits your lifestyle. A quality stainless steel sink is designed to go through cooking and cleaning battles together with you in the kitchen, so make sure you choose a high-quality stainless steel sink to last.<br\/><br\/>Our sinks are high precision handmade stainless steel meaning that they're sturdy all around. Also, our sinks come equipped with the sink strainers (also known as wastebaskets), they are also watermarked meaning that they meet fit the plumbing standards in Australia.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "164789908988eee9a6-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "color_scheme": "3",
+        "divider": false
+      }
+    },
+    "164789907864148d5a": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Buildmat_Product_award_winner.png",
+        "image_width": 500,
+        "subtitle": "",
+        "title": "Award Winning Sinks",
+        "text": "<p>Buildmat is the winner of the international Product Design Award in the 2020 Architecture Masterprize.<br\/><br\/>At Buildmat we are constantly updating and improving our product range and designs and it has shown this year by winning a product design award in the kitchen category of a global competition. <\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "164789909627e4acc0": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Precision_Made_c2d09e3f-d98b-45d7-be70-d1f8a9a5ef94.jpg",
+        "image_width": 600,
+        "subtitle": "",
+        "title": "1.5mm Premium Thickness",
+        "text": "<p>Steel thickness plays an important part to the quality, durability and sound absorption of the sink.<\/p><p>The thicker the steel used to make the sink it means you get more sink. The reason why it’s important is because it becomes a sturdier and more solid sink, you’ll notice it when you start putting pots and pans down.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "164789910296244750": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Premium_Thickness_Durability_bd2d2beb-b77b-4b86-a24d-1c73326b041c.png",
+        "image_width": 600,
+        "subtitle": "",
+        "title": "Precision Made Sinks",
+        "text": "<p>Our Precision Handmade sinks means that there are people actually welding the sink together instead of a machine just pressing on a sheet of metal. It means that the each corner is carefully crafted and that each wall of the sink is a true 1.5mm thick stainless steel instead of a sheet of metal being stretched by a large machine press into shape.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "16479003449f96e137": {
+      "type": "advanced-content",
+      "blocks": {
+        "1647900344fb485846-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "{% if collection.metafields.my_fields.extrainfo != blank %} \n<p>\n{{ collection.metafields.my_fields.extrainfo }}<\/p>\n{% else %}\n<p> <\/p>\n{% endif %}",
+            "width": "75%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1647900344fb485846-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "16478991042b03a678": {
+      "type": "faq",
+      "blocks": {
+        "1647899104ce551955-0": {
+          "type": "question",
+          "settings": {
+            "title": "Australian Designed For All Types Of Installation Methods",
+            "text": "<p>The inset sink style (also known as overmount sinks or known as topmount sinks) are the most popular, we have designed our sinks to have an easy to install clip that holds the sink down to the benchtop whether you've decided to use a stone benchtop, laminate benchtop or timber benchtop you want to make sure you use our easy to use pull-down clips. Both our stainless steel single bowl inset sink and double inset sinks are available.<br\/><br\/>Our sinks are also designed to be an undermount sink, either undermount single bowl or undermount double bowl this is a more costly exercise and we always recommend that you plan your sink a lot earlier than usual because it is better to provide the sink to the cabinet maker so that there are no mistakes when doing the sink cut out. Make sure if you're designing your kitchen around the benchtop that you look for an undermount sink without a taphole because it is more elegant and having the tap sit on the bench makes for a better feel.<br\/><br\/>Another style that people like to use is the flush mount style, but make sure you have a conversation with your stonemason before deciding because it's very hard to get right and might end up as a costly activity, but if you're able to pull it off nothing can beat the style. Either single bowl sinks or double bowl sinks will work for a flushmount, but we'd avoid putting in a drainboard for a flushmount style.<\/p>"
+          }
+        },
+        "1647899104ce551955-1": {
+          "type": "question",
+          "settings": {
+            "title": "Kitchen Sink Configurations",
+            "text": "<p>We have multiple styles of single bowl sinks, double bowl sinks, and drainer sinks with a drainboard if you'd like to read more about sink configurations you can visit our article: which kitchen sink style is right for you. If you're going to be a lot of cooking a preparation then consider a double bowl sink.<\/p>"
+          }
+        },
+        "4b2e74df-6403-4107-8845-4b65c22afc35": {
+          "type": "question",
+          "settings": {
+            "title": "Are Kitchen Sinks Suitable For Laundry Tubs",
+            "text": "<p>If you're after a nice sturdy laundry tub that you're getting a benchtop for, make sure you don't get stuck with a low-quality tub, generally when people think laundry tubs they are flimsy low quality and out in the corner. Modern homes are now being redesigned with a laundry that's nice enough to show your guests, the kitchen <a href=\"\/collections\/laundry-tubs\" title=\"Laundry Tubs\">laundry tub<\/a> is the best option as they're made strong enough for the wear and tear of kitchen use but situated pleasantly in the laundry, most people will choose a single sink instead of a double sink for the laundry, but it's really up to you. it's actually one of the best-kept building secrets: using a single bowl kitchen sink in the Laundry. If you want to read more on buying a laundry tub visit our article: Laundry tub buying guide<\/p>"
+          }
+        },
+        "11fae26f-5ded-452e-9c81-80ab81bdbf25": {
+          "type": "question",
+          "settings": {
+            "title": "Kitchen Sink Accessories",
+            "text": "<p>Also consider choosing a variety of kitchen sink accessories that are custom made for our sinks, whether it's a chopping board, dish rack, colander or roll mat we've designed it perfectly for our sink and it's free delivery when you buy the sink because we just throw them inside the box for you!<\/p>"
+          }
+        },
+        "7354f8c8-0fb2-4114-a748-22f6e8429e72": {
+          "type": "question",
+          "settings": {
+            "title": "Match Your Kitchen Sink with Your Perfect Sink Mixer Tap",
+            "text": "<p>We have a large range of styles of sink bowls and kitchen taps and kitchen mixers to go with the theme and style of kitchen, whether it's a contemporary or classic, minimalistic or Grande design we'll have one available to suit your style.<\/p>"
+          }
+        },
+        "6145f91b-b13d-4cfb-a2c0-f164f7e1e029": {
+          "type": "question",
+          "settings": {
+            "title": "Showroom",
+            "text": "<p>Our online showroom has our entire range for you to view, if you find it hard to navigate then please feel free to give us a call on 1300123122 and we'll be able to talk you through the styles available. <\/p><p>Whether you're after a matte black tapware, gunmetal soap dispensers, chrome toilet roll holders, bath spouts or bathroom accessories, we're happy to have a chat. Alternatively, you can visit our Kitchen Sink FAQ.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1647899104ce551955-0",
+        "1647899104ce551955-1",
+        "4b2e74df-6403-4107-8845-4b65c22afc35",
+        "11fae26f-5ded-452e-9c81-80ab81bdbf25",
+        "7354f8c8-0fb2-4114-a748-22f6e8429e72",
+        "6145f91b-b13d-4cfb-a2c0-f164f7e1e029"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "promo-grid",
+    "164789884304ca456d",
+    "main-collection",
+    "recently-viewed",
+    "1647899089ad10e061",
+    "164789907864148d5a",
+    "164789909627e4acc0",
+    "164789910296244750",
+    "16479003449f96e137",
+    "16478991042b03a678"
+  ]
+}

@@ -1,0 +1,309 @@
+  <div class="collapsibles-wrapper">
+    <button type="button" class="cstm_label label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height" aria-controls="Product-content-{{ id }}">
+      {{ title }}
+      {%- render 'collapsible-icons' -%}
+    </button>
+    <div id="Product-content-{{ id }}" class="collapsible-content collapsible-content--all">
+      <div class="collapsible-content__inner rte">
+        <div class="Main_section">
+          <div class="">
+            
+            {% if product.metafields.my_fields.brand != blank %}  
+            <div class="Product_Brand">
+              <div class="prod-brand brandname">
+                <p> Brand </p>
+              </div>
+              <div class="Meta-brandname Meta-brand">
+                <p>    {{ product.metafields.my_fields.brand}}
+              </div>
+            </div>
+            {% endif %} 
+
+			<!-- SKU Uses Variant SKU NOT metafields -->
+            {% assign current_variant = product.selected_or_first_available_variant %}
+            {% if current_variant.sku != blank %}
+            <div class="Product_Brand">
+              <div class="prod-brand">
+                <p> SKU </p>
+              </div>
+              <div class="Meta-brand">
+                <p>
+                  {{ current_variant.sku }}
+                </p>
+              </div>
+            </div>
+            {% endif %}                       
+			<!-- END SKU Uses Variant SKU NOT metafields -->
+            
+            {% if product.metafields.my_fields.product_finish != blank %}
+            <div class="Product_Brand">
+              <div class="prod-brand">
+                <p> Product Finish </p>
+              </div>
+              <div class="Meta-brand">
+                <p>
+                  {{product.metafields.my_fields.product_finish }}
+                </p>
+              </div>
+            </div>
+            {% endif %}
+            
+            {% if product.metafields.my_fields.product_configuration != blank  %}
+            <div class="Product_Brand">
+              <div class="prod-brand">
+                <p> Configuration </p>
+              </div>
+              <div class="Meta-brand">
+                <p>
+                  {{ product.metafields.my_fields.product_configuration }}
+                </p>
+              </div>
+            </div>
+            {% endif %} 
+
+            
+            {% if product.metafields.my_fields.installation_methods != blank  %}
+            <div class="Product_Brand">
+              <div class="prod-brand">
+                <p> Installation Methods </p>
+              </div>
+              <div class="Meta-brand">
+                <p>
+                  {{ product.metafields.my_fields.installation_methods }}
+                </p>
+              </div>
+            </div>
+            {% endif %} 
+            
+            {% if product.metafields.my_fields.internal_edges != blank  %}
+            <div class="Product_Brand">
+              <div class="prod-brand">
+                <p> Internal Edges </p>
+              </div>
+              <div class="Meta-brand">
+                <p>
+                  {{ product.metafields.my_fields.internal_edges }}
+                </p>
+              </div>
+            </div>
+            {% endif %}             
+            
+
+            {% if product.metafields.my_fields.product_thickness != blank %}
+            <div class="Product_Brand">
+              <div class="prod-brand">
+                <p> Thickness </p>
+              </div>
+              <div class="Meta-brand">
+                <p>
+                  {{ product.metafields.my_fields.product_thickness }}
+                </p>
+              </div>
+            </div>
+            {% endif %} 
+
+            {% if product.metafields.my_fields.litres != blank %}
+            <div class="Product_Brand">
+              <div class="prod-brand">
+                <p> Capacity in Litres </p>
+              </div>
+              <div class="Meta-brand">
+                <p>
+                  {{ product.metafields.my_fields.litres.value }}
+                </p>
+              </div>
+            </div>
+            {% endif %}     
+            
+            {% if product.metafields.my_fields.cubic_size != blank %}
+            <div class="Product_Brand">
+              <div class="prod-brand">
+                <p> Internal Cubic Size </p>
+              </div>
+              <div class="Meta-brand">
+                <p>
+                  {{ product.metafields.my_fields.cubic_size.value }}
+                </p>
+              </div>
+            </div>
+            {% endif %}                    
+                        
+            
+            {% if product.metafields.my_fields.product_sink_size != blank %}
+            <div class="Product_Brand">
+               <div class="prod-brand">
+              <p> Sink Size </p>
+            </div>
+              <div class="Meta-brand">
+                <p>  {{ product.metafields.my_fields.product_sink_size }} (Including Lip) </p>
+              </div>
+            </div>
+            {% endif %} 
+
+
+            {%if product.metafields.my_fields.product_bowl_size != blank %}
+            <div class="Product_Brand">
+              <div class="prod-brand">
+                <p> Bowl Size </p>
+              </div>
+              <div class="Meta-brand">
+                <p>
+                  {{ product.metafields.my_fields.product_bowl_size }} (Excluding Lip)
+                </p>
+              </div>
+            </div>
+            {% endif %} 
+
+            {% if product.metafields.my_fields.product_depth != blank %}
+            <div class="Product_Brand">
+              <div class="prod-brand">
+                <p> Depth </p>
+              </div>
+              <div class="Meta-brand">
+                <p>
+                  {{ product.metafields.my_fields.product_depth }}
+                </p>
+              </div>
+            </div>
+            {% endif %} 
+
+            {% if product.metafields.my_fields.internal_corners != blank %}
+            <div class="Product_Brand">
+              <div class="prod-brand">
+                <p> Internal Corners </p>
+              </div>
+              <div class="Meta-brand">
+                <p>
+                  {{ product.metafields.my_fields.internal_corners }}
+                </p>
+              </div>
+            </div>
+            {% endif %} 
+
+            {% if product.metafields.my_fields.external_corners != blank %}
+            <div class="Product_Brand">
+              <div class="prod-brand">
+                <p> External Corners </p>
+              </div>
+              <div class="Meta-brand">
+                <p>
+                  {{ product.metafields.my_fields.external_corners }}
+                </p>
+              </div>
+            </div>
+            {% endif %} 
+
+            {% if product.metafields.my_fields.sound_pads != blank %}
+            <div class="Product_Brand">
+              <div class="prod-brand">
+                <p> Sounds Pads </p>
+              </div>
+              <div class="Meta-brand">
+                <p>
+                  {{ product.metafields.my_fields.sound_pads }}
+                </p>
+              </div>
+            </div>
+            {% endif %}             
+
+            {% if product.metafields.my_fields.strainer != blank %}
+            <div class="Product_Brand">
+              <div class="prod-brand">
+                <p> Strainer </p>
+              </div>
+              <div class="Meta-brand">
+                <p>
+                  {{ product.metafields.my_fields.strainer }}
+                </p>
+              </div>
+            </div>
+            {% endif %}             
+            
+            {% if product.metafields.my_fields.waste_location != blank %}
+            <div class="Product_Brand">
+              <div class="prod-brand">
+                <p> Waste Location </p>
+              </div>
+              <div class="Meta-brand">
+                <p>
+                  {{ product.metafields.my_fields.waste_location }}
+                </p>
+              </div>
+            </div>
+            {% endif %} 
+
+            {% if product.metafields.my_fields.strainer_waste_size != blank %}
+            <div class="Product_Brand">
+              <div class="prod-brand">
+                <p> Strainer Waste Size </p>
+              </div>
+              <div class="Meta-brand">
+                <p>
+                  {{ product.metafields.my_fields.strainer_waste_size }}
+                </p>
+              </div>
+            </div>
+            {% endif %}             
+
+            {% if product.metafields.my_fields.tolerances != blank %}
+            <div class="Product_Brand">
+              <div class="prod-brand">
+                <p> Product Tolerances </p>
+              </div>
+              <div class="Meta-brand">
+                <p>
+                  {{ product.metafields.my_fields.tolerances }}
+                </p>
+              </div>
+            </div>
+            {% endif %}             
+
+            {% if product.metafields.my_fields.warranty != blank %}
+            <div class="Product_Brand">
+              <div class="prod-brand">
+                <p> Warranty </p>
+              </div>
+              <div class="Meta-brand">
+                <p>
+                  {{ product.metafields.my_fields.warranty }}
+                </p>
+              </div>
+            </div>
+            {% endif %}                         
+
+            {% if product.metafields.my_fields.box_size != blank %}
+            <div class="Product_Brand">
+              <div class="prod-brand">
+                <p> Box Dimensions </p>
+              </div>
+              <div class="Meta-brand">
+                <p>
+                  {{ product.metafields.my_fields.box_size }}
+                </p>
+              </div>
+            </div>
+            {% endif %}   
+            
+			<!-- Weight Uses Variant Weight NOT metafields -->
+            {% if product.variants.first.weight != blank %}
+            <div class="Product_Brand">
+              <div class="prod-brand">
+                <p> Boxed Weight </p>
+              </div>
+              <div class="Meta-brand">
+                <p>
+                  {{ product.variants.first.weight | weight_with_unit }}
+                </p>
+              </div>
+            </div>
+            {% endif %}                    
+			<!-- END Weight Uses Variant Weight NOT metafields -->                     
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--  -->

@@ -1,0 +1,37 @@
+<nav id="MegamenuBlock" class="megamenu-block">
+  <ul class="megamenu-block__ul">
+    <li class="megamenu-block__item">
+      <a href="/collections/kitchen">
+        Kitchen
+        <span class="megamenu-block__item-icon-arrow">{%- render 'theme-icon' with 'arrow-down' -%}</span>
+      </a>
+      <div class="megamenu-block__mega">
+        <div class="page-width">
+          {%- render 'submenu-item-kitchen', section: section -%}
+        </div>
+      </div>
+    </li>
+    <li class="megamenu-block__item">
+      <a href="/collections/bathroom">
+        Bathroom
+        <span class="megamenu-block__item-icon-arrow">{%- render 'theme-icon' with 'arrow-down' -%}</span>
+      </a>
+      <div class="megamenu-block__mega">
+        <div class="page-width">
+          {%- render 'submenu-item-bathroom', section: section -%}
+        </div>
+      </div>
+    </li>
+    <li class="megamenu-block__item">
+      <a href="/collections/laundry">
+        Laundry
+        <span class="megamenu-block__item-icon-arrow">{%- render 'theme-icon' with 'arrow-down' -%}</span>
+      </a>
+      <div class="megamenu-block__mega">
+        <div class="page-width">
+          {%- render 'submenu-item-laudry', section: section -%}
+        </div>
+      </div>
+    </li>
+  </ul>
+</nav>

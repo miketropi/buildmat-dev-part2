@@ -1,0 +1,17 @@
+<div class="page-width">
+{% if template.suffix == 'custom' %}
+  {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: false, product: product %}
+  {% endif %}
+</div>
+{% schema %}
+  {
+    "name": "Reviews",
+	"class" : "Cstm_reviews"
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

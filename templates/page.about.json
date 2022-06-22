@@ -1,0 +1,228 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Premium Architectural Products"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Buildmat is a 100% Australian owned and operated online retailer of building materials. We are based in Melbourne and ship nationally, our team live by the motto that if it's not a product we will have in our own home, then we won't be selling it and this is a principle we stand by when choosing products.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "1646940376aff42e75": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "Our Story",
+        "title": "The Start Of Our Journey",
+        "text": "<p>Buildmat was established in 2014 to provide premium building products at an affordable price point. <br\/><br\/>Starting in the kitchen sinks category we were able to penetrate the market by going above and beyond standard specifications that were available and providing innovative products and continually challenging the industry.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/Buildmat-Story.jpg",
+        "focal_point": "center",
+        "layout": "right",
+        "height": 650,
+        "parallax": false
+      }
+    },
+    "164693825659d7b5c5": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "Educate",
+        "text": "<p>We take great pride in educating our customers and their journey in choosing the right products for them. Our blog is dedicated to teaching our customers what to consider and specifications to compare and how to compare them.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/Buildmat-Educate-Customers.jpg",
+        "focal_point": "80% 50%",
+        "layout": "left",
+        "height": 650,
+        "parallax": false
+      }
+    },
+    "1646940384eed26753": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "Innovation",
+        "text": "<p>Since the beginning of our journey, we've been big on innovation and product development and we've noticed the industry realise and tried to follow in our footsteps.<br\/><br\/>We started off by producing thicker gauge steel sinks, from then on Buildmat continually innovated and brought several products into the market that nobody imagined would work, but we created it because we saw the need from customers.<br\/><br\/>We seek to continually have our finger on the pulse to bring you the latest building materials.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/Buildmat-Luxury-Products.jpg",
+        "focal_point": "center",
+        "layout": "right",
+        "height": 650,
+        "parallax": false
+      }
+    },
+    "1646939068b831c1b3": {
+      "type": "rich-text",
+      "blocks": {
+        "16469390683ff3c3d5-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Innovation Achievements"
+          }
+        }
+      },
+      "block_order": [
+        "16469390683ff3c3d5-0"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "none",
+        "divider": true
+      }
+    },
+    "text-columns": {
+      "type": "text-columns",
+      "blocks": {
+        "column1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "2014: Thick Gauge Sinks",
+            "text": "<p>In 2014 we brought out a collection of 1.5mm thickness sinks that the domestic market had never seen before. <br\/>This is where our journey began and we set the new standard for the industry.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "2015: Handmade Butler Sinks",
+            "text": "<p>We created an extremely small sink to fit those tiny kitchens but still keep its premium quality and feel, there was nothing else available in the market at the time but now you find that small butler sinks in a handmade are vast.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "2017: Massive 85L Single Bowl Sink",
+            "text": "<p>Customers were requesting large single bowl sinks for different reasons, and they were constantly frustrated not being able to find something available in the market, so we went and created the massive Seville 900x450 sink<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "b5a18c1e-134e-4ad6-b38b-2bffc31d4fb6": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "2020: International Architecture Masterprize Product Innovation Winner",
+            "text": "<p>Buildmat is the winner of the international Product Design Award in the 2020 Architecture Masterprize.<br\/><br\/>At Buildmat we are constantly updating and improving our product range and designs and it has shown this year by winning a product design award in the kitchen category of a global competition. <\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3",
+        "b5a18c1e-134e-4ad6-b38b-2bffc31d4fb6"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "left",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "16469404726e833e65": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/SNCOR016-Ella-Corner-Sink-in-Window.jpg",
+        "image_width": 600,
+        "subtitle": "",
+        "title": "Buildmat Ella Corner Sink",
+        "text": "<p>In 2020, Buildmat was on a mission to solve a problem that is often overlooked. So we started with speaking with customers and we realised more people are looking for solutions in the kitchen rather than just products.<br\/><br\/>Buildmat consulted on all the frustrating aspects in kitchen designs and dead cupboard and bench space in the corners was highlighted. Nothing was available for this space that would be chic and stylish, so Buildmat designed an elegant symmetrical kitchen sink that would be highly versatile and still maximise the display of your marble benchtop.<br\/><br\/>As for functionality, with corner cupboards hard to use and sink under cabinets a waste of space, we combined the two areas together.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "map": {
+      "type": "map",
+      "disabled": true,
+      "settings": {
+        "map_title": "Our retail store",
+        "address": "<p>301 Front St W<br>Toronto, Canada<\/p><p>Mon - Fri, 8:30am - 10:30pm<br>Saturday, 8:30am - 10:30pm<br>Sunday, 8:30am - 10:30pm<\/p>",
+        "map_address": "301 Front St W, Toronto, ON M5V 2T6",
+        "api_key": "",
+        "show_button": true,
+        "background_image_position": "center center"
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection",
+        "home_featured_products": "",
+        "count": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "title": "Contact us",
+        "text": "",
+        "show_phone": false,
+        "narrow_column": true,
+        "color_scheme": "none"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich-text",
+    "1646940376aff42e75",
+    "164693825659d7b5c5",
+    "1646940384eed26753",
+    "1646939068b831c1b3",
+    "text-columns",
+    "16469404726e833e65",
+    "map",
+    "featured-collection",
+    "form"
+  ]
+}

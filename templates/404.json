@@ -1,0 +1,72 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-404",
+      "settings": {
+      }
+    },
+    "1646949134f8797afe": {
+      "type": "featured-collections",
+      "blocks": {
+        "1646949134708bb097-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "kitchen",
+            "title": ""
+          }
+        },
+        "1646949134708bb097-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "kitchen-sinks",
+            "title": ""
+          }
+        },
+        "1646949134708bb097-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "kitchen-mixers",
+            "title": ""
+          }
+        },
+        "1646949134708bb097-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "laundry",
+            "title": ""
+          }
+        },
+        "1646949134708bb097-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "bathroom",
+            "title": ""
+          }
+        },
+        "1646949134708bb097-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "terrazzo-basins",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "1646949134708bb097-0",
+        "1646949134708bb097-1",
+        "1646949134708bb097-2",
+        "1646949134708bb097-3",
+        "1646949134708bb097-4",
+        "1646949134708bb097-5"
+      ],
+      "settings": {
+        "title": "Popular categories",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1646949134f8797afe"
+  ]
+}

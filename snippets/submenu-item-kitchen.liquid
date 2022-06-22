@@ -1,0 +1,113 @@
+{% assign headItem1 = 'Kitchen Sinks : /collections/kitchen-sinks : /#' | split: " : " %}
+{% assign subItems1 = 'Single Bowl : /collections/single-bowl-sinks, Double Bowl : /collections/double-bowl-sinks, Sink with Drainboard : /collections/drainboard-sinks, Tap Landing Sinks : /collections/tap-landing-sinks' | split: ", " %}
+
+{% assign headItem2 = 'Kitchen Mixers & Taps : /collections/kitchen-mixers : /#' | split: " : " %}
+{% assign subItems2 = 'Pull Out Mixer : /collections/pull-out-kitchen-mixer, Dual Spray Mixer : /collections/dual-spray-mixers, Gooseneck Mixer : /collections/gooseneck-mixers-and-tapware, Square Mixer : /collections/square-kitchen-mixers' | split: ", " %}
+
+{% assign headItem3 = 'Top Kitchen Accesories : /collections/kitchen-accessories : /#' | split: " : " %}
+{% assign subItems3 = 'Sink Protector Grids : /collections/sink-protector-grids, Drying Accessories : /collections/drying-sink-accessories, Portable Sinks : /collections/portable-sinks, Chopping Boards : /collections/sink-chopping-boards, All Kitchen Accessories : /collections/kitchen-accessories' | split: ", " %}
+
+{% assign headItem4 = 'Shop by Colour : /collections/kitchen : /#' | split: " : " %}
+{% assign subItems4 = 'Brushed Stainless Steel : /collections/brushed-stainless-steel, Brushed Nickel : /collections/brushed-nickel, Brushed Gunmetal : /collections/brushed-gunmetal, Brushed Brass Gold : /collections/brushed-brass-gold, Brushed Copper : /collections/copper, Matte Black : /collections/matte-black' | split: ", " %}
+
+<div class="megamenu-block__mega-inner sub-megamenu">
+  
+  <ul class="megamenu-block__mega-item sub-megamenu__ul sub-megamenu__item">
+    <li class="sub-megamenu__nav-item sub-megamenu__nav-item-first">
+      <div class="sub-megamenu__nav-item-entry">
+        <span class="megamenu-label">{{ headItem1[0] }}</span>
+        <a href="{{ headItem1[1] }}">
+          View All 
+          <span class="megamenu-block__item-icon-arrow">{%- render 'theme-icon' with 'arrow-next' -%}</span>
+        </a>
+      </div>
+      {{ 'm-menu-image-1.png' | asset_url | img_tag: 'menu-icon' }}
+    </li>
+    {% for sub1 in subItems1 %} {% assign subItem = sub1 | split: " : "%}
+    <li class="sub-megamenu__nav-item">
+      <a href="{{ subItem[1] }}">{{ subItem[0] }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <ul class="megamenu-block__mega-item sub-megamenu__ul sub-megamenu__item">
+    <li class="sub-megamenu__nav-item sub-megamenu__nav-item-first">
+      <div class="sub-megamenu__nav-item-entry">
+        <span class="megamenu-label">{{ headItem2[0] }}</span>
+        <a href="{{ headItem2[1] }}">
+          View All
+          <span class="megamenu-block__item-icon-arrow">{%- render 'theme-icon' with 'arrow-next' -%}</span>
+        </a>
+      </div>
+      {{ 'm-menu-image-2.png' | asset_url | img_tag: 'menu-icon' }}
+    </li>
+    {% for sub2 in subItems2 %} {% assign subItem = sub2 | split: " : "%}
+    <li class="sub-megamenu__nav-item">
+      <a href="{{ subItem[1] }}">{{ subItem[0] }}</a>
+    </li>
+    {% endfor %}
+
+    <li style="margin-bottom: 14px; list-style: none;"></li>
+
+    <li class="sub-megamenu__nav-item sub-megamenu__nav-item-first">
+      <div class="sub-megamenu__nav-item-entry">
+        <span class="megamenu-label">{{ headItem3[0] }}</span>
+        <a href="{{ headItem3[1] }}">
+          View All
+          <span class="megamenu-block__item-icon-arrow">{%- render 'theme-icon' with 'arrow-next' -%}</span>
+        </a>
+      </div>
+      {{ 'm-menu-image-3.png' | asset_url | img_tag: 'menu-icon' }}
+    </li>
+    {% for sub3 in subItems3 %} {% assign subItem = sub3 | split: " : "%}
+    <li class="sub-megamenu__nav-item">
+      <a href="{{ subItem[1] }}">{{ subItem[0] }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <ul class="megamenu-block__mega-item sub-megamenu__ul sub-megamenu__item">
+    <li class="sub-megamenu__nav-item sub-megamenu__nav-item-first">
+      <div class="sub-megamenu__nav-item-entry">
+        <span class="megamenu-label">{{ headItem4[0] }}</span>
+        <a href="{{ headItem4[1] }}">
+          View All
+          <span class="megamenu-block__item-icon-arrow">{%- render 'theme-icon' with 'arrow-next' -%}</span>
+        </a>
+      </div>
+      {{ 'm-menu-image-4.png' | asset_url | img_tag: 'menu-icon' }}
+    </li>
+    {% for sub4 in subItems4 %} {% assign subItem = sub4 | split: " : "%}
+    <li class="sub-megamenu__nav-item">
+      <a href="{{ subItem[1] }}">{{ subItem[0] }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <div class="megamenu-block__mega-extra sub-megamenu__item">
+    <div class="megamenu-widget">
+      <h4 class="megamenu-widget__title">Buying Guides</h4>
+      <ul class="megamenu-widget__nav">
+        <li>
+          <a href="/#">Compare Sinks</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="megamenu-widget">
+      <h4 class="megamenu-widget__title">Building & Renovating Tips</h4>
+      <ul class="megamenu-widget__nav">
+        <li>
+          <a href="/blogs/building-renovating-tips/undermount-or-topmount-sinks">Undermount or Topmount?</a>
+        </li>
+        <li>
+          <a href="/#">Buying A Sink? Our Top</a>
+        </li>
+        <li>
+          <a href="/blogs/building-renovating-tips/deeper-thinking-4-considerations-when-buying-a-deep-kitchen-sink">Considerations</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>

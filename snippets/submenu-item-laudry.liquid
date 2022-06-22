@@ -1,0 +1,52 @@
+{% assign headItem1 = 'Laundry sinks : /collections/laundry-tubs : /#' | split: " : " %}
+{% assign subItems1 = 'Small Laundry Tubs : /collections/single-bowl-sinks, Large Laundry Tubs : /collections/large-laundry-tubs, With Tap Landings : /collections/tap-landing-sinks' | split: ", " %}
+
+{% assign headItem2 = 'Laundry mixers : /collections/laundry-mixers : /#' | split: " : " %}
+{% assign subItems2 = 'Pull Out Mixer : /collections/pull-out-laundry-mixer, Dual Spray Mixer : /collections/dual-spray-laundry-mixers, All Laundry Mixers : /collections/laundry-mixers' | split: ", " %}
+
+{% assign product = all_products[section.settings.product_2] %}
+<div class="megamenu-block__mega-inner sub-megamenu">
+  
+  <ul class="megamenu-block__mega-item sub-megamenu__ul sub-megamenu__item">
+    <li class="sub-megamenu__nav-item sub-megamenu__nav-item-first">
+      <div class="sub-megamenu__nav-item-entry">
+        <span class="megamenu-label">{{ headItem1[0] }}</span>
+        <a href="{{ headItem1[1] }}">
+          View All
+          <span class="megamenu-block__item-icon-arrow">{%- render 'theme-icon' with 'arrow-next' -%}</span>
+        </a> 
+      </div>
+      {{ 'm-menu-image-5.png' | asset_url | img_tag: 'menu-icon' }}
+    </li>
+    {% for sub1 in subItems1 %} {% assign subItem = sub1 | split: " : "%}
+    <li class="sub-megamenu__nav-item">
+      <a href="{{ subItem[1] }}">{{ subItem[0] }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <ul class="megamenu-block__mega-item sub-megamenu__ul sub-megamenu__item">
+    <li class="sub-megamenu__nav-item sub-megamenu__nav-item-first">
+      <div class="sub-megamenu__nav-item-entry">
+        <span class="megamenu-label">{{ headItem2[0] }}</span>
+        <a href="{{ headItem2[1] }}">
+          View All
+          <span class="megamenu-block__item-icon-arrow">{%- render 'theme-icon' with 'arrow-next' -%}</span>
+        </a>
+      </div>
+      {{ 'm-menu-image-6.png' | asset_url | img_tag: 'menu-icon' }}
+    </li>
+    {% for sub2 in subItems2 %} {% assign subItem = sub2 | split: " : "%}
+    <li class="sub-megamenu__nav-item">
+      <a href="{{ subItem[1] }}">{{ subItem[0] }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <ul class="megamenu-block__mega-item sub-megamenu__ul sub-megamenu__item"></ul>
+
+  <div class="megamenu-block__mega-extra sub-megamenu__item __inner-center-flex">
+    {%- render 'product-card', section: section, product: product -%}
+  </div>
+
+</div>

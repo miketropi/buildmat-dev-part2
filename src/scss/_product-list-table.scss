@@ -1,0 +1,143 @@
+table.product-list-table {
+
+  thead{}
+
+  tbody{
+
+    tr {}
+
+    td {
+      vertical-align: top;
+    }
+  }
+}
+
+.product-list-table {
+  border-top: solid 1px #E8E5E5;
+
+  &__item {
+    border-bottom: solid #E8E5E5;
+    border-width: 1px 0 1px 0;
+
+    td {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    &:after {
+      content: " ";
+    }
+
+    .p-image {
+      padding-left: 0;
+      
+      .p-thumb-container {
+        background: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+
+        a {
+          display: block;
+
+          img {
+            height: 175px;
+          }
+        }
+      }
+    }
+
+    .p-content {
+
+      .p-capacity {
+        font-size: 24px;
+      }
+
+      .p-title {
+        font-size: 24px;
+        font-weight: bold;
+        font-family: "Sofia Pro";
+        color: #333333;
+      }
+    }
+
+    .p-price {
+
+      .p-price-result {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .p-stock-status {
+        font-size: 14px;
+        color: #333;
+        display: flex;
+        align-items: center;
+
+        .__dot {
+          width: 8px;
+          height: 8px;
+          background: #94BE5F;
+          border-radius: 8px;
+          margin-right: 4px;
+        }
+      }
+    }
+
+    .p-action {
+      padding-right: 0;
+
+      form {
+
+        button[type=submit] {
+          background: #006875;
+          color: white;
+          font-family: "Sofia Pro";
+          font-size: 13px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          border-radius: 4px;
+          font-weight: normal;
+
+          &:hover {
+            opacity: .7;
+          }
+        }
+      }
+    }
+  }
+}
+
+.p-meta-list {
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__icon {
+    margin-right: 8px;
+    line-height: 0;
+  }
+
+  &__item--color {
+
+    .p-meta-list__icon {
+      width: 16px;
+      height: 16px;
+      border-radius: 16px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    color: #333;
+  }
+}

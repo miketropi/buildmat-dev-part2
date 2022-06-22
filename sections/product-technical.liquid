@@ -1,0 +1,140 @@
+{% if product.metafields.technical.top_image or product.metafields.technical.side_image %}
+<div class="page-width">
+  <div class="technical_wrapper">
+  <div class="Custom_technicalsection">
+    <p>
+    {{ product.metafields.technical.theading }}
+    </p>
+  </div>
+  <div class="Technical_textcontent">
+    <p> {{ product.metafields.text.content }}</p>
+  </div>
+
+
+
+
+<!-- Tabs code   -->
+<div class="Technical_container">
+
+	<ul class="Technical_tabs">
+		<li class="tab-link current" data-tab="tab-1">Top View </li>
+		<li class="tab-link" data-tab="tab-2">Side View</li>
+		
+	</ul>
+
+	<div id="tab-1" class="tab-content current">
+   <img src="{{ product.metafields.Technical.top_image | img_url: 'master' }}" />
+	</div>
+	<div id="tab-2" class="tab-content">
+ <img src="{{ product.metafields.Technical.side_image | img_url: 'master' }} "/>  
+  </div>
+	
+</div>
+<div class="Download_technicallink">
+<!--   <a href="/images/myw3schoolsimage.jpg" > -->
+  <span class="TextButton">
+    <a class="TechnicalBtn_link" href="{{ product.metafields.technical.download_drawing_link }}"  target="_blank" download>
+      <img loading="lazy" src="{{ 'pdf-icon.png' | asset_url }}" alt="download-pdf" width="40" height="40">
+      <div class="downloads-file-info">
+      	 <span class="file-name">Product Brochure</span>
+         <span class="text">Instant download</span>
+      </div>
+      <img loading="lazy" src="{{ 'download-red-icon.png' | asset_url }}" alt="" width="24" height="24">
+    </a>
+  </span>
+</div>
+  </div>
+ <!-- container -->
+  
+<!-- Technical bottom section   -->
+  <div class="Technical_Bottomsection">
+    <div class="technical_empty_div"></div>
+    {% if product.metafields.technical.model and product.metafields.technical.capacity != blank  %}
+    <div class="technical-model custm-technical-content">
+      <p class="cstmproduct_features"> {{ product.metafields.technical.model }} </p>
+      <p class="cstm_techical_text"> {{ product.metafields.technical.capacity }}  </p>
+    </div>
+    {% endif %}
+    
+    {% if product.metafields.technical.capacity_content and product.metafields.technical.model_content != blank %}
+    <div class="technical-capacity custm-technical-content">
+      <p class="cstmproduct_features"> {{ product.metafields.technical.capacity_content }}  </p>
+      <p class="cstm_techical_text">  {{ product.metafields.technical.model_content }} </p>
+    </div>
+    {% endif  %}
+    
+    {% if product.metafields.technical.finish and  product.metafields.technical.finish_content != blank  %}
+    <div class="technical-finish custm-technical-content">
+      <p class="cstmproduct_features"> {{ product.metafields.technical.finish }} </p>
+      <p class="cstm_techical_text"> {{ product.metafields.technical.finish_content }} </p>
+    </div>
+    {% endif %}
+    
+    {% if product.metafields.technical.internal_corner_radius and product.metafields.technical.internal_corner_radius_content != blank %}
+    <div class="technical_corner custm-technical-content">
+      <p class="cstmproduct_features"> {{ product.metafields.technical.internal_corner_radius }} </p>
+      <p class="cstm_techical_text"> {{ product.metafields.technical.internal_corner_radius_content }} </p>
+    </div>
+    {% endif %}
+    
+    {% if  product.metafields.technical.sinksize and product.metafields.technical.sinksizecontent_ != blank %}
+    <div class="technical-sinksize custm-technical-content">
+      <p class="cstmproduct_features"> {{ product.metafields.technical.sinksize }} </p>
+      <p class="cstm_techical_text"> {{ product.metafields.technical.sinksizecontent_ }} </p>
+    </div>
+    {% endif %}
+
+    {% if product.metafields.technical.bowlsize and product.metafields.technical.bowl_size_content != blank %}
+    <div class="technical-bowlsize custm-technical-content">
+      <p class="cstmproduct_features"> {{ product.metafields.technical.bowlsize }} </p>
+      <p class="cstm_techical_text"> {{ product.metafields.technical.bowl_size_content}}  </p>
+    </div>
+    {% endif %}
+    
+    {% if product.metafields.tecnical.depth and product.metafields.technical.depth_content != blank  %}
+    <div class="technical-Depth custm-technical-content">
+      <p class="cstmproduct_features"> {{ product.metafields.tecnical.depth }} </p>
+      <p class="cstm_techical_text"> {{ product.metafields.technical.depth_content }} </p>
+    </div>
+    {% endif %}
+    
+    {% if product.metafields.technical.depth_thickness and product.metafields.technical.depth_thickness_content != blank %}
+    <div class="technical-Thickness custm-technical-content">
+      <p class="cstmproduct_features"> {{ product.metafields.technical.depth_thickness }} </p>
+      <p class="cstm_techical_text"> {{ product.metafields.technical.depth_thickness_content }} </p>
+    </div>
+    {% endif %}
+   
+  </div>
+  
+  
+</div>
+
+{% endif %}
+{% schema %}
+  {
+    "name": "Product Technical",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+  
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+<script>
+  $(document).ready(function(){
+    $(document).on('click','.tab-link',function(e){
+      var target = $(this).attr('data-tab');
+      if(!$(this).hasClass('current')){
+        $('.tab-link.current').removeClass('current');
+        $('.tab-content.current').removeClass('current');
+        $(this).addClass('current');
+        $('#'+target).addClass('current');
+      }
+    })
+  })
+</script>

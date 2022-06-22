@@ -1,0 +1,115 @@
+{% assign steel_thickness_ratio_1 = 1.87 %}
+{% assign steel_thickness_size_1 = 1.5 %}
+{% assign steel_thickness_description_1 = "Buildmat Superior Quality" %}
+
+{% assign steel_thickness_ratio_2 = 1.5 %}
+{% assign steel_thickness_size_2 = 1.2 %}
+{% assign steel_thickness_description_2 = "What other brands consider high quality hand made" %}
+
+{% assign steel_thickness_ratio_3 = 1.25 %}
+{% assign steel_thickness_size_3 = 1.0 %}
+{% assign steel_thickness_description_3 = "High quality pressed or cheap handmade" %}
+
+{% assign steel_thickness_ratio_4 = 1 %}
+{% assign steel_thickness_size_4 = 0.8 %}
+{% assign steel_thickness_description_4 = "Pressed Sinks" %}
+
+
+{% assign st_ratio_avg = 100 | divided_by: steel_thickness_size_1 %}
+<div class="page-width">
+    <div class="steel_thickness_wrapper">
+        <div class="steel_thickness_title">
+          <h2>Steel Thickness</h2>
+        </div>
+
+        <div class="steel_thickness_content">
+          
+            <div class="steel_thickness-item steel_thickness_1">
+              <div class="bar-info">
+                	<div class="bar" data-percent="100%">
+                       <p class="st_ratio">{{ steel_thickness_ratio_1 }}x <span>thickness</span></p>
+                	</div>
+              </div>
+              <div class="detail-info">
+                  <p class="st_size">{{ steel_thickness_size_1 }}mm</p>
+                  <p class="st_desc">{{ steel_thickness_description_1 }}</p>
+              </div>
+            </div>
+          
+            <div class="steel_thickness-item steel_thickness_2">
+              <div class="bar-info">
+                  <div class="bar" data-percent="{{ st_ratio_avg | times: steel_thickness_size_2 }}%">
+                      <p class="st_ratio">{{ steel_thickness_ratio_2 }}x</p>
+                  </div>
+              </div>
+              <div class="detail-info">
+                  <p class="st_size">{{ steel_thickness_size_2 }}mm</p>
+                  <p class="st_desc">{{ steel_thickness_description_2 }}</p>
+              </div>
+            </div>
+          
+            <div class="steel_thickness-item steel_thickness_3">
+              <div class="bar-info">
+                  <div class="bar" data-percent="{{ st_ratio_avg | times: steel_thickness_size_3 }}%">
+                      <p class="st_ratio">{{ steel_thickness_ratio_3 }}x</p>
+                  </div>
+              </div>
+              <div class="detail-info">
+                  <p class="st_size">{{ steel_thickness_size_3 }}mm</p>
+                  <p class="st_desc">{{ steel_thickness_description_3 }}</p>
+              </div>
+            </div>
+          
+            <div class="steel_thickness-item steel_thickness_4">
+              <div class="bar-info">
+                  <div class="bar" data-percent="{{ st_ratio_avg | times: steel_thickness_size_4 }}%">
+                      <p class="st_ratio">{{ steel_thickness_ratio_4 }}x</p>
+                  </div>
+              </div>
+              <div class="detail-info">
+                  <p class="st_size">{{ steel_thickness_size_4 }}mm</p>
+                  <p class="st_desc">{{ steel_thickness_description_4 }}</p>
+              </div>
+            </div>
+          
+        </div>
+    </div>
+
+</div>
+
+{% schema %}
+  {
+    "name": "Product Steel Thickness",
+    "class": "steel-thickness-section",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+<script>
+  var st_element = $('.steel-thickness-section');
+  function executeAnimation() {
+    setTimeout(function start (){
+        $('.steel_thickness-item .bar').each(function(i){
+          var $bar = $(this);
+          setTimeout(function(){
+            $bar.css('width', $bar.attr('data-percent'));
+          }, i*100);
+        });
+     }, 200);
+  }
+  $(window).scroll(function(){
+      var docViewTop = $(window).scrollTop();
+      var docViewBottom = docViewTop + $(window).height();
+      var elemTop = $(st_element).offset().top;
+      var elemBottom = elemTop + $(st_element).height();
+      if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop)) {
+          executeAnimation();
+      }
+  });
+</script>

@@ -1,0 +1,53 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Get in touch"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Call us anytime on <a href=\"tel:13000123122\" title=\"tel:1300 123 122\">1300 123 122<\/a> or <a href=\"tel:+61399175588\" title=\"tel:+61399175588\">(03) 9917 5588<\/a> and we'll help you choose the right product<\/p><p><br\/>Or if you prefer please fill out the form and we will get in touch with you shortly<\/p><p><\/p><p>Or visit us at:<br\/><a href=\"https:\/\/g.page\/buildmat-hallam?share\" target=\"_blank\" title=\"Buildmat\">18 Babbage Drv, Dandenong South VIC 3175<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "title": "Contact us",
+        "text": "",
+        "show_phone": false,
+        "narrow_column": true,
+        "color_scheme": "none"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich-text",
+    "form"
+  ]
+}

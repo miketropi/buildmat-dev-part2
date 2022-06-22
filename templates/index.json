@@ -1,0 +1,304 @@
+{
+  "sections": {
+    "1636779566c33a2818": {
+      "type": "slideshow",
+      "blocks": {
+        "16367795660540e80b-0": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "Designed in Melbourne",
+            "title": "<p>Stunning Kitchen Sinks made for Australian Homes<\/p>",
+            "title_size": 55,
+            "subheading": "Turning Kitchen Sinks into centerpieces with stunning hairline brushed texture & crafted from 20% thicker stainless steel",
+            "link": "shopify:\/\/pages\/kitchen-sinks",
+            "link_text": "Discover Our Range",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/Buildmat_Hero_1800x800_a76e2650-2f88-41a4-968b-0ff0e07c93d6.jpg",
+            "overlay_opacity": 10,
+            "focal_point": "80% 50%"
+          }
+        }
+      },
+      "block_order": [
+        "16367795660540e80b-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 100,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "promo-grid": {
+      "type": "promo-grid",
+      "blocks": {
+        "1f9a53d3-d060-4525-81a1-8644133c7913": {
+          "type": "simple",
+          "settings": {
+            "link": "shopify:\/\/collections\/kitchen-sinks",
+            "text": "Kitchen Sinks",
+            "width": "33",
+            "height": 400
+          }
+        },
+        "6dbe830c-f2cf-45a6-8140-b6fd712b832f": {
+          "type": "simple",
+          "settings": {
+            "link": "shopify:\/\/collections\/concrete-basins",
+            "text": "Concrete Basins",
+            "image": "shopify:\/\/shop_images\/Bathroom_76ec89f3-b032-4eff-941c-1ce2e76e6e6d.jpg",
+            "width": "33",
+            "height": 300
+          }
+        },
+        "5a60597c-88fa-4928-ba3b-31005651a514": {
+          "type": "simple",
+          "settings": {
+            "link": "shopify:\/\/collections",
+            "text": "View all products",
+            "image": "shopify:\/\/shop_images\/Cody-950x450x205-Single-Bowl-Laundry-Sink-Drain-Board-Australia-3.png",
+            "width": "33",
+            "height": 300
+          }
+        }
+      },
+      "block_order": [
+        "1f9a53d3-d060-4525-81a1-8644133c7913",
+        "6dbe830c-f2cf-45a6-8140-b6fd712b832f",
+        "5a60597c-88fa-4928-ba3b-31005651a514"
+      ],
+      "settings": {
+        "full_width": true,
+        "gutter_size": 10,
+        "space_above": true,
+        "space_below": false
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Best Sellers",
+        "home_featured_products": "featured-collection",
+        "count": 10,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "16367865671f73817a": {
+      "type": "apps",
+      "blocks": {
+        "42141e46-9ad1-40a8-8201-8f61428e7285": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 5000,
+            "show_header": true,
+            "enable_link": true,
+            "all_reviews_link": "pages\/reviews"
+          }
+        }
+      },
+      "block_order": [
+        "42141e46-9ad1-40a8-8201-8f61428e7285"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": true
+      }
+    },
+    "16368670196e5dffed": {
+      "type": "rich-text",
+      "blocks": {
+        "1636867019061e2394-0": {
+          "type": "heading",
+          "settings": {
+            "title": "@buildmat Inspiratons"
+          }
+        }
+      },
+      "block_order": [
+        "1636867019061e2394-0"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "From our Building and Renovating Journal",
+        "blog": "building-renovating-tips",
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "blog_image_size": "natural",
+        "divider": false
+      }
+    },
+    "1636786494ad452097": {
+      "type": "apps",
+      "blocks": {
+        "0839e042-6efb-4f3f-a0f4-eda59177ce86": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_font": "open_sans_n4",
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "0839e042-6efb-4f3f-a0f4-eda59177ce86"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false
+      }
+    },
+    "1636866757bbc840c5": {
+      "type": "slideshow-split",
+      "blocks": {
+        "16368667574414e110-0": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "",
+            "title": "Melbourne Office",
+            "title_size": 60,
+            "subheading": "18 Babbage Drv, \nDandenong South VIC 3175\n\nMon-Fri 9:00am- 4:00pm",
+            "link": "https:\/\/g.page\/buildmat-hallam?share",
+            "link_text": "Google Maps",
+            "link_2": "https:\/\/www.google.com\/maps\/dir\/\/Buildmat,+18+Babbage+Dr,+Dandenong+South+VIC+3175\/",
+            "link_text_2": "Directions",
+            "text_position": "left",
+            "image": "shopify:\/\/shop_images\/Buildmat-Story.jpg",
+            "indent_image": false,
+            "focal_point": "20% 50%",
+            "color_scheme": "none"
+          }
+        }
+      },
+      "block_order": [
+        "16368667574414e110-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "height": 650,
+        "height_mobile": 450,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "16467355736fb8197b": {
+      "type": "promo-grid",
+      "disabled": true,
+      "blocks": {
+        "16467355731397bd87-0": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0023\/9881\/4278\/files\/Untitled.mp4",
+            "width": "33",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#ffffff"
+          }
+        },
+        "16467355731397bd87-1": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0023\/9881\/4278\/files\/Untitled_1.mp4",
+            "width": "33",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#ffffff"
+          }
+        },
+        "a5aa0409-14e7-45fb-97ac-a482ecc9c872": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0023\/9881\/4278\/files\/Untitled.mp4",
+            "width": "33",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#ffffff"
+          }
+        },
+        "bdd10b97-b7bc-4144-8a29-10ca56202ce7": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0023\/9881\/4278\/files\/Untitled_1.mp4",
+            "width": "33",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "16467355731397bd87-0",
+        "16467355731397bd87-1",
+        "a5aa0409-14e7-45fb-97ac-a482ecc9c872",
+        "bdd10b97-b7bc-4144-8a29-10ca56202ce7"
+      ],
+      "settings": {
+        "full_width": true,
+        "gutter_size": 0,
+        "space_above": true,
+        "space_below": true
+      }
+    }
+  },
+  "order": [
+    "1636779566c33a2818",
+    "promo-grid",
+    "featured-collection",
+    "16367865671f73817a",
+    "16368670196e5dffed",
+    "blog-posts",
+    "1636786494ad452097",
+    "1636866757bbc840c5",
+    "16467355736fb8197b"
+  ]
+}

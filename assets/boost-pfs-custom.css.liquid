@@ -1,0 +1,59 @@
+/*********************** Custom CSS for Boost Filter & Search  ************************/
+{% assign breakpointMobile = '767px' %}
+{% assign breakpointDesktop = '768px' %}
+{% assign searchBoxMobileHeight = '64px' %}
+
+/* *************************** Place your custom css below  *************************** */
+  
+/**** Custom Search result toolbar ****/
+.boost-pfs-search-result-toolbar {
+	margin: 20px 0;
+}
+
+.boost-pfs-search-result-toolbar>.boost-pfs-container-default-box,
+.boost-pfs-search-result-toolbar>.boost-pfs-container-default-fullwidth {
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	align-items: center;
+	text-align: left;
+}
+
+@media(max-width: {{ breakpointMobile }}) {
+  .search-grid  { margin-top: 20px; }
+  
+  .boost-pfs-filter-option:not(.boost-pfs-filter-option-collapsed) .boost-pfs-filter-option-content { display: block !important;}
+  .boost-pfs-filter-option.boost-pfs-filter-option-collapsed .boost-pfs-filter-option-content { display: none !important;}
+}
+
+.boost-pfs-filter-tree-mobile-button { display: none; }
+
+@media(min-width: {{ breakpointDesktop }}) {
+  .template-search .boost-pfs-filter-top-sorting {
+      border-right: none;
+      margin-right: 0;
+      padding-right: 0;
+  }
+  .grid_full-width {
+  	  width: 100%;
+  }
+  .collection-filter__item--count {
+    padding-left: 10px;
+  }
+  .collection-grid.boost-pfs-filter-products {
+  	max-width: 78%;
+  }
+}
+
+.boost-pfs-filter-top-sorting.boost-pfs-filter-option:not(.boost-pfs-filter-option-collapsed) .boost-pfs-filter-option-title .boost-pfs-filter-option-title-heading:after {
+    -webkit-transform: rotate(45deg) !important;
+    transform: rotate(45deg) !important;
+}
+
+@media (max-width: 1199px) {
+  .boost-pfs-action-list-enabled {
+      margin-bottom: 10px!important;
+  }
+}

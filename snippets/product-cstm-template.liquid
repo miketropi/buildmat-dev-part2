@@ -1,0 +1,218 @@
+{%- liquid
+  assign current_variant = product.selected_or_first_available_variant
+
+  unless thumbnail_position
+    assign thumbnail_position = 'beside'
+  endunless
+
+  assign product_zoom_size = '1800x1800'
+
+  assign enableHistory = true
+  if isModal or isAjax
+    assign enableHistory = false
+  endif
+
+  case image_container_width
+    when 'small'
+      assign product_image_width = 'medium-up--two-fifths'
+      assign product_description_width = 'medium-up--three-fifths'
+    when 'medium'
+      assign product_image_width = 'medium-up--one-half'
+      assign product_description_width = 'medium-up--one-half'
+    when 'large'
+      assign product_image_width = 'medium-up--three-fifths'
+      assign product_description_width = 'medium-up--two-fifths'
+  endcase
+-%}
+
+<div id="ProductSection-{{ section_id }}-{{ product.id }}"
+     class="product-section"
+     data-section-id="{{ section_id }}"
+     data-section-type="product"
+     data-product-id="{{ product.id }}"
+     data-product-handle="{{ product.handle }}"
+     data-product-title="{{ product.title | escape }}"
+     data-history="{{ enableHistory }}"
+     data-modal="{{ isModal }}">
+
+  {%- render 'product-template-variables', product: product, current_variant: current_variant -%}
+ 
+  {%- capture product_header -%}
+  {%- if settings.show_breadcrumbs and isModal != true -%}
+  {%- render 'breadcrumbs' -%}
+  {%- endif -%}
+
+  <div class="review-con">
+  {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: true, product: product %}
+  </div>
+    
+  {% assign prod_title = product.title | split: " " | first %}
+  <p class="h1 product-single__title prod-title-first">
+    {{ prod_title }}
+  </p>
+  <p class="h2 product-single__title prod-title-last">
+    {{ product.title | remove_first: prod_title }}
+  </p>
+
+  <span class="__go-apecifications-js">View Specifications</span>
+
+  {%- endcapture -%}
+
+  <div class="page-content page-content--product prod-pg-wrap">
+    <div class="page-width">
+
+      <div class="product-grid__container grid">
+
+        <div class="grid__item four-fifths prod-imgs">
+          {%- render 'product-images',
+              section_id: section_id,
+          product: product,
+          isModal: isModal,
+          image_position: image_position,
+          image_size: image_size,
+          product_zoom_enable: product_zoom_enable,
+          product_zoom_size: product_zoom_size,
+          thumbnail_arrows: thumbnail_arrows,
+          thumbnail_position: thumbnail_position,
+          video_looping: video_looping,
+          video_style: video_style
+          -%}
+        </div>
+
+
+        
+
+
+        <div class="product-grid__content grid__item four-fifths prod-content">
+
+          <div class="product-single__meta">
+
+            <div class="product-block product-block--header product-single__header prod-meta first-prod-meta">
+              {{ product_header }}
+            </div>
+            <div class="prod-meta second-prod-meta">
+
+              {% if product.compare_at_price > product.price %}
+              <span class="sale-badge">Sale</span>
+              {% endif %}
+
+              <div class="prod-price"><span>{{ product.price | money }}</span>
+                <sub class="prod-c-price">{{ product.compare_at_price | money }}</sub>
+              </div>
+
+              
+              <div class="product-block product-block--sales-point" {{ block.shopify_attributes }}>
+                {%- render 'product-inventory', product: product, current_variant: current_variant, block: block -%}
+              </div>
+
+              {%- form 'product', product, id: form_id, class: 'product-single__form prod-cstm-form' -%}
+
+
+              {%- liquid
+    assign enable_dynamic_buttons = false
+    if show_dynamic_checkout and template != 'product.preorder'
+      assign enable_dynamic_buttons = true
+    endif
+  -%}
+
+              {%- if enable_dynamic_buttons -%}
+              <div class="payment-buttons">
+                {%- endif -%}
+
+                {%- liquid
+      assign default_text = 'products.product.add_to_cart' | t
+      assign button_text = 'products.product.add_to_cart' | t
+      if template == 'product.preorder'
+        assign default_text = 'products.product.preorder' | t
+        assign button_text = 'products.product.preorder' | t
+      endif
+      if current_variant.inventory_quantity < 1
+        assign default_text = 'products.product.preorder' | t
+        assign button_text = 'products.product.preorder' | t  
+      endif  
+      unless current_variant.available
+        assign button_text = 'products.product.sold_out' | t
+      endunless
+
+    -%}
+                
+<!--    Add to cart sticky              -->
+                <div class="Cstm_addcartsticky">
+                
+                  </div>
+<!--      end sticky            -->
+
+                <button
+                        {% if product.empty? %}type="button"{% else %}type="submit"{% endif %}
+                        name="add"
+                        data-add-to-cart
+                        class="btn add-to-cart cstm_stickyend{% if enable_dynamic_buttons and product.selling_plan_groups == empty %} btn--secondary{% endif %}"
+                        {% unless current_variant.available %} disabled="disabled"{% endunless %}>
+                  <span data-add-to-cart-text data-default-text="{{ default_text }}">
+                    <span class="price-atc">{{ product.price | money }} - </span> {{ button_text }}
+                  </span>
+                </button>
+                
+                
+                 <button
+                        {% if product.empty? %}type="button"{% else %}type="submit"{% endif %}
+                        name="add"
+                        data-add-to-cart
+                        class="h2 sticky_addtocart-mobile btn add-to-cart{% if enable_dynamic_buttons and product.selling_plan_groups == empty %} btn--secondary{% endif %}"
+                        {% unless current_variant.available %} disabled="disabled"{% endunless %}>
+                  <span data-add-to-cart-text data-default-text="{{ default_text }}">
+                    <span class="price-atc">{{ product.price | money }} - </span> {{ button_text }}
+                  </span>
+                </button>
+                
+                {% render 'payment-icons' %}
+                {% render 'afterpay' %}
+  
+                {%- if enable_dynamic_buttons -%}
+                {{ form | payment_button }}
+                {%- endif -%}
+
+                {%- if enable_dynamic_buttons -%}
+              </div>
+              {%- endif -%}
+
+              <div class="shopify-payment-terms product__policies">{{ form | payment_terms }}</div>
+
+              <select name="id" data-product-select class="product-single__variants no-js">
+                {%- for variant in product.variants -%}
+                {%- if variant.available -%}
+                <option {% if variant == product.selected_or_first_available_variant %}
+                        selected="selected"{% endif %}
+                        value="{{ variant.id }}">
+                  {{ variant.title }} - {{ variant.price | money_with_currency }}
+                </option>
+                {%- else -%}
+                <option disabled="disabled">
+                  {{ variant.title }} - {{ 'products.product.sold_out' | t }}
+                </option>
+                {%- endif -%}
+                {%- endfor -%}
+              </select>
+
+              <textarea data-variant-json class="hide" aria-hidden="true" aria-label="Product JSON">
+                {{ product.variants | json }}
+              </textarea>
+              {%- if product.options.size > 1 -%}
+              <textarea data-current-variant-json class="hide" aria-hidden="true" aria-label="Variant JSON">
+                {{ current_variant | json }}
+              </textarea>
+              {%- endif -%}
+              {%- endform -%}
+
+
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

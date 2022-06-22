@@ -1,0 +1,251 @@
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": true,
+        "parallax": true
+      }
+    },
+    "promo-grid": {
+      "type": "promo-grid",
+      "disabled": true,
+      "blocks": {
+        "banner": {
+          "type": "banner",
+          "disabled": true,
+          "settings": {
+            "heading": "Banner promotion",
+            "text": "Add the details of your promotion in smaller text",
+            "link": "",
+            "label": "Shop now",
+            "color_scheme": "1"
+          }
+        }
+      },
+      "block_order": [
+        "banner"
+      ],
+      "settings": {
+        "full_width": true,
+        "gutter_size": 10,
+        "space_above": true,
+        "space_below": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {
+          }
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "grid_style": "small"
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapse_filters": true,
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "1636871039adbb814f": {
+      "type": "rich-text",
+      "blocks": {
+        "1636871039eeb5e5eb-0": {
+          "type": "heading",
+          "settings": {
+            "title": "What do I need to know before purchasing a concrete basin?"
+          }
+        },
+        "1636871039eeb5e5eb-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Concrete basins are becoming more popular in showrooms, and have been talked about in bathroom idea articles, especially with the minimalistic or nature-themed bathroom renovations. There are some things that you need to consider when considering having a concrete sink or basin in your house.<br\/><br\/>Let's go through some of the things that you should know before you decide that you want to have a nice concrete basin in your bathroom<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1636871039eeb5e5eb-0",
+        "1636871039eeb5e5eb-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "color_scheme": "3",
+        "divider": false
+      }
+    },
+    "163686844052e5df7e": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Concrete-Basins-are-Pourous.jpg",
+        "image_width": 500,
+        "subtitle": "",
+        "title": "Is Concrete Waterproof?",
+        "text": "<p>Concrete is actually a porous surface which means that even though it's technically waterproof what will happen is that water will stay in the pores of the concrete and start to erode the concrete slowly, this would mean that over time small granules and debris will start to come off the concrete.<br\/><br\/> What else might happen is that the pores might lead to water eventually seeping through the concrete and ending up on your wooden bench or tabletop and eventually mould the area if the bench is not sealed or waterproof. If you're working with DIY concrete make sure you find a sealer.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "1636873061c9b59322": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Concrete-Basins-are-imperfect.jpg",
+        "image_width": 500,
+        "subtitle": "",
+        "title": "Concrete Basins are imperfect",
+        "text": "<p>You'll notice that the photos look really nice and have a rustic feel to them because concrete is not a perfect material it means that you'll see obvious imperfections.<br\/><br\/> Some of the imperfections that you should know about before choosing a concrete basin are the air bubbles and join lines, sometimes even the sealant has streaks.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "163687307815ff502d": {
+      "type": "featured-product",
+      "blocks": {
+        "1636873078e163a0b9-0": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "1636873078e163a0b9-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": false
+          }
+        },
+        "10ac1dcc-d5e7-443e-b20b-b0d1752e577b": {
+          "type": "text",
+          "settings": {
+            "text": "To make the concrete vanity or stone wash basins waterproof we need to go through a process of sealing the concrete, this is the first thing that you should check with the supplier on any concrete products, whether it's a benchtop or a basin, the concrete must be sealed. Over time this sealant might erode and you might need to reseal the concrete but it should last a very long time. The sealant will cover the pores and make it harder for water to seep through and rot or mould your benchtop."
+          }
+        }
+      },
+      "block_order": [
+        "1636873078e163a0b9-0",
+        "1636873078e163a0b9-3",
+        "10ac1dcc-d5e7-443e-b20b-b0d1752e577b"
+      ],
+      "settings": {
+        "featured_product": "concrete-basin-sealer",
+        "divider": false,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_container_size": "small",
+        "product_image_size": "square",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "1636873584ca334f35": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Components-of-Concrete.jpg",
+        "image_width": 500,
+        "subtitle": "",
+        "title": "What else do I need to consider?",
+        "text": "<p>When you have decided that you're going with a concrete basin as your bathroom basin, you need to consider the costs involved and finding a vanity top that suits. There are vanity units that have been built for the purpose of having an on-counter basin, which is what most concrete basins are.<br\/><br\/>If you're going for the on counter basin then in terms of tapware you need to make sure that you're choosing a hi-rise basin mixer which needs to have a spout that is able to reach above the height of the basin. The thing with on counter basins is that you need to make sure there is enough bench space in the area for things such as towel rails, soap dish or soap dispensers.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "163678832949bd5d3b": {
+      "type": "faq",
+      "blocks": {
+        "16367883296bb60c7e-0": {
+          "type": "question",
+          "settings": {
+            "title": "Rooms that they suit concrete basins",
+            "text": "<p>Whether you're planning the interior design for a large bathroom, small bathroom or powder room you can utilise a concrete basin because they're above counter basins (sometimes this is also known as a vessel sink or trough sink) all you need is a flat countertop to put it on. Whether you've got a kickboard vanity or a wall hung bathroom vanity, either style can support the concert bathroom sink and give it a modern bathroom look. A concrete bathroom sink requires a bit of planning and making sure that you have your bathroom design well planned out because using a concrete design means you'll need some natural colours to contrasts against. Consider making a mood board or researching some home decor articles.<br\/><br\/> If you're looking for a kitchen sink then we would advise not to go concrete as there are lots of banging and clanking that goes on in the kitchen sink you're better to choose a Stainless steel kitchen sink.<\/p>"
+          }
+        },
+        "16367883296bb60c7e-1": {
+          "type": "question",
+          "settings": {
+            "title": "Can you build me some concrete furniture?",
+            "text": "<p>If you're going for concrete in the bathroom then it's definitely worth considering a concrete benchtop or concrete countertops, we don't supply these because they're generally made locally because they're extremely heavy to ship so you'll need to find a local that works with concrete, just make sure that you ask them to use a sealer.<\/p>"
+          }
+        },
+        "0390163d-2b89-4282-8838-f4391a6a0ab3": {
+          "type": "question",
+          "settings": {
+            "title": "How much is shipping?",
+            "text": "<p>Our concrete basins are completely sealed and available in different styles, in Australia, we ship them from our Melbourne warehouse, and it is free shipping Australia wide.<\/p>"
+          }
+        },
+        "03cf7edb-f7e4-43e4-98b6-389fb5767e38": {
+          "type": "question",
+          "settings": {
+            "title": "Showroom",
+            "text": "<p>Our online showroom has our entire range for you to view, if you find it hard to navigate then please feel free to give us a call on 1300123122 and we'll be able to talk you through the styles available. Whether you're after a matte black tapware, gunmetal soap dispensers, chrome toilet roll holders, bath spouts or bathroom accessories, we're happy to have a chat. Alternatively, you can visit our Kitchen Sink FAQ.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16367883296bb60c7e-0",
+        "16367883296bb60c7e-1",
+        "0390163d-2b89-4282-8838-f4391a6a0ab3",
+        "03cf7edb-f7e4-43e4-98b6-389fb5767e38"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions"
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "promo-grid",
+    "main-collection",
+    "1636871039adbb814f",
+    "163686844052e5df7e",
+    "1636873061c9b59322",
+    "163687307815ff502d",
+    "1636873584ca334f35",
+    "163678832949bd5d3b",
+    "recently-viewed"
+  ]
+}

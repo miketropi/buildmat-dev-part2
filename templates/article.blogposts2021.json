@@ -1,0 +1,49 @@
+{
+  "sections": {
+    "main": {
+      "type": "article-template",
+      "settings": {
+        "blog_capitalize_first": true,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": true
+      }
+    },
+    "sidebar": {
+      "type": "blog-sidebar",
+      "disabled": true,
+      "blocks": {
+        "share": {
+          "type": "share",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "share"
+      ],
+      "settings": {
+      }
+    },
+    "163685979838b1c1e1": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "Other Building and Renovating Tip Articles",
+        "blog": "building-renovating-tips",
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": true,
+        "blog_image_size": "wide",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sidebar",
+    "163685979838b1c1e1"
+  ],
+  "wrapper": "div.page-width.page-content.blog-layout"
+}

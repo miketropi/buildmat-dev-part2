@@ -1,0 +1,51 @@
+<div class="Main_productStickyBar">
+  <div class="page-width">
+  <div class="Sticy_productbar">
+    <div class="Featured_imgsticky">
+  <img class="sticky_featuredimg" src="{{ product.featured_image | img_url: 'master' }}" />
+        <span>
+  {{ product.title }}
+      </span>
+   
+    </div>
+    <div class="Sticky_cutmtabs">
+      <nav>
+      <ul class="Custom_tabsbar">
+        <li class="li_stickybar">
+          <a class="StickyAnchor_navigate" href="#shopify-section-template--15837220864220__main"> Gallery</a>
+        </li>
+        <li class="li_stickybar">
+          <a class="StickyAnchor_navigate" href="#shopify-section-template--15837220864220__1637468211e1d63b0b"> Features</a>
+        </li>
+        <li class="li_stickybar">
+          <a class="StickyAnchor_navigate" href="#shopify-section-template--15837220864220__product_technical"> Specifications</a>
+        </li>
+        <li class="li_stickybar">
+          <a class="StickyAnchor_navigate" href="#shopify-section-template--15837220864220__Custom_reviews-section"> Reviews</a>
+        </li>
+        
+        
+      </ul>
+      </nav>
+    </div>
+    <div class="Sticky_cartBtnn">
+      <button type="submit" name="add" data-add-to-cart="" class="btn add-to-cart"
+              {% unless product.selected_or_first_available_variant.available %}disabled='disabled' {% endunless %}
+              >
+                    <span data-add-to-cart-text="" data-default-text="Add to cart">
+                      <span class="price-atc">{{ product.price | money }} - </span> 
+                      {% if product.selected_or_first_available_variant.inventory_quantity == 0 %}
+                      {% if product.selected_or_first_available_variant.available %}
+                      Pre-order
+                      {% else %}
+                      Sold Out 
+                      {% endif %}
+                      {% else %}
+                      Add to cart
+                      {% endif %}
+                    </span>
+                  </button>
+    </div>
+  </div>
+  </div>
+  </div>

@@ -1,0 +1,162 @@
+{% assign cr_article_url = article.url %}
+{% assign cr_article_tags = article.tags %}
+<header class="section-header">
+  
+  <div class="back-link page-width">
+     <a href="{{ blog.url }}" class="return-link">
+       <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M0.113737 5.27983L4.36825 9.91335C4.41824 9.96875 4.49657 10 4.57823 10L5.86641 10C5.97807 10 6.03973 9.89063 5.9714 9.81676L1.54857 5L5.9714 0.183239C5.98679 0.166491 5.99634 0.14639 5.99895 0.125235C6.00157 0.104079 5.99715 0.0827236 5.9862 0.0636091C5.97524 0.0444946 5.9582 0.0283918 5.93702 0.0171432C5.91584 0.00589465 5.89137 -4.57859e-05 5.86641 -1.16786e-08L4.57823 -1.24295e-07C4.49657 -1.31434e-07 4.41825 0.0326699 4.36825 0.0866469L0.113737 4.71875C-0.0379129 4.88494 -0.0379129 5.11506 0.113737 5.27983Z" fill="#004F59"/>
+       </svg>
+       {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
+     </a>
+  </div>
+  <div class="header-wrap">
+      <div class="article__sub-meta">
+        {%- if section.settings.blog_show_date -%}
+          <span class="article__sub-meta-date">{{ article.published_at | time_tag: '%B %d, %y' }}</span>
+        {%- endif -%}
+        {%- if section.settings.blog_show_author -%}
+          <span>by {{ article.author }}</span>
+        {%- endif -%}
+      </div>
+
+      <h1 class="section-header__title">{{ article.title }}</h1>
+
+      {% if article.excerpt != blank %}
+        <div class="excerpt">{{ article.excerpt }}</div>
+      {% endif %}
+  </div>
+    
+</header>
+
+<div class="section-content">
+  {%- if section.settings.blog_show_featured_image and article.image -%}
+    <div class="image-wrap">
+      {%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+      <img class="lazyload"
+           data-src="{{ img_url }}"
+           data-widths="[180, 360, 540, 720, 900, 1080]"
+           data-aspectratio="{{ article.image.aspect_ratio }}"
+           data-sizes="auto"
+           alt="{{ article.image.alt | escape }}">
+      <noscript>
+        <img class="lazyloaded" src="{{ article.image | img_url: '400x' }}" alt="{{ article.title | escape }}">
+      </noscript>
+    </div>
+  {%- endif -%}
+  
+  <div class="content-wrap">{{ article.content }}</div>
+</div>
+
+{%- if section.settings.blog_show_related_posts and cr_article_tags.size > 0 -%}
+  <div class="section-related-article">
+      <div class="related-article-wrap page-width"> 
+        <h3 class="related-article-heading">Related Posts</h3>
+        <div class="related-article-list new-grid"> 
+            {% assign counter = 0 %}
+            {% for article in blogs['building-renovating-tips'].articles %}
+                {% if article.url != cr_article_url and counter < 3 %}
+          
+                   {% for cr_tag in cr_article_tags %}
+                       {% assign break_loop = false %}
+          
+                       {% for tag in article.tags %}
+                          {% if tag == cr_tag %}
+                              {% assign counter = counter | plus: 1 %}
+                              {%- liquid assign style = 'medium' -%}
+                              {%- render 'article-grid-item',
+                                          article: article,
+                                          style: style,
+                                          show_date: true,
+                                          show_author: false,
+                                          show_excerpt: true,
+                                          image_size: 'natural' -%}
+                               {% assign break_loop = true %}
+                           {% endif %}
+          				{% endfor %}
+          
+          				{% if break_loop %}
+                           {% break %}
+                        {% endif %}
+          
+                   {% endfor %}
+                {% endif %}
+            {% endfor %}
+         </div>
+      </div>
+  </div>
+{%- endif -%}
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "articleBody": {{ article.content | strip_html | json }},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ shop.url | append: article.url | json }}
+  },
+  "headline": {{ article.title | json }},
+  {% if article.excerpt != blank %}
+    "description": {{ article.excerpt | strip_html | json }},
+  {% endif %}
+  {% if article.image %}
+    {% assign image_size = article.image.width | append: 'x' %}
+    "image": [
+      {{ article | img_url: image_size | prepend: "https:" | json }}
+    ],
+  {% endif %}
+  "datePublished": {{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+  "dateModified": {{ article.updated_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+  "dateCreated": {{ article.created_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+  "author": {
+    "@type": "Person",
+    "name": {{ article.author | json }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    {% if page_image %}
+      {% assign image_size = page_image.width | append: 'x' %}
+      "logo": {
+        "@type": "ImageObject",
+        "height": {{ page_image.height | json }},
+        "url": {{ page_image | img_url: image_size | prepend: "https:" | json }},
+        "width": {{ page_image.width | json }}
+      },
+    {% endif %}
+    "name": {{ shop.name | json }}
+  }
+}
+</script>
+
+{% schema %}
+  {
+    "name": "Article pages",
+    "class": "blog-layout__main",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "blog_show_date",
+        "label": "Show date",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "blog_show_author",
+        "label": "Show author"
+      },
+	  {
+        "type": "checkbox",
+        "id": "blog_show_featured_image",
+        "label": "Show featured image",
+        "default": true
+      },
+	  {
+        "type": "checkbox",
+        "id": "blog_show_related_posts",
+        "label": "Show related posts",
+        "default": true
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,31 @@
+<div class="footer__title">
+  {%- if block.settings.title != blank -%}
+    {%- if block.settings.title_link != blank -%} 
+       <a href="{{ block.settings.title_link }}"
+          {% if block.settings.title_link contains "/pages/about-us" or block.settings.title_link contains "/pages/reviews" or block.settings.title_link contains "/pages/contact-us" 
+                 or block.settings.title_link contains "/account" or block.settings.title_link contains "/pages/shipping" or block.settings.title_link contains "/pages/terms-conditions" %}
+         	 rel="nofollow"
+          {% endif %}
+          > 
+    {%- endif -%}
+        {{ block.settings.title }}
+    {%- if block.settings.title_link != blank -%} 
+       </a> 
+    {%- endif -%}
+  {%- endif -%}
+</div>
+
+<ul class="footer__menu">
+  {%- for link in linklists[block.settings.menu].links -%}
+    <li>
+      <a href="{{ link.url }}"
+         {% if link.url contains "/pages/about-us" or link.url contains "/pages/reviews" or link.url contains "/pages/contact-us" 
+                 or link.url contains "/account" or link.url contains "/pages/shipping" or link.url contains "/pages/terms-conditions" %}
+         	rel="nofollow"
+         {% endif %}
+         >
+         {{ link.title }}
+      </a>
+    </li>
+  {%- endfor -%}
+</ul>

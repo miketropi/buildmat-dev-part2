@@ -1,0 +1,29 @@
+body, html {
+	font-family: "Sofia Pro";
+}
+
+.__go-apecifications-js {
+	font-size: 12px;
+	font-weight: 300;
+	text-decoration: underline;
+	margin-bottom: 6px;
+	cursor: pointer;
+} 
+
+.page-ss-heading {
+	margin-bottom: 48px;
+
+	&__heading-text {
+		font-family: "Sofia Pro";
+		font-weight: bold;
+		font-size: 56px;
+	}
+
+	&__sub-heading-text {
+		font-family: "Sofia Pro";
+		font-size: 24px;
+		color: #333333;
+		width: 658px;
+		margin: 0 auto;
+	}
+}

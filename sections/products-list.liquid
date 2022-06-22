@@ -1,0 +1,561 @@
+<style>
+  .page-products_list table{
+    background: initial !important;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+.page-products_list
+  .subsection.subsection2
+  .product_list
+  .product_item {
+  border-bottom: 1px solid #ecebeb;
+}
+.page-products_list
+  .subsection.subsection2
+  .product_list
+  .product_item
+  th {
+  padding: 8px 0;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #333333;
+}
+.page-products_list
+  .subsection.subsection2
+  .product_list
+  .product_item
+  td {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  vertical-align: top;
+}
+.page-products_list
+  .subsection.subsection2
+  .product_list
+  .product_item
+  td:first-child {
+  padding-left: 105px;
+}
+@media (max-width: 1024px) {
+.page-products_list
+    .subsection.subsection2
+    .product_list
+    .product_item
+    td:first-child {
+    padding-left: 16px;
+  }
+}
+.page-products_list
+  .subsection.subsection2
+  .product_list
+  .product_item
+  td:last-child {
+  padding-right: 105px;
+  text-align: right;
+}
+@media (max-width: 1024px) {
+.page-products_list
+    .subsection.subsection2
+    .product_list
+    .product_item
+    td:last-child {
+    padding-right: 16px;
+  }
+}
+.page-products_list
+  .subsection.subsection2
+  .product_list
+  .product_item
+  .p_image
+  img {
+  max-height: 151px;
+}
+@media (max-width: 768px) {
+  .page-products_list 
+  	.product_list{
+      border-top:  1px solid #ecebeb
+    }
+.page-products_list
+    .subsection.subsection2
+    .product_list
+    .product_item
+    .p_image
+    img {
+    max-height: 126px;
+  }
+}
+.page-products_list
+  .subsection.subsection2
+  .product_list
+  .product_item
+  .p_content
+  h2.p_litre {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 125%;
+  color: #333333;
+  margin: 0;
+}
+@media (max-width: 768px) {
+.page-products_list
+    .subsection.subsection2
+    .product_list
+    .product_item
+    .p_content
+    h2.p_litre {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+}
+.page-products_list
+  .subsection.subsection2
+  .product_list
+  .product_item
+  .p_content
+  h2.p_name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 125%;
+  color: #333333;
+}
+@media (max-width: 768px) {
+.page-products_list
+    .subsection.subsection2
+    .product_list
+    .product_item
+    .p_content
+    h2.p_name {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+.page-products_list
+  .subsection.subsection2
+  .product_list
+  .product_item
+  .p_content
+  .p_size,
+.page-products_list
+  .subsection.subsection2
+  .product_list
+  .product_item
+  .p_content
+  .p_weight,
+.page-products_list
+  .subsection.subsection2
+  .product_list
+  .product_item
+  .p_content
+  .p_type,
+.page-products_list
+  .subsection.subsection2
+  .product_list
+  .product_item
+  .p_content
+  .p_edges {
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+@media (max-width: 768px) {
+.page-products_list
+    .subsection.subsection2
+    .product_list
+    .product_item
+    .p_content
+    .p_size,
+.page-products_list
+    .subsection.subsection2
+    .product_list
+    .product_item
+    .p_content
+    .p_weight,
+.page-products_list
+    .subsection.subsection2
+    .product_list
+    .product_item
+    .p_content
+    .p_type,
+.page-products_list
+    .subsection.subsection2
+    .product_list
+    .product_item
+    .p_content
+    .p_edges {
+    font-size: 13px;
+  }
+}
+.page-products_list
+  .subsection.subsection2
+  .product_list
+  .product_item
+  .p_content
+  .p_size
+  svg,
+.page-products_list
+  .subsection.subsection2
+  .product_list
+  .product_item
+  .p_content
+  .p_weight
+  svg,
+.page-products_list
+  .subsection.subsection2
+  .product_list
+  .product_item
+  .p_content
+  .p_type
+  svg,
+.page-products_list
+  .subsection.subsection2
+  .product_list
+  .product_item
+  .p_content
+  .p_edges
+  svg {
+  margin-right: 8px;
+}
+.page-products_list
+  .subsection.subsection2
+  .product_list
+  .product_item
+  .p_content
+  .p_edges {
+  margin-bottom: 0;
+}
+.page-products_list
+  .subsection.subsection2
+  .product_list
+  .product_item
+  .p_price
+  label {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  color: #828282;
+}
+@media (max-width: 768px) {
+.page-products_list
+    .subsection.subsection2
+    .product_list
+    .product_item
+    .p_price
+    label {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+.page-products_list
+  .subsection.subsection2
+  .product_list
+  .product_item
+  .p_price
+  .p_price_html {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: #333333;
+}
+@media (max-width: 768px) {
+.page-products_list
+    .subsection.subsection2
+    .product_list
+    .product_item
+    .p_price
+    .p_price_html {
+    font-size: 18px;
+  }
+}
+.page-products_list
+  .subsection.subsection2
+  .product_list
+  .product_item
+  .p_action
+  form {
+  display: inline-block;
+  text-align: left;
+}
+.page-products_list
+  .subsection.subsection2
+  .product_list
+  .product_item
+  .p_action
+  .btn {
+  background: #000000;
+  border: 1px solid #272727;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 13px 35px;
+}
+@media (max-width: 768px) {
+.page-products_list
+    .subsection.subsection2
+    .product_list
+    .product_item
+    .p_action
+    .btn {
+    padding: 13px 19px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+.page-products_list
+  .subsection.subsection2
+  .product_list
+  .product_item
+  .p_action
+  .btn
+  svg {
+  margin-left: 14px;
+}
+@media (max-width: 768px) {
+.page-products_list
+    .subsection.subsection2
+    .product_list
+    .product_item
+    .p_action
+    .btn
+    svg {
+    margin-left: 8px;
+  }
+}
+.page-products_list
+  .subsection.subsection2
+  .product_list
+  .product_item
+  .p_action
+  a {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: #949494;
+  display: block;
+}
+@media (max-width: 768px) {
+.page-products_list
+    .subsection.subsection2
+    .product_list
+    .product_item {
+    display: block;
+  }
+.page-products_list
+    .subsection.subsection2
+    .product_list
+    .product_item:first-child {
+    display: none;
+  }
+.page-products_list
+    .subsection.subsection2
+    .product_list
+    .product_item
+    .p_image {
+    display: block;
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 10px;
+  }
+.page-products_list
+    .subsection.subsection2
+    .product_list
+    .product_item
+    .p_content {
+    display: block;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+  }
+.page-products_list
+    .subsection.subsection2
+    .product_list
+    .product_item
+    .p_price {
+    width: calc(50% - 3px);
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 0;
+    padding-left: 16px;
+  }
+.page-products_list
+    .subsection.subsection2
+    .product_list
+    .product_item
+    .p_action {
+    width: calc(50% - 3px);
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 32px;
+  }
+}
+
+</style>
+<section class="page-section page-products_list">
+  <div class="subsection subsection2">
+    <div class="section-container">
+      <table class="product_list">
+        <tr class="product_item">
+          <th></th>
+          <th>PROPERTIES</th>
+          <th>PRICE</th>
+          <th></th>
+        </tr>
+        {% for block in section.blocks %}
+          {% assign product = all_products[block.settings.product] %}
+          <tr class="product_item" {{ block.shopify_attributes }}>
+            <td class="p_image">
+              <a href="{{shop_domain}}/products/{{ block.settings.product.handle }}">
+                <img alt="{{ block.settings.p_name | escape }}" src="{{ block.settings.p_image | img_url: 'master' }}"/>
+              </a>
+            </td>
+            <td class="p_content">
+              <h2 class="p_litre">
+                <a href="{{shop_domain}}/products/{{ block.settings.product.handle }}">{{ block.settings.p_litre | escape }}</a>
+              </h2>
+              <h2 class="p_name">{{ block.settings.p_name | escape }}</h2>
+              <div class="p_size">
+                <svg fill="none" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <path clip-rule="evenodd" d="M17.8315 2.53226C17.8315 2.53226 17.8316 2.73843 17.8316 2.99271L17.8317 7.59697C17.8317 7.59697 17.6254 7.59698 17.3712 7.59698C17.1169 7.59698 16.9107 7.59698 16.9107 7.59698L16.9107 4.10428L3.47934 17.5357L6.97204 17.5357C6.97204 17.5357 6.97204 17.7418 6.97204 17.9961C6.97204 18.2504 6.97212 18.4565 6.97212 18.4565L1.90735 18.4565L1.90735 13.3918C1.90735 13.3918 2.11349 13.3918 2.36777 13.3918C2.62206 13.3918 2.8282 13.3918 2.8282 13.3918L2.8282 16.8845L16.2596 3.45314L12.7669 3.45314C12.7669 3.45314 12.7669 3.247 12.7669 2.99271C12.7669 2.73843 12.7669 2.53229 12.7669 2.53229L17.8315 2.53226Z" fill-rule="evenodd" fill="#828282"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect fill="white" height="20" width="20"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                {{ block.settings.p_size }}</div>
+              <div class="p_weight">
+                <svg fill="none" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.9478 5.3331H12.4785C12.9494 4.76883 13.2333 4.04327 13.2333 3.25256C13.2333 1.45905 11.7743 0 9.98093 0C8.18741 0 6.72836 1.45905 6.72836 3.25256C6.72836 4.04327 7.01233 4.76883 7.48322 5.3331h2.01392L0.234375 20H19.7273L16.9478 5.3331ZM9.98093 1.17188C11.1281 1.17188 12.0615 2.10526 12.0615 3.25256C12.0615 4.39972 11.1281 5.3331 9.98093 5.3331C8.83362 5.3331 7.90024 4.39972 7.90024 3.25256C7.90024 2.10526 8.83362 1.17188 9.98093 1.17188ZM3.98453 6.50497H15.9772L18.3125 18.8281H1.64917L3.98453 6.50497Z" fill="#828282"/>
+                  <path d="M10.0046 10.3356H8.67447L6.81488 12.1926V10.3356H5.85907V15.0188H6.81488V13.4182L7.29691 12.9482L8.75366 15.0188H9.98749L7.97943 12.2914L10.0046 10.3356Z" fill="#828282"/>
+                  <path d="M11.8956 13.3339H13.1586V13.8475C13.0571 13.9215 12.9189 13.9941 12.7463 14.0639C12.5363 14.1489 12.3181 14.1919 12.0981 14.1919C11.8462 14.1919 11.6051 14.1356 11.3812 14.0245C11.1655 13.9175 11.0052 13.7576 10.8917 13.5355C10.7745 13.3064 10.7152 13.0127 10.7152 12.6625C10.7152 12.3788 10.7655 12.1129 10.8643 11.8729C10.9201 11.7393 10.9996 11.615 11.1006 11.5028C11.1969 11.396 11.328 11.3075 11.4899 11.2399C11.6548 11.1711 11.8564 11.1362 12.0892 11.1362C12.2789 11.1362 12.4527 11.169 12.6057 11.2337C12.7513 11.2952 12.863 11.3759 12.9376 11.4734C13.0185 11.579 13.0885 11.7313 13.1459 11.9261L13.1996 12.1085L14.0796 11.8671L14.0321 11.6826C13.9514 11.3683 13.83 11.1075 13.671 10.9071C13.5078 10.7016 13.2825 10.5402 13.0008 10.4272C12.728 10.3178 12.4203 10.2625 12.0863 10.2625C11.6283 10.2625 11.216 10.3589 10.8609 10.549C10.4974 10.7437 10.2155 11.0445 10.0233 11.4429C9.83643 11.8301 9.74182 12.2522 9.74182 12.6978C9.74182 13.1488 9.83765 13.5641 10.027 13.932C10.2206 14.3086 10.511 14.6002 10.8904 14.7989C11.2616 14.9934 11.6788 15.0922 12.1303 15.0922C12.4649 15.0922 12.7956 15.0313 13.1131 14.911C13.4276 14.7922 13.736 14.613 14.0297 14.3788L14.1028 14.3207V12.4393L11.8956 12.4428V13.3339Z" fill="#828282"/>
+                </svg>
+                {{ block.settings.p_weight }}</div>
+              <div class="p_type">
+                <svg fill="none" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                  <path clip-rule="evenodd" d="M1 1H19V19H1V1ZM0 0H1H19H20V1V19V20H19H1H0V19V1V0ZM12 10C12 11.1046 11.1046 12 10 12C8.89543 12 8 11.1046 8 10C8 8.89543 8.89543 8 10 8C11.1046 8 12 8.89543 12 10ZM12.5 10C12.5 11.3807 11.3807 12.5 10 12.5C8.61929 12.5 7.5 11.3807 7.5 10C7.5 8.61929 8.61929 7.5 10 7.5C11.3807 7.5 12.5 8.61929 12.5 10ZM5.82843 6.82843L3 4L3.69531 3.28129L6.52374 6.10972L5.82843 6.82843ZM4 16.8284L6.82843 14L6.13312 13.2813L3.30469 16.1097L4 16.8284ZM15.8284 16.8284L13 14L13.6953 13.2813L16.5237 16.1097L15.8284 16.8284ZM14 6.82843L16.8284 4L16.1331 3.28129L13.3047 6.10972L14 6.82843Z" fill-rule="evenodd" fill="#828282"/>
+                </svg>
+                {{ block.settings.p_type }}</div>
+              <div class="p_edges">
+                <svg fill="none" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <path clip-rule="evenodd" d="M4 -57.5C4 -58.3284 4.67157 -59 5.5 -59H77.5C78.3284 -59 79 -58.3284 79 -57.5V14.5C79 15.3284 78.3284 16 77.5 16H5.5C4.67157 16 4 15.3284 4 14.5V-57.5ZM5.5 -58C5.22386 -58 5 -57.7761 5 -57.5V14.5C5 14.7761 5.22386 15 5.5 15H77.5C77.7761 15 78 14.7761 78 14.5V-57.5C78 -57.7761 77.7761 -58 77.5 -58H5.5Z" fill-rule="evenodd" fill="#828282"/>
+                    <path d="M7.88196 9.48165V8.50459H10.3896V6H11.3743V8.50459H13.882V9.48165H11.3743V12H10.3896V9.48165H7.88196Z" fill="#828282"/>
+                  </g>
+                  <rect height="19" stroke="#828282" width="19" x="0.5" y="0.5"/>
+                  <defs>
+                    <clipPath id="clip0"></clipPath>
+                  </defs>
+                </svg>
+                {{ block.settings.p_edges }}</div>
+            </td>
+            <td class="p_price">
+              <label>From</label>
+              <div class="p_price_html">{{ product.price | money_without_trailing_zeros }}</div>
+            </td>
+            <td class="p_action">
+              <form action="/cart/add" method="post">
+                <input type="hidden" name="id" value="{{ product.variants.first.id }}"/>
+                <button class="btn" type="submit" value="BUY DIRECT">BUY DIRECT
+                  <svg fill="none" height="16" viewbox="0 0 17 16" width="17" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                      <path d="M5.50002 15.6667C6.2364 15.6667 6.83335 15.0697 6.83335 14.3333C6.83335 13.597 6.2364 13 5.50002 13C4.76364 13 4.16669 13.597 4.16669 14.3333C4.16669 15.0697 4.76364 15.6667 5.50002 15.6667Z" stroke-linecap="square" stroke-miterlimit="10" stroke="white"/>
+                      <path d="M13.5 15.6667C14.2364 15.6667 14.8334 15.0697 14.8334 14.3333C14.8334 13.597 14.2364 13 13.5 13C12.7636 13 12.1667 13.597 12.1667 14.3333C12.1667 15.0697 12.7636 15.6667 13.5 15.6667Z" stroke-linecap="square" stroke-miterlimit="10" stroke="white"/>
+                      <path d="M3.94467 4.33333H15.5L14.1667 11H4.83333L3.5 1H1.5" stroke-miterlimit="10" stroke="white"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0">
+                        <rect fill="white" height="16" transform="translate(0.5)" width="16"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <a href="https://www.buildmat.com.au/">ON BUILDMAT.COM</a>
+              </form>
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  </div>
+</section>
+{% schema %}
+
+{
+  "name": "Section Products",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product Item",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        }, {
+          "type": "image_picker",
+          "id": "p_image",
+          "label": "Image"
+        }, {
+          "type": "text",
+          "id": "p_litre",
+          "label": "Capacity"
+        }, {
+          "type": "text",
+          "id": "p_name",
+          "label": "Name "
+        }, {
+          "type": "text",
+          "id": "p_size",
+          "label": "Box Size"
+        }, {
+          "type": "text",
+          "id": "p_weight",
+          "label": "Boxed Weight"
+        }, {
+          "type": "text",
+          "id": "p_type",
+          "label": "Type"
+        }, {
+          "type": "text",
+          "id": "p_edges",
+          "label": "Internal Edges"
+        }
+      ]
+    }
+  ]
+}
+
+{% endschema %}
+
+{% stylesheet %}
+
+
+
+{% endstylesheet %}
+
+{% javascript %}
+
+
+
+{% endjavascript %}

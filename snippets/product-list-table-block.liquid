@@ -1,0 +1,54 @@
+<table class="product-list-table">
+  <thead>
+    <tr>
+      <th width="42%"></th>
+      <th width="30%"></th>
+      <th width="15%"></th>
+      <th width="13%"></th>
+    </tr>
+  </thead>
+  <tbody class="product-list-container">
+    {% for block in section.blocks %} 
+    {% assign product = all_products[block.settings.product] %}
+    {% assign metaList = "size : 300 x 450 x 250 mm, weight : 8 kg Boxed Weight, type : Single Bowl, edges : Internal Bowl Size: 250 x 400mm" | split : ", " %}
+    <tr class="product-list-table__item p-filter-colour-{{ block.settings.p_colour | downcase | replace: " ", "-" }}" data-p-colour="{{ block.settings.p_colour }}">
+      <td class="p-image">
+        <div class="p-thumb-container">
+          <a href="{{ product.url }}">
+            <img alt="{{ block.settings.title | escape }}" src="{{ block.settings.p_image | img_url: 'master' }}"/>
+          </a>
+        </div>
+      </td>
+      <td class="p-content">
+        <div class="p-capacity">25 L</div>
+        <h4 class="p-title">
+          <a href="{{ product.url }}">{{ product.title }}</a>
+        </h4>
+        <ul class="p-meta-list">
+          <li class="p-meta-list__item p-meta-list__item--color">
+            <span class="p-meta-list__icon __icon-{{ block.settings.p_colour | downcase | replace: " ", "-" }}"></span> 
+            <span class="p-meta-list__text">{{ block.settings.p_colour }}</span>
+          </li>
+          {% for m_item in metaList %} {% assign mItemArr = m_item | split : " : " %}
+          <li class="p-meta-list__item">
+            <span class="p-meta-list__icon">{%- render 'theme-icon' with mItemArr[0] -%}</span>
+            <span class="p-meta-list__text">{{ mItemArr[1] }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </td>
+      <td class="p-price">
+        <span>From</span>
+        <div class="p-price-result">{{ product.price | money_without_trailing_zeros }}</div>
+        <div class="p-stock-status"><span class="__dot"></span> {{ block.settings.p_stock_status }}</div>
+      </td>
+      <td class="p-action" style="text-align: right;">
+        <form action="/cart/add" method="post">
+          <input type="hidden" name="id" value="{{ product.variants.first.id }}"/>
+          <button class="btn" type="submit" value="BUY DIRECT">Add To Cart</button>
+        </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table> <!-- .product-list-table -->

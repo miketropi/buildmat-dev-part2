@@ -1,0 +1,104 @@
+.custom-select-ui {
+  display: inline-block;
+  border: 1px solid #E3E6E8;
+  border-radius: 4px;
+  width: 295px;
+  max-width: 100%;
+  cursor: pointer;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  
+  &:hover {
+    border-color: black;
+  }
+
+  &__inner {
+    padding: 16px;
+    position: relative;
+  }
+
+  &__target {
+    color: #333333;
+    padding-right: 20px;
+
+    display: flex;
+    align-items: center;
+
+    .__icon-class {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      outline: solid 2px #006875;
+      border-radius: 24px;
+      margin-right: 8px;
+    }
+  }
+
+  .arrow-icon {
+    position: absolute;
+    line-height: 0;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    z-index: 3;
+  }
+}
+
+.custom-select-ui__select-list {
+  background-color: white;
+  border: 1px solid #E3E6E8;
+  border-radius: 4px;
+  overflow: hidden;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 0;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+
+    .__icon-class {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      outline: solid 2px transparent;
+      border-radius: 24px;
+      margin-right: 8px;
+    }
+
+    &:not(:last-child) {
+      border-bottom: solid 1px #E3E6E8;
+    }
+
+    &.__selected,
+    &:hover {
+      background-color: #EFF7F8;
+
+      .__icon-class {
+        outline-color: #006875;
+      }
+    }
+  }
+}
+
+.__icon-brushed-stainless-steel {
+  background: linear-gradient(180deg, #EEEEEE 0%, #C9C9C9 100%);
+}
+.__icon-brushed-copper {
+  background: linear-gradient(180deg, #B28065 0%, #815641 100%);
+}
+.__icon-brushed-gunmetal {
+  background: linear-gradient(180deg, #999797 0%, #7B7774 100%);
+}
+.__icon-brushed-brass-gold {
+  background: linear-gradient(180deg, #EDE4BC 0%, #B5A773 100%);
+}

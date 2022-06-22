@@ -1,0 +1,213 @@
+
+<div class="subsection subsection2 float loading">
+  <div class="section-container">
+    <div class="image_boxs">
+<div class="image_box">
+<div class="image_box_image">
+          <img alt="1.5mm Thick<br>Stainless Steel" src="{{ section.settings.text-box6 | img_url:"60x60" }}">
+        </div>
+<div class="image_box_text">{{ section.settings.text }}</div>
+
+      </div>
+<div class="image_box">
+ <div class="image_box_image">
+          <img alt="Under or Over<br>Mount Compatible" src="{{ section.settings.text-box1 | img_url:"60x60" }}">
+        </div>
+<div class="image_box_text">{{ section.settings.text1 }}</div>
+</div>
+<div class="image_box">
+<div class="image_box_image">
+          <img alt="Anti Condensation<br>Paint Underneath" src="{{ section.settings.text-box2 | img_url:"60x60" }}">
+        </div>
+<div class="image_box_text">{{ section.settings.text2 }}</div>
+ </div>
+<div class="image_box">
+<div class="image_box_image">
+          <img alt="Sound Deadening<br>Pads" src="{{ section.settings.text-box3 | img_url:"60x60" }}">
+        </div>
+<div class="image_box_text">{{ section.settings.text3 }}</div>
+</div>
+<div class="image_box">
+<div class="image_box_image">
+          <img alt="304 Grade<br>Stainless Steel" src="{{ section.settings.text-box4 | img_url:"60x60" }}">
+        </div>
+<div class="image_box_text">{{ section.settings.text4 }}</div>
+</div>
+<div class="image_box">
+<div class="image_box_image">
+          <img alt="Hand Welded<br>not pressed" src="{{ section.settings.text-box5 | img_url:"60x60" }}">
+        </div>
+<div class="image_box_text">{{ section.settings.text5 }}</div>
+ </div>
+</div>
+  </div>
+</div>
+{% schema %}
+{
+"name": "Image Boxes",
+"settings": [
+{
+"id": "text-box6",
+"type": "image_picker",
+"label": "Choose Image"
+},
+{
+"id": "text",
+"type": "textarea",
+"label": "Enter the USP"
+},
+{
+"id": "text-box1",
+"type": "image_picker",
+"label": "Choose Image"
+},
+{
+"id": "text1",
+"type": "textarea",
+"label": "Enter the USP"
+},
+{
+"id": "text-box2",
+"type": "image_picker",
+"label": "Choose Image"
+},
+{
+"id": "text2",
+"type": "textarea",
+"label": "Enter the USP"
+},
+{
+"id": "text-box3",
+"type": "image_picker",
+"label": "Choose Image"
+},
+{
+"id": "text3",
+"type": "textarea",
+"label": "Enter the USP"
+},
+{
+"id": "text-box4",
+"type": "image_picker",
+"label": "Choose Image"
+},
+{
+"id": "text4",
+"type": "textarea",
+"label": "Enter the USP"
+},
+{
+"id": "text-box5",
+"type": "image_picker",
+"label": "Choose Image"
+},
+{
+"id": "text5",
+"type": "textarea",
+"label": "Enter the USP"
+}
+],
+"presets": [
+{
+"name": "Image Boxes",
+"category": "Custom Content"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+<style>
+  .subsection.subsection2.float {
+    color: #EDEEEF;
+    background: rgba(11,11,14,.5);
+    position: absolute;
+    width: 100%;
+    margin-top: -181px;
+    transition:opacity 0.5s linear;
+    
+}
+  .loading{
+   	opacity:0; 
+  }
+  .loaded{
+   	opacity:1; 
+  }
+  @media screen and (max-width:768px) {
+  .subsection.subsection2.float {
+margin-top: -140px;
+position: relative;
+  }
+    
+  }
+@media screen and (min-width:768px) {
+  .subsection.subsection2 {
+    padding: 32px 0;
+  }
+}
+ .subsection.subsection2 .section-container {
+    max-width: 1262px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+}
+ .subsection.subsection2 .image_boxs {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+   	
+}
+.subsection.subsection2 .image_boxs .image_box {
+    /* flex: 0 0 calc((100% - 128px)/5); */
+    padding: 0 15px;
+}
+.subsection.subsection2 .image_boxs .image_box_image {
+    margin-bottom: 16px;
+  
+}
+.subsection.subsection2 .image_boxs img {
+    max-width: 56px;
+}
+.subsection.subsection2 .image_boxs .image_box_text {
+    font-size: 18px;
+    line-height: 115%;
+    text-align: center;
+    letter-spacing: -0.03em;
+}
+  @media (max-width: 768px){
+   .subsection.subsection2 .section-container {
+    padding: 0;
+}
+    .subsection.subsection2 .image_boxs {
+        background: #0D0E1A;
+    flex-wrap: wrap;
+    }
+    .subsection.subsection2 .image_boxs .image_box {
+        flex: 0 0 calc(100% / 3);
+    padding: 18px 12px;
+    border: 1px solid #353840;
+    }
+    .subsection.subsection2 .image_boxs .image_box_image {
+    margin-bottom: 8px;
+    }
+    .subsection.subsection2 .image_boxs img {
+    max-width: 36px;
+}
+    .subsection.subsection2 .image_boxs .image_box_text {
+      font-size: 13px;}
+  }
+</style>
+<script>
+  $(document).ready(function () {
+    setTimeout(() => {
+    $('.subsection2').removeClass('loading');
+    $('.subsection2').addClass('loaded');
+    }, 1500);
+
+  });
+</script>

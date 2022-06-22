@@ -1,0 +1,444 @@
+{
+  "wrapper": "div.main-cstm-prod-wrap",
+  "sections": {
+    "main": {
+      "type": "main-cstm-product",
+      "blocks": {
+        "variant_picker": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "variant_labels": false,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": false
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_threshold": 10,
+            "inventory_transfers_enable": true
+          }
+        },
+        "ad89b3a8-4565-4d8b-884c-2d7b2d338082": {
+          "type": "reviews",
+          "settings": {
+          }
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "truck",
+            "text": "Free shipping Australia wide"
+          }
+        },
+        "sales_point2": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "truck",
+            "text": "Free returns"
+          }
+        },
+        "sales_point3": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "leaf",
+            "text": "Carbon neutral"
+          }
+        },
+        "sales_point4": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "lock",
+            "text": "Secure payments"
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker",
+        "price",
+        "buy_buttons",
+        "inventory_status",
+        "ad89b3a8-4565-4d8b-884c-2d7b2d338082",
+        "sales_point",
+        "sales_point2",
+        "sales_point3",
+        "sales_point4"
+      ],
+      "settings": {
+        "sku_enable": false,
+        "image_position": "left",
+        "image_container_size": "large",
+        "product_image_size": "square",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": true,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "1637467955957e4f6a": {
+      "type": "text-columns",
+      "blocks": {
+        "16374679555e8754c7-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2021-11-21_at_3.13.38_pm.png",
+            "image_width": 200,
+            "title": "",
+            "text": "<p>Long Structural Warranty for Peace of Mind<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "16374679555e8754c7-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2021-11-21_at_3.13.43_pm.png",
+            "image_width": 200,
+            "title": "",
+            "text": "<p>Dispatch From Melbourne Warehouse<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "16374679555e8754c7-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Buildmat_design_icon_9d47478a-9933-411a-828a-19c03de82e5b.png",
+            "image_width": 200,
+            "title": "",
+            "text": "<p>Products Designed in Melbourne<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16374679555e8754c7-0",
+        "16374679555e8754c7-1",
+        "16374679555e8754c7-2"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": true,
+        "color_scheme": "none"
+      }
+    },
+    "164724157568d118a3": {
+      "type": "advanced-content",
+      "disabled": true,
+      "blocks": {
+        "164724157579bc979a-1": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "code": "{% if product.metafields.my_fields.product_specific_description != blank %} \n<p>\n{{ product.metafields.my_fields.product_specific_description }}<\/p>\n{% else %}\n{{ \" \"}}\n{% endif %}",
+            "width": "66%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "164724157579bc979a-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "product_accordion": {
+      "type": "product-accordion",
+      "blocks": {
+        "6f10c3fc-afaa-4b17-95fd-258ba189f899": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "3037728b-1c58-4b7a-8aa9-addb1cd18cb5": {
+          "type": "Metafields-tab",
+          "settings": {
+            "code-new": "Specifications"
+          }
+        },
+        "d8760a19-6b1d-4470-9172-2580a4e88b32": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping information",
+            "content": "<p>Buildmat is offering <strong>Free Shipping Australia Wide<\/strong> on basins. <\/p>",
+            "page": "shipping-custom"
+          }
+        },
+        "9833b8ce-c944-47c7-8457-a3af7d71b882": {
+          "type": "custom-new",
+          "disabled": true,
+          "settings": {
+            "code-new": "Specifications"
+          }
+        }
+      },
+      "block_order": [
+        "6f10c3fc-afaa-4b17-95fd-258ba189f899",
+        "3037728b-1c58-4b7a-8aa9-addb1cd18cb5",
+        "d8760a19-6b1d-4470-9172-2580a4e88b32",
+        "9833b8ce-c944-47c7-8457-a3af7d71b882"
+      ],
+      "settings": {
+        "max_width": true
+      }
+    },
+    "163746830423fe9062": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "{{ product.metafields.my_fields.desc1.value }}",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "<p class=\"pdp-imagetext\"><span class=\"pdp-accent\">Buildmat Basins<\/span> crafted for your bathroom<br> \n<\/p>",
+        "text": "<p><strong>A Description of our elegant <\/strong><strong>{{ product.title }}<\/strong> <strong>Desgin<\/strong><\/p><p><\/p><p>{{ product.metafields.my_fields.product_specific_description | metafield_tag }}<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "1637468211e1d63b0b": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "{{ product.metafields.my_fields.desc2.value }}",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "<p class=\"pdp-imagetext\">Constructed with <br><span class=\"pdp-accent\">Durable Ceramic<\/span><\/p>",
+        "text": "<p>The {{ product.title }} is made with a hard-wearing solid ceramic material which offers resistance to extreme hot and cold temperatures, scratches, and permanent stains making it perfect for your everyday use. <\/p><p><\/p><p>Its ultrasmooth surface shine is long-lasting, keeping it look good as new for many years to come!<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "164685794107da280f": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "{{ product.metafields.my_fields.des3.value }}",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "<p class=\"pdp-imagetext\"> Buildmat's\n<span class=\"pdp-accent\">Effortless Maintenance<\/span> design<\/p>",
+        "text": "<p>The {{ product.title }} is an effortless basin to maintain, with just some warm soapy water and using the soft side of a scouring sponge along the surface, the basin will be perfectly fresh and clean! Not only is it easy to maintain, but the slight inward slope combined with its smooth surface also allows for an easy<br\/>flow to the centre waste.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "1639614255ecee720f": {
+      "type": "hero-video",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "title": "",
+        "title_size": 70,
+        "subheading": "",
+        "link_text": "",
+        "link": "",
+        "color_accent": "#ffffff",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0023\/9881\/4278\/files\/Buildmat_Sink_PDP_Video_22secs.mp4?v=1647134885",
+        "overlay_opacity": 0,
+        "height": 700,
+        "height_mobile": 300
+      }
+    },
+    "Custom_reviews-section": {
+      "type": "Custom_reviews-section",
+      "settings": {
+      }
+    },
+    "1639614080ec489b23": {
+      "type": "promo-grid",
+      "disabled": true,
+      "blocks": {
+        "78f545bd-23fe-49ec-ae54-eb27de101465": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Penny_510_Topmount_Single_Bowl_Sink2.jpg",
+            "link": "",
+            "width": "50"
+          }
+        },
+        "7ac91ed0-5516-43d6-b723-62830411ce47": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lifestyle-photo-landscape-02.jpg",
+            "link": "",
+            "width": "50"
+          }
+        },
+        "b91c6231-1dd7-419c-bb19-4dd646074a9f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cody_950x450_Single_Bowl_Drainboard_Sink.jpg",
+            "link": "",
+            "width": "33"
+          }
+        },
+        "54205810-9dbd-4c12-9be8-8c7547e41f1d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cody_950x450_Single_Bowl_Drainboard_Sink_right.jpg",
+            "link": "",
+            "width": "33"
+          }
+        },
+        "cccd3aef-d583-417e-af83-781647db960d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Penny_510_Topmount_Single_Bowl_Sink_black_mixer.jpg",
+            "link": "",
+            "width": "33"
+          }
+        }
+      },
+      "block_order": [
+        "78f545bd-23fe-49ec-ae54-eb27de101465",
+        "7ac91ed0-5516-43d6-b723-62830411ce47",
+        "b91c6231-1dd7-419c-bb19-4dd646074a9f",
+        "54205810-9dbd-4c12-9be8-8c7547e41f1d",
+        "cccd3aef-d583-417e-af83-781647db960d"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": true
+      }
+    },
+    "product_technical": {
+      "type": "product-technical",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "You may also like"
+      }
+    },
+    "more-products-vendor": {
+      "type": "more-products-vendor",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": true
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Specifications",
+            "content": "<p>Brand:{{ product.metafields.my_fields.brand.value }}<\/p><p>Finish: {{ product.metafields.my_fields.product_finish.value }}<\/p><p>Sku: {{ product.metafields.my_fields.sku.value }}<\/p>",
+            "page": ""
+          }
+        },
+        "c26ef2f9-d99a-449e-9bba-140a2057c92a": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping information",
+            "content": "",
+            "page": ""
+          }
+        },
+        "50e9a602-6104-4f3d-9116-fa793fc8508f": {
+          "type": "custom",
+          "settings": {
+            "code": "<p>Buildmat is offering <b>Free Shipping Australia Wide<\/b> on kitchen sinks.\n<br><br>\nAll our kitchen Sinks are shipped from our Melbourne warehouse and are shipped next business day. Shipping time estimates are listed below:<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "description",
+        "tab",
+        "c26ef2f9-d99a-449e-9bba-140a2057c92a",
+        "50e9a602-6104-4f3d-9116-fa793fc8508f"
+      ],
+      "settings": {
+        "max_width": false
+      }
+    },
+    "more-products-collection": {
+      "type": "more-products-collection",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "2"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1637467955957e4f6a",
+    "164724157568d118a3",
+    "product_accordion",
+    "163746830423fe9062",
+    "1637468211e1d63b0b",
+    "164685794107da280f",
+    "1639614255ecee720f",
+    "Custom_reviews-section",
+    "1639614080ec489b23",
+    "product_technical",
+    "recommendations",
+    "more-products-vendor",
+    "recently-viewed",
+    "sub",
+    "more-products-collection",
+    "collection-return"
+  ]
+}

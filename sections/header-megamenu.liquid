@@ -1,0 +1,134 @@
+<div data-section-id="{{ section.id }}" data-section-type="header">
+  <div id="HeaderMegamenuWrapper" class="header-megamenu-wrapper header-megamenu">
+    <header id="SiteHeaderMegamenu" class="header-megamenu__header-tag page-width">
+      <div class="header-megamenu__meta header-megamenu--logo">
+        {%- render 'header-logo-block', section: section -%}
+      </div>
+      <div class="header-megamenu__meta header-megamenu--nav">
+      	{%- render 'header-megamenu-block', section: section -%}
+      </div>
+      <div class="header-megamenu__meta header-megamenu--icons">
+        {%- render 'header-icons', section: section, nav_position: nav_position -%}
+      </div>
+
+      <div class="site-header__search-container">
+        <div class="page-width">
+          <div class="site-header__search">
+            {%- render 'header-search' -%}
+            <button type="button" class="text-link site-header__search-btn site-header__search-btn--cancel">
+              <span class="medium-up--hide"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M19 17.61l27.12 27.13m0-27.13L19 44.74"/></svg></span>
+              <span class="small--hide">{{ 'general.search.cancel' | t }}</span>
+            </button>
+          </div>
+        </div>
+      </div> <!-- .site-header__search-container -->
+
+      {%- if settings.predictive_search_enabled or settings.search_top_collection != blank -%} 
+        <div id="SearchResultsWrapper" class="site-header__search-results hide">
+          {%- if settings.search_top_collection != blank -%}
+            {%- assign search_collection = collections[settings.search_top_collection] -%}
+            <div id="TopSearched" class="site-header__search-results-wrapper">
+              <div class="page-width">
+                <div class="h4 site-header__search-title">{{ 'general.search.search_title' | t }}</div>
+              </div>
+              <div class="page-width page-width--flush-small">
+                <div class="new-grid product-grid scrollable-grid--small" data-view="scrollable">
+                  {%- for product in search_collection.products limit: 6 -%}
+                    {%- render 'product-grid-item', product: product, no_actions: true -%}
+                  {%- endfor -%}
+                </div>
+              </div>
+            </div>
+          {%- endif -%}
+
+          {%- if settings.predictive_search_enabled -%}
+            <div id="PredictiveWrapper" class="hide" data-image-size="{{ settings.predictive_image_size }}">
+              <div class="page-width">
+                <div id="PredictiveResults" class="predictive-result__layout"></div>
+                <div class="text-center predictive-results__footer">
+                  <button type="button" class="btn btn--small" data-predictive-search-button>
+                    <small>
+                      {{ 'general.search.view_more' | t }}
+                    </small>
+                  </button>
+                </div>
+              </div>
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+
+    </header>
+  </div>
+  <div id="MobileMegamenu" class="mobile-megamenu">
+    <div class="mobile-megamenu__inner">
+      <div class="mobile-megamenu__nav"></div>
+      <div class="mobile-megamenu__entra">
+        {%- render 'mobile-menu-widgets', section: section -%} 
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Header Megamenu", 
+  "class": "header-megamenu",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Select Product in Megamenu"
+    },
+    {
+      "type": "product",
+      "id": "product_2",
+      "label": "Select Product in Megamenu 2"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo-inverted",
+          "label": "White logo",
+          "info": "Used when on top of an image"
+        },
+        {
+          "type": "range",
+          "id": "desktop_logo_width",
+          "label": "Desktop logo width",
+          "default": 200,
+          "min": 100,
+          "max": 400,
+          "step": 10,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "mobile_logo_width",
+          "label": "Mobile logo width",
+          "default": 140,
+          "min": 60,
+          "max": 200,
+          "step": 10,
+          "unit": "px",
+          "info": "Set as a max-width, may appear smaller"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "settings": {}
+  }
+}
+{% endschema %}

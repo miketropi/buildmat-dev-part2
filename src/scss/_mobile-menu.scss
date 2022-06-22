@@ -1,0 +1,155 @@
+$mobile-wrap-bg-color: rgba(1,1,1,.3);
+$mobile-nav-bg-color: #19242D;
+$mobile-nav-item-border-color: #4A5365;
+
+/**
+ * Fix z-index
+ */
+.toolbar-section,
+#HeaderMegamenuWrapper {
+  z-index: 50;
+}
+
+.mobile-megamenu__entra {
+  background-color: $mobile-nav-bg-color;
+}
+
+.mobile-megamenu {
+  position: fixed;
+  z-index: 30;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(1,1,1,.3);
+  display: flex;
+  justify-content: right;
+  overflow: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+
+  .page-width {
+    padding: 0;
+  }
+
+  &__inner {
+    width: 460px;
+    max-width: 100%;
+    background: $mobile-nav-bg-color;
+    padding-top: 92px;
+    opacity: 0;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transition: .4s ease;
+    -webkit-transition: .4s ease;
+
+    @media(max-width: 767px) {
+      padding-top: 120px;
+    }
+  }
+
+  .megamenu-block {
+    background: white;
+
+    &__ul {
+
+    }
+
+    &__item {
+      width: 100%;
+      border-bottom: 1px solid $mobile-nav-item-border-color;
+      
+      > a {
+        background: $mobile-nav-bg-color;
+        padding: 20px 24px;
+      }
+
+      &:hover,
+      &:active {
+        
+        > a {
+          color: white !important;
+          opacity: 1;
+
+          .megamenu-block__item-icon-arrow {
+
+            svg {
+              fill: white;
+              opacity: .7;
+            }
+          }
+        }
+      }
+    }
+
+    &__mega {
+      position: initial;
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      display: none;
+    }
+  }
+
+  .sub-megamenu {
+    margin: 0;
+
+    &__item {
+      width: 100%;
+      padding: 24px;
+      border-bottom: 1px solid #EBEBEB;
+      box-shadow: inset 0px -2px 12px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.mobi-megamenu-widgets {
+  padding: 30px 24px;
+
+  .megamenu-widget {
+    margin-bottom: 30px;
+
+    &__title {
+      color: white;
+      padding: 0;
+      border-bottom: none;
+      font-family: 'Open Sans';
+    }
+
+    &__nav {
+
+      li {
+
+        a {
+          color: #AAB9C7;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 1026px) {
+  
+  body.menumobi-open {
+    overflow: hidden;
+  
+    .mobile-megamenu {
+      visibility: visible;
+      opacity: 1;
+  
+      &__inner {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+#shopify-section-toolbar {
+  z-index: 999;
+}

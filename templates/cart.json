@@ -1,0 +1,35 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-cart",
+      "settings": {
+        "logo": "shopify:\/\/shop_images\/Logo_Horizontal_1.png",
+        "desktop_logo_width": 400,
+        "mobile_logo_width": 200
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1648587480f2fd3670": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Popular Kitchen Accessories",
+        "home_featured_products": "kitchen-accessories",
+        "count": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "recently-viewed",
+    "1648587480f2fd3670"
+  ]
+}

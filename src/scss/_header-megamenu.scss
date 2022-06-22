@@ -1,0 +1,371 @@
+$header-backgroud-color: #19242D !default;
+$menu-item-color: white !default;
+$menu-item-background-active-color: white !default;
+$menu-item-active-color: #19242D !default;
+$menu-item-font-size: 14px !default;
+
+$submega-background: white !default; 
+$submega-menu-item-color: #006D7B !default;
+
+#shopify-section-header-megamenu {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.header-megamenu {
+  background: $header-backgroud-color;
+
+  &__header-tag { 
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__meta {
+
+  }
+
+  &--logo {
+    margin-right: 70px;
+
+  }
+
+  &--nav {
+
+  }
+
+  &--icons {
+    margin-left: auto;
+  }
+}
+
+.megamenu-block {
+
+  &__ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    list-style: none;
+    margin-bottom: 0;
+
+    > a {
+      color: $menu-item-color;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      padding: 24px 32px;
+      display: inline-block;
+      font-size: $menu-item-font-size;
+      transition: .3s ease;
+      -webkit-transition: .3s ease;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &:hover {
+
+      > a {
+        background-color: $menu-item-background-active-color;
+        color: $menu-item-active-color;
+
+        .megamenu-block__item-icon-arrow {
+
+          svg {
+            fill: $menu-item-active-color;
+          }
+        }
+      }
+    }
+
+    &:hover {
+
+      .megamenu-block__mega {
+        visibility: visible;
+        z-index: 50;
+        opacity: 1;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+      }
+    }
+  }
+
+  &__item-icon-arrow {
+    width: 16px;
+    line-height: 0;
+    margin-left: 6px;
+    
+    svg {
+      width: 100%;
+      fill: $menu-item-color;
+      width: 100%;
+      transition: .3s ease;
+      -webkit-transition: .3s ease;
+    }
+  }
+
+  &__mega-extra {
+    background-color: #F1F3F3;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 50vw;
+      background: #F1F3F3;
+      z-index: -1;
+    }
+  }
+}
+
+.megamenu-block__mega {
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  left: 0;
+  width: 100%;
+  background: $submega-background;
+  z-index: -1;
+  padding: 0;
+  transform: translateY(20px);
+  -webkit-transform: translateY(20px);
+}
+
+.sub-megamenu {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -35px;
+  font-size: 14px;
+
+  a {
+    color: $submega-menu-item-color;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &__item {
+    padding: 16px 35px;
+    box-sizing: border-box;
+    width: calc(100% / 4);
+  }
+
+  &__ul {
+    margin: 0;
+  }
+
+  &__nav-item {
+    list-style: none;
+    padding: 6px 0;
+    margin-bottom: 0;
+  }
+
+  &__nav-item-first {
+    border-bottom: solid 1px #C4C4C4;
+    padding: 12px 0;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .megamenu-label {
+      color: black;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.megamenu-widget {
+  margin-bottom: 18px;
+
+  &__title {
+    color: #19242D;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 16px 0;
+    margin-bottom: 16px;
+    border-bottom: solid 1px #C4C4C4;
+  }
+
+  &__nav {
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0;
+      list-style: none;
+
+      > a {
+        display: inline-block;
+        padding: 6px 0;
+      }
+    }
+  }
+}
+
+.product-card {
+
+  &__inner {
+    background: white;
+  }
+
+  &__thumb {
+    display: inline-block;
+    width: 100%;
+    background: #fafafa;
+    line-height: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+
+    img {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .sale-badge {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: #CF3B3B;
+      color: white;
+      z-index: 3;
+      padding: 4px 8px;
+      font-family: "Sofia Pro";
+      font-weight: bold;
+      line-height: normal;
+    }
+  }
+
+  &__entry {
+    padding: 16px;
+
+    .sale-text {
+      color: #CF3B3B;
+      font-weight: bold;
+      font-family: "Sofia Pro";
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    margin-bottom: 8px;
+
+    a {
+      color: #333;
+    }
+  }
+
+  &__price {
+    font-weight: bold;
+    color: #333;
+
+    .prod-c-price {
+      text-decoration: line-through;
+      font-weight: normal;
+    }
+
+    .sale-badge {
+      color: #CF3B3B;
+      font-weight: bold;
+      font-family: "Sofia Pro";
+    }
+  }
+}
+
+.__inner-center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#HeaderMegamenuWrapper {
+  position: relative;
+  @media(max-width: 1026px) {
+    border-bottom: 1px solid #4A5365;
+  }
+
+  .header-megamenu--nav {
+    
+    @media(max-width: 1026px) {
+      display: none;
+    }
+  }
+
+  .header-megamenu--logo {
+    margin-right: 0;
+  }
+
+  .site-nav {
+
+    &__icons {
+
+      
+    }
+  
+    &__link--icon-user {
+      
+      @media(max-width: 1026px) {
+        display: none;
+      }
+    }
+
+    &__mobile-nav-trigger {
+
+      @media(max-width: 1026px) {
+        display: block !important;
+      }
+    }
+  }
+  
+}
+
+.hamburger-icon-desktop {
+  display: none;
+
+  @media(max-width: 1026px) {
+    display: none !important;
+  }
+}
+
+// .header-megamenu--nav {
+
+//   &:hover {
+
+//     & + .header-megamenu--icons {
+      
+//       .site-nav__link--icon-user {
+//         display: none;
+//       }
+
+//       .hamburger-icon-desktop {
+//         display: block;
+//       }
+//     }
+//   }
+// }

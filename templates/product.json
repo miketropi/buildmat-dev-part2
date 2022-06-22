@@ -1,0 +1,268 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "variant_picker": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": true
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": false
+          }
+        },
+        "ad89b3a8-4565-4d8b-884c-2d7b2d338082": {
+          "type": "reviews",
+          "settings": {
+          }
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "truck",
+            "text": "Free shipping Australia wide"
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_threshold": 10,
+            "inventory_transfers_enable": false
+          }
+        },
+        "sales_point2": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "truck",
+            "text": "Free returns"
+          }
+        },
+        "sales_point3": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "leaf",
+            "text": "Carbon neutral"
+          }
+        },
+        "sales_point4": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "lock",
+            "text": "Secure payments"
+          }
+        },
+        "142cfb86-b00e-4184-8db0-e1b0c72c4df4": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker",
+        "price",
+        "buy_buttons",
+        "ad89b3a8-4565-4d8b-884c-2d7b2d338082",
+        "sales_point",
+        "inventory_status",
+        "sales_point2",
+        "sales_point3",
+        "sales_point4",
+        "142cfb86-b00e-4184-8db0-e1b0c72c4df4"
+      ],
+      "settings": {
+        "sku_enable": false,
+        "image_position": "left",
+        "image_container_size": "large",
+        "product_image_size": "square",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": true,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "1637467955957e4f6a": {
+      "type": "text-columns",
+      "disabled": true,
+      "blocks": {
+        "16374679555e8754c7-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2021-11-21_at_3.13.38_pm.png",
+            "image_width": 250,
+            "title": "",
+            "text": "<p>Replacement Warranty For Piece of Mind<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "16374679555e8754c7-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2021-11-21_at_3.13.43_pm.png",
+            "image_width": 250,
+            "title": "",
+            "text": "<p>Dispatch From Melbourne Warehouse<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "16374679555e8754c7-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2021-11-21_at_3.13.47_pm.png",
+            "image_width": 250,
+            "title": "",
+            "text": "<p>Owned and Operated Australian Company<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16374679555e8754c7-0",
+        "16374679555e8754c7-1",
+        "16374679555e8754c7-2"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": true,
+        "color_scheme": "none"
+      }
+    },
+    "1637468211e1d63b0b": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2021-11-21_at_3.17.51_pm.png",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Superior Durability and Sound Absorption",
+        "text": "<p>The thickness of kitchen sinks plays an important part to the quality and durability. The thicker the steel used to make it means you get more sink.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "color_scheme": "none",
+        "divider": true
+      }
+    },
+    "163746830423fe9062": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2021-11-21_at_3.19.01_pm.png",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Modern Design and Limitless",
+        "text": "<p>Our Precision Handmade sinks means that here are people actually welding the sink together instead of a machine just pressing on a sheet of metal.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping information",
+            "content": "",
+            "page": "shipping-custom"
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "settings": {
+            "title": "Ask a question",
+            "phone": true
+          }
+        }
+      },
+      "block_order": [
+        "description",
+        "tab",
+        "contact"
+      ],
+      "settings": {
+        "max_width": false
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "You may also like"
+      }
+    },
+    "more-products-vendor": {
+      "type": "more-products-vendor",
+      "settings": {
+      }
+    },
+    "more-products-collection": {
+      "type": "more-products-collection",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "2"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1637467955957e4f6a",
+    "1637468211e1d63b0b",
+    "163746830423fe9062",
+    "sub",
+    "recommendations",
+    "more-products-vendor",
+    "more-products-collection",
+    "recently-viewed",
+    "collection-return"
+  ]
+}
