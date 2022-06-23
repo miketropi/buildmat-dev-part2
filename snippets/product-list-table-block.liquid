@@ -18,6 +18,7 @@
       {% assign p_moniker = metafields.moniker %}
     {% endif %}
 
+    {% assign p_colour = product.options_by_name['Color'].values[0] %}
     {% assign p_litres = metafields.litres.value | append: metafields.litres.unit %}
     {% assign p_size = metafields.product_sink_size %}
     {% assign p_weight = product.variants.first.weight | weight_with_unit %}
@@ -27,7 +28,7 @@
     {% capture data_string_meta %}size : {{ p_size }}, weight : {{ p_weight }} Boxed Weight, type : {{ p_type }}, edges : Internal Bowl Size: {{ p_bowl_size }}{% endcapture %}
 
     {% assign metaList = data_string_meta | split : ", " %}
-    <tr class="product-list-table__item p-filter-colour-{{ block.settings.p_colour | downcase | replace: " ", "-" }}" data-p-colour="{{ block.settings.p_colour }}">
+    <tr class="product-list-table__item p-filter-colour-{{ p_colour | downcase | replace: " ", "-" }}" data-p-colour="{{ p_colour }}">
       <td class="p-image">
         <div class="p-thumb-container">
           <a href="{{ product.url }}">
@@ -42,8 +43,8 @@
         </h4>
         <ul class="p-meta-list">
           <li class="p-meta-list__item p-meta-list__item--color">
-            <span class="p-meta-list__icon __icon-{{ block.settings.p_colour | downcase | replace: " ", "-" }}"></span> 
-            <span class="p-meta-list__text">{{ block.settings.p_colour }}</span>
+            <span class="p-meta-list__icon __icon-{{ p_colour | downcase | replace: " ", "-" }}"></span> 
+            <span class="p-meta-list__text">{{ p_colour }}</span>
           </li>
           {% for m_item in metaList %} {% assign mItemArr = m_item | split : " : " %}
           <li class="p-meta-list__item">
@@ -56,7 +57,7 @@
       <td class="p-price">
         <span>From</span>
         <div class="p-price-result">{{ product.price | money_without_trailing_zeros }}</div>
-        <div class="p-stock-status"><span class="__dot"></span> {{ block.settings.p_stock_status }}</div>
+        {% render 'product-stock-status' | product: product %}
       </td>
       <td class="p-action" style="text-align: right;">
         <form action="/cart/add" method="post">

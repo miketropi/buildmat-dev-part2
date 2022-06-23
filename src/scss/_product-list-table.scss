@@ -83,6 +83,13 @@ table.product-list-table {
           border-radius: 8px;
           margin-right: 4px;
         }
+
+        &.__off {
+
+          .__dot {
+            background: #c5c5c5;
+          }
+        }
       }
     }
 

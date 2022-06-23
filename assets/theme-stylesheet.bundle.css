@@ -877,6 +877,9 @@ table.product-list-table tbody td {
   border-radius: 8px;
   margin-right: 4px;
 }
+.product-list-table__item .p-price .p-stock-status.__off .__dot {
+  background: #c5c5c5;
+}
 .product-list-table__item .p-action {
   padding-right: 0;
 }

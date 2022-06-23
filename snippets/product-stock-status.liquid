@@ -1,0 +1,16 @@
+{% assign kitchen_products = product.collections | where:  "handle", "kitchen-sinks" | first %}
+{%- assign out_of_stock = false -%}
+{%- if product.variants.first.inventory_quantity < 1 -%}
+  {%- assign out_of_stock = true -%}
+{%- endif -%}
+
+{% if out_of_stock == true %}
+  <div class="p-stock-status __off"><span class="__dot"></span> This item is on Preorder</div>
+{% else %} 
+
+  {% if kitchen_products.id %}
+    <div class="p-stock-status"><span class="__dot"></span> {{ 'products.product.in_stock_free_shipping_label' | t }}</div>
+  {% else %}
+    <div class="p-stock-status"><span class="__dot"></span> {{ 'products.product.in_stock_label' | t }}</div>
+  {% endif %} 
+{% endif %} 
