@@ -748,7 +748,7 @@ select#ProductFilterColourField {
   display: inline-block;
   width: 24px;
   height: 24px;
-  outline: solid 2px #006875;
+  box-shadow: 0 0 0 2px #006875;
   border-radius: 24px;
   margin-right: 8px;
 }
@@ -797,7 +797,7 @@ select#ProductFilterColourField {
   background-color: #EFF7F8;
 }
 .custom-select-ui__select-list li.__selected .__icon-class, .custom-select-ui__select-list li:hover .__icon-class {
-  outline-color: #006875;
+  box-shadow: 0 0 0 2px #006875;
 }
 
 .__icon-brushed-stainless-steel {
@@ -917,7 +917,6 @@ table.product-list-table tbody td {
   width: 16px;
   height: 16px;
   border-radius: 16px;
-  margin-right: 12px;
 }
 .p-meta-list__text {
   font-size: 14px;
