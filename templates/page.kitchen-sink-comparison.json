@@ -22,12 +22,7 @@
             "p_image": "shopify:\/\/shop_images\/Perfect_for_Butlers_Pantry_256x256_c0227504-361f-4131-965d-a4ef4ad0c9ef.png",
             "p_stock_status": "In stock, ready to ship",
             "p_colour": "Brushed Stainless Steel",
-            "p_litre": "25 L",
-            "p_name": "Perfect for Butlers Pantry",
-            "p_size": "300 x 450 x 250 mm",
-            "p_weight": "8 kg Boxed Weight",
-            "p_type": "Single Bowl",
-            "p_edges": "Internal Bowl Size: 250 x 400mm"
+            "p_moniker_override": ""
           }
         },
         "23d3bf59-714c-4f42-8a44-1ef59a61aafe": {
@@ -37,12 +32,7 @@
             "p_image": "shopify:\/\/shop_images\/Single_Bowl_Sink_256x256_e1d45feb-5453-4f2c-930b-253304024bd1.png",
             "p_stock_status": "In stock, ready to ship",
             "p_colour": "Brushed Stainless Steel",
-            "p_litre": "46 L", 
-            "p_name": "Single Bowl Sink",
-            "p_size": "510 x 450 x 250 mm",
-            "p_weight": "9 kg Boxed Weight",
-            "p_type": "Single Bowl",
-            "p_edges": "Internal Bowl Size: 460 x 400mm"
+            "p_moniker_override": ""
           }
         },
         "556010d3-2ab3-43d5-9433-d784d7653eeb": {
@@ -52,12 +42,7 @@
             "p_image": "shopify:\/\/shop_images\/Willow_Medium_Sized_Kitchen_Sink_and_Laundry_Trough_256x256_786dd22e-c02a-4cd2-8890-0fc5ebb58175.png",
             "p_stock_status": "In stock, ready to ship",
             "p_colour": "Brushed Stainless Steel",
-            "p_litre": "55 L",
-            "p_name": "Willow Medium Bowl Sink",
-            "p_size": "600 x 450 x 250 mm",
-            "p_weight": "10 kg boxed weight",
-            "p_type": "Single Bowl",
-            "p_edges": "Internal Bowl Size: 550 x 400mm"
+            "p_moniker_override": ""
           }
         },
         "dbb165e2-0371-4cca-8205-8950a2bc8618": {
@@ -67,12 +52,7 @@
             "p_image": "shopify:\/\/shop_images\/Perfect_sized_Laundry_256x256_50927064-15d5-4fae-8b01-8227ab890155.png",
             "p_stock_status": "In stock, ready to ship",
             "p_colour": "Brushed Stainless Steel",
-            "p_litre": "60 L",
-            "p_name": "Perfect sized Laundry",
-            "p_size": "700 x 450 x 250 mm",
-            "p_weight": "12 kg Boxed Weight",
-            "p_type": "Single Bowl",
-            "p_edges": "Internal Bowl Size: 650 x 400mm"
+            "p_moniker_override": ""
           }
         },
         "b8c4acd4-b68e-4266-ad93-829f1261df04": {
@@ -82,12 +62,7 @@
             "p_image": "shopify:\/\/shop_images\/Large_enough_for_pets_256x256_2c2115fe-41ea-4e1e-b2ab-7b6462d92c64.png",
             "p_stock_status": "In stock, ready to ship",
             "p_colour": "Brushed Stainless Steel",
-            "p_litre": "70 L",
-            "p_name": "Extra Large Bowl",
-            "p_size": "810 x 450 x 250 mm",
-            "p_weight": "13 kg Boxed Weight",
-            "p_type": "Single Bowl",
-            "p_edges": "Internal Bowl Size: 760 x 400mm"
+            "p_moniker_override": ""
           }
         },
         "5f43ffd1-9a98-4cc4-b7e3-f5e9b81338f5": {
@@ -97,12 +72,7 @@
             "p_image": "shopify:\/\/shop_images\/Ultimate_size_256x256_1ba9b1bb-ae90-4a14-949f-ceceedb39422.png",
             "p_stock_status": "In stock, ready to ship",
             "p_colour": "Brushed Stainless Steel",
-            "p_litre": "85 L",
-            "p_name": "XXLarge Ultimate size",
-            "p_size": "900 x 450 x 250  mm",
-            "p_weight": "12.9 kg Boxed Weight",
-            "p_type": "Single Bowl Sink",
-            "p_edges": "Internal Bowl Size: 850 x 400mm"
+            "p_moniker_override": ""
           }
         },
         "daaff9c8-6312-4c44-8724-5dccfa70e9ab": {
@@ -112,12 +82,7 @@
             "p_image": "shopify:\/\/shop_images\/Single_Qtr_Bowl_Sink_256x256_abec5249-1948-441e-b550-24b6b82dbadb.png",
             "p_stock_status": "In stock, ready to ship",
             "p_colour": "Brushed Stainless Steel",
-            "p_litre": "53 L",
-            "p_name": "Single & Qtr Bowl Sink",
-            "p_size": "725 x 450 x 205 mm",
-            "p_weight": "10.2 kg Boxed Weight",
-            "p_type": "Double Bowl",
-            "p_edges": "Bowl Size: 400 x 400 & 250 x 400 mm"
+            "p_moniker_override": ""
           }
         },
         "db20dd25-2eca-4fb8-bf12-a35203bd480e": {
@@ -127,12 +92,7 @@
             "p_image": "shopify:\/\/shop_images\/Double_Bowl_Sink_256x256_c18c1050-b0d6-4a20-9e01-53ef59f1ddad.png",
             "p_stock_status": "In stock, ready to ship",
             "p_colour": "Brushed Stainless Steel",
-            "p_litre": "57 L",
-            "p_name": "Double Bowl Sink",
-            "p_size": "775 x 450 x 205 mm",
-            "p_weight": "12 kg Boxed Weight",
-            "p_type": "Double Bowl",
-            "p_edges": "Bowl Size: 350 x 400 & 350 x 400 mm"
+            "p_moniker_override": ""
           }
         },
         "c59bb3e1-af89-4b08-ba3e-25383d4f41f0": {
@@ -142,12 +102,7 @@
             "p_image": "shopify:\/\/shop_images\/Larger_Double_Bowl_Style_256x256_875d898f-b1ae-45ec-908e-4ef819cc0087.png",
             "p_stock_status": "In stock, ready to ship",
             "p_colour": "Brushed Stainless Steel",
-            "p_litre": "61.5 L",
-            "p_name": "Larger Double Bowl Style",
-            "p_size": "825 x 450 x 205  mm",
-            "p_weight": "14 kg Boxed Weight",
-            "p_type": "Double Bowl",
-            "p_edges": "Bowl Size: 450 x 400 & 300 x 400 mm"
+            "p_moniker_override": ""
           }
         },
         "4d7bc95c-958e-45b0-9bd8-c860d31f8324": {
@@ -157,12 +112,7 @@
             "p_image": "shopify:\/\/shop_images\/Fit_a_Dishwasher_under_d69f1b27-7e83-42e5-a3d4-35d2e93e853f.png",
             "p_stock_status": "In stock, ready to ship",
             "p_colour": "Brushed Stainless Steel",
-            "p_litre": "45 L",
-            "p_name": "Fit a Dishwasher under",
-            "p_size": "950 x 450 x 205 mm",
-            "p_weight": "10 kg Boxed Weight",
-            "p_type": "Drain Board Sinks",
-            "p_edges": "Internal Bowl Size: 550 x 400 mm"
+            "p_moniker_override": ""
           }
         },
         "a884adaa-7ab6-4962-8fec-bf9a1e5d7bfd": {
@@ -172,14 +122,9 @@
             "p_image": "shopify:\/\/shop_images\/Double_Bowl_Design_45ab20a9-6700-483a-8038-0ac091c1bdb5.png",
             "p_stock_status": "In stock, ready to ship",
             "p_colour": "Brushed Stainless Steel",
-            "p_litre": "57 L",
-            "p_name": "Double Bowl Design",
-            "p_size": "1125 x 450 x 205 mm",
-            "p_weight": "18 kg Boxed Weight",
-            "p_type": "Drain Board Sinks",
-            "p_edges": "Bowl Size: 350 x 400 & 350 x 400 mm"
+            "p_moniker_override": ""
           }
-        }
+        } 
       },
       "block_order": [
         "dc512aa6-303f-4483-a2a5-a396223cad0c",

@@ -17,6 +17,10 @@ body, html {
 		font-family: "Sofia Pro";
 		font-weight: bold;
 		font-size: 56px;
+
+		@media(max-width: 768px) {
+			font-size: 8vw;
+		}
 	}
 
 	&__sub-heading-text {
@@ -24,6 +28,11 @@ body, html {
 		font-size: 24px;
 		color: #333333;
 		width: 658px;
+		max-width: 100%;
 		margin: 0 auto;
+
+		@media(max-width: 768px) {
+			font-size: 3vw;
+		}
 	}
 }

@@ -263,10 +263,10 @@
 }
 
 .features-inline {
-  margin-bottom: 80px;
+  margin-bottom: 54px;
 
   &__inner {
-
+    overflow: hidden;
   }
 
   &__ul {
@@ -282,6 +282,19 @@
     padding: 0 28px;
     text-align: center;
     width: calc(100% / 6);
+    margin-bottom: 28px;
+
+    @media(max-width: 768px) {
+      width: calc(100% / 4);
+    }
+
+    @media(max-width: 586px) {
+      width: calc(100% / 3);
+    }
+
+    @media(max-width: 425px) {
+      width: calc(100% / 2);
+    }
 
     .f-name {
       font-size: 14px;
@@ -291,4 +304,11 @@
       margin: 0 auto;
     }
   }
+}
+
+select#ProductFilterColourField {
+	display: block;
+	width: 295px;
+	border-radius: 4px;
+	padding: 12px 16px;
 }

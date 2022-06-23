@@ -7,6 +7,7 @@ export default class CustomSelectUI {
     this.opts = opts;
     this.defaultValue = elem.value;
     this.value = this.defaultValue;
+    this.setValueInit = 0;
 
     elem.style.display = 'none';
 
@@ -74,9 +75,17 @@ export default class CustomSelectUI {
     this.selectListTemp.querySelector('.__item.__selected').classList.remove('__selected');
     findOpt.classList.add('__selected');
 
-    if(this?.opts?.onChange) {
+    if(this?.opts?.onChange && this.setValueInit > 0) {
       this.opts.onChange.call(null, value, this); // callback onchange
     }
+
+    if(this?.opts?.onInit && this.setValueInit == 0) {
+      this.setValueInit += 1;
+      this.opts.onInit.call(null, this);
+      return;
+    }
+
+    this.setValueInit += 1;
   }
 
   getValue() {
@@ -115,7 +124,6 @@ export default class CustomSelectUI {
     // Select option
     [...items].forEach(li => {
       li.addEventListener('click', function() {
-        // console.log(this.dataset.optionValue)
         self.setValue(this.dataset.optionValue)
         self.controlSelectListDisplay(0);
       })

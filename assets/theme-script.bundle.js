@@ -42,6 +42,7 @@ var CustomSelectUI = /*#__PURE__*/function () {
     this.opts = opts;
     this.defaultValue = elem.value;
     this.value = this.defaultValue;
+    this.setValueInit = 0;
     elem.style.display = 'none';
     this.buildTempalte();
     this.render();
@@ -86,7 +87,7 @@ var CustomSelectUI = /*#__PURE__*/function () {
   }, {
     key: "handleAfterSetValue",
     value: function handleAfterSetValue() {
-      var _this$opts;
+      var _this$opts, _this$opts2;
 
       var value = this.getValue();
       var findOpt = this.selectListTemp.querySelector("[data-option-value=\"".concat(value, "\"]"));
@@ -97,9 +98,17 @@ var CustomSelectUI = /*#__PURE__*/function () {
       this.selectListTemp.querySelector('.__item.__selected').classList.remove('__selected');
       findOpt.classList.add('__selected');
 
-      if (this !== null && this !== void 0 && (_this$opts = this.opts) !== null && _this$opts !== void 0 && _this$opts.onChange) {
+      if (this !== null && this !== void 0 && (_this$opts = this.opts) !== null && _this$opts !== void 0 && _this$opts.onChange && this.setValueInit > 0) {
         this.opts.onChange.call(null, value, this); // callback onchange
       }
+
+      if (this !== null && this !== void 0 && (_this$opts2 = this.opts) !== null && _this$opts2 !== void 0 && _this$opts2.onInit && this.setValueInit == 0) {
+        this.setValueInit += 1;
+        this.opts.onInit.call(null, this);
+        return;
+      }
+
+      this.setValueInit += 1;
     }
   }, {
     key: "getValue",
@@ -139,7 +148,6 @@ var CustomSelectUI = /*#__PURE__*/function () {
 
       _toConsumableArray(items).forEach(function (li) {
         li.addEventListener('click', function () {
-          // console.log(this.dataset.optionValue)
           self.setValue(this.dataset.optionValue);
           self.controlSelectListDisplay(0);
         });
@@ -180,11 +188,17 @@ var CustomSelectUI = /*#__PURE__*/function () {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getQueryUrl": () => (/* binding */ getQueryUrl),
 /* harmony export */   "insertAfter": () => (/* binding */ insertAfter)
 /* harmony export */ });
 var insertAfter = function insertAfter(newNode, existingNode) {
   existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
 };
+var getQueryUrl = new Proxy(new URLSearchParams(window.location.search), {
+  get: function get(searchParams, prop) {
+    return searchParams.get(prop);
+  }
+});
 
 /***/ }),
 
@@ -197,6 +211,7 @@ var insertAfter = function insertAfter(newNode, existingNode) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _megaMenu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./megaMenu */ "./src/megaMenu.js");
 /* harmony import */ var _lib_custom_select_ui__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/custom-select-ui */ "./src/lib/custom-select-ui.js");
+/* harmony import */ var _lib_helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/helpers */ "./src/lib/helpers.js");
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -215,6 +230,8 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
  */
 
 
+
+;
 
 (function (w, $) {
   'use strict';
@@ -238,8 +255,23 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     var select = document.querySelector('select#ProductFilterColourField');
     var productListContainer = document.querySelector('.product-list-container');
     if (!select) return;
+    var urlQueryname = 'colour';
 
-    var _finterFn = function _finterFn(filter) {
+    var _historyFn = function _historyFn(args) {
+      var url = new URL(w.location);
+
+      if (args) {
+        var _url$searchParams;
+
+        (_url$searchParams = url.searchParams).set.apply(_url$searchParams, _toConsumableArray(args));
+      } else {
+        url.searchParams["delete"](urlQueryname);
+      }
+
+      w.history.pushState({}, '', url);
+    };
+
+    var _filterFn = function _filterFn(filter) {
       _toConsumableArray(productListContainer.querySelectorAll('tr')).forEach(function (elem) {
         elem.style.display = 'none';
       });
@@ -255,7 +287,22 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       onChange: function onChange(value, object) {
         document.querySelector('.__filter-current-value').innerHTML = "(".concat(value, ")");
 
-        _finterFn(value);
+        _filterFn(value);
+
+        if (object.defaultValue == value) {
+          _historyFn();
+        } else {
+          _historyFn([urlQueryname, value]);
+        }
+      },
+      onInit: function onInit(object) {
+        document.querySelector('.__filter-current-value').innerHTML = "(".concat(object.value, ")");
+
+        _filterFn(object.value);
+
+        if (_lib_helpers__WEBPACK_IMPORTED_MODULE_2__.getQueryUrl.colour != null) {
+          object.setValue(_lib_helpers__WEBPACK_IMPORTED_MODULE_2__.getQueryUrl.colour);
+        }
       }
     });
   };
@@ -496,7 +543,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunk"] = self["webpackChunk"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkbuildmat_dev_part2"] = self["webpackChunkbuildmat_dev_part2"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();
