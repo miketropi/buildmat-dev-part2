@@ -149,7 +149,8 @@
     <div class="transition-body">
       
       {%- section 'toolbar' -%}
-      {%- section 'header-megamenu' -%}
+      {% section 'header-megamenu' %}
+      
       {% if template.suffix == 'custom' %}
       {% include 'Sticky-productbar' %}
       {% endif %}

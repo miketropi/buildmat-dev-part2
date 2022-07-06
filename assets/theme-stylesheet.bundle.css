@@ -11,7 +11,7 @@ body, html {
 }
 
 .page-ss-heading {
-  margin-bottom: 48px;
+  margin-bottom: 21px;
 }
 .page-ss-heading__heading-text {
   font-family: "Sofia Pro";
@@ -283,6 +283,9 @@ body, html {
   #HeaderMegamenuWrapper {
     border-bottom: 1px solid #4A5365;
   }
+}
+#HeaderMegamenuWrapper .header-megamenu--nav {
+  margin-left: 70px;
 }
 @media (max-width: 1026px) {
   #HeaderMegamenuWrapper .header-megamenu--nav {
@@ -721,6 +724,32 @@ select#ProductFilterColourField {
   padding: 12px 16px;
 }
 
+.filter-by-colour-list {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+.filter-by-colour-list li {
+  list-style: none;
+  margin: 6px;
+}
+.filter-by-colour-list li .__icon-class {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+}
+
+.filter-by-colour-list__label {
+  font-size: 20px !important;
+  font-weight: border;
+  color: black;
+  text-align: center;
+  letter-spacing: 0;
+}
+
 .custom-select-ui {
   display: inline-block;
   border: 1px solid #E3E6E8;
@@ -944,4 +973,45 @@ table.product-list-table tbody td {
   table.product-list-table tbody.product-list-container tr.product-list-table__item > td.p-action {
     text-align: left !important;
   }
+}
+body.template--kitchen-sink-comparison div#shopify-section-toolbar {
+  color: #7D7D7D;
+  z-index: 999;
+  position: relative;
+}
+body.template--kitchen-sink-comparison div#shopify-section-toolbar .toolbar {
+  background: #E9E9E9;
+}
+body.template--kitchen-sink-comparison div#shopify-section-toolbar * {
+  color: #7D7D7D;
+}
+body.template--kitchen-sink-comparison div#shopify-section-toolbar svg {
+  fill: #7D7D7D !important;
+}
+body.template--kitchen-sink-comparison div#shopify-section-toolbar p {
+  font-weight: normal;
+}
+body.template--kitchen-sink-comparison div#HeaderMegamenuWrapper {
+  background: white;
+  box-shadow: 0 -3px 16px 0 rgba(1, 1, 1, 0.1);
+  border-bottom: none;
+}
+body.template--kitchen-sink-comparison div#HeaderMegamenuWrapper #MegamenuBlock .megamenu-block__ul > li > a {
+  color: #444C53;
+}
+body.template--kitchen-sink-comparison div#HeaderMegamenuWrapper #MegamenuBlock .megamenu-block__ul > li > a .megamenu-block__item-icon-arrow svg {
+  fill: #444C53;
+}
+body.template--kitchen-sink-comparison div#HeaderMegamenuWrapper #MegamenuBlock .megamenu-block__ul > li:hover > a {
+  background: #F1F3F3;
+  color: #006D7B;
+}
+body.template--kitchen-sink-comparison div#HeaderMegamenuWrapper #MegamenuBlock .megamenu-block__mega a:hover {
+  border-bottom: solid 1px;
+}
+body.template--kitchen-sink-comparison div#HeaderMegamenuWrapper .header-megamenu--icons .site-nav__icons > a svg {
+  color: #444C53;
+}
+body.template--kitchen-sink-comparison div#HeaderMegamenuWrapper .icon-hamburger {
+  color: #444C53;
 }

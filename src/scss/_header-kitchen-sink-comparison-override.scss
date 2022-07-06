@@ -1,0 +1,82 @@
+body.template--kitchen-sink-comparison {
+
+  div#shopify-section-toolbar {
+    color: #7D7D7D;
+    z-index: 999;
+    position: relative;
+
+    .toolbar {
+      background: #E9E9E9;
+    }
+
+    * {
+      color: #7D7D7D;
+    }
+  
+    svg {
+      fill: #7D7D7D !important;
+    }
+  
+    p {
+      font-weight: normal;
+    }
+  }
+
+  div#HeaderMegamenuWrapper {
+    background: white;
+    box-shadow: 0 -3px 16px 0 rgb(1 1 1 / 10%);
+    border-bottom: none;
+
+    #MegamenuBlock {
+
+      .megamenu-block__ul {
+
+        > li {
+
+          > a {
+            color: #444C53;
+
+            .megamenu-block__item-icon-arrow {
+
+              svg {
+                fill: #444C53;
+              }
+            }
+          }
+
+          &:hover {
+
+            > a {
+              background: #F1F3F3;
+              color: #006D7B;
+            }
+          }
+        }
+      }
+
+      .megamenu-block__mega {
+
+        a:hover {
+          border-bottom: solid 1px;
+        }
+      }
+    }
+
+    .header-megamenu--icons {
+
+      .site-nav__icons {
+
+        > a {
+
+          svg {
+            color: #444C53;
+          }
+        }
+      }
+    }
+
+    .icon-hamburger {
+      color: #444C53;
+    }
+  }
+}

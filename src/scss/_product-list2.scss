@@ -312,3 +312,31 @@ select#ProductFilterColourField {
 	border-radius: 4px;
 	padding: 12px 16px;
 }
+
+.filter-by-colour-list {
+	display: flex;
+	margin: 0 auto;
+	padding: 0;
+	align-items: center;
+	justify-content: center;
+
+	li {
+		list-style: none;
+		margin: 6px;
+
+		.__icon-class {
+			display: inline-block;
+			width: 32px;
+			height: 32px;
+			border-radius: 32px;
+		}
+	}
+}
+
+.filter-by-colour-list__label {
+	font-size: 20px !important;
+	font-weight: border;
+	color: black;
+	text-align: center;
+	letter-spacing: 0;
+}

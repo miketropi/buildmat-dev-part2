@@ -21,7 +21,7 @@
       </div>
       {{ 'm-menu-image-7.png' | asset_url | img_tag: 'menu-icon' }}
     </li>
-    {% for sub1 in subItems1 %} {% assign subItem = sub1 | split: " : "%}
+    {% for sub1 in subItems1 %} {% assign subItem = sub1 | split: " : "%} 
     <li class="sub-megamenu__nav-item">
       <a href="{{ subItem[1] }}">{{ subItem[0] }}</a>
     </li>

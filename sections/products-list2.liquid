@@ -9,6 +9,7 @@ __live_mode
 {% endcapture %}
 
 {% assign ColourFilterList = "Brushed Stainless Steel, Brushed Copper, Brushed Gunmetal, Brushed Brass Gold" | split: ", " %}
+{% assign ColourFilterListUrl = ", "| append: section.settings.steel_colour_url | append: ", " | append: section.settings.copper_colour_url | append: ", " | append: section.settings.gunmetal_colour_url | append: ", " | append: section.settings.brass_gold_colour_url | split: ", " %}
 {% assign featuresList = "1.5mm Thick Stainless Steel : ficon-1.svg, Under or Over Mount Compatible : ficon-2.svg, Anti Condensation Paint Underneath : ficon-3.svg, Sound Deadening Pads : ficon-4.svg, 304 Grade Stainless Steel : ficon-5.svg, Hand Welded not pressed : ficon-6.svg" | split: ", " %}
 
 <div style="height: 80px;"></div> <!-- space top -->
@@ -25,12 +26,26 @@ __live_mode
         </div> <!-- .page-ss-heading -->
 
         <div class="products__filter-color-select">
+          <!-- 
           <div class="products__filter-color-select--current-selected text-center">Colour <span class="__filter-current-value">(no select)</span></div>
+          
           <select id="ProductFilterColourField" data-site-mode="{{ classes_mode | strip }}">
             {% for colour in ColourFilterList %}
             <option value="{{ colour }}" data-icon-class="{{ colour | downcase | replace: " ", "-" }}">{{ colour }}</option>
             {% endfor %}
           </select>
+          -->
+          <label class="filter-by-colour-list__label">Select a colour to see our range:</label>
+          <ul class="filter-by-colour-list">
+            {% for colour in ColourFilterList %}
+            <li data-icon-class="{{ colour | downcase | replace: " ", "-" }}" title="{{ colour }}">
+              <a href="#">
+                <!-- {{ forloop.index }} -->
+                <span class="__icon-class __icon-{{ colour | downcase | replace: " ", "-" }}"></span>
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
         </div> <!-- .products__filter-color-select -->
 
       </div> 
@@ -80,6 +95,26 @@ __live_mode
       "type": "checkbox",
       "id": "enable_features",
       "label": "Enable Features"
+    }, 
+    {
+      "type": "url",
+      "id": "steel_colour_url",
+      "label": "Select Steel Page"
+    },
+    {
+      "type": "url",
+      "id": "copper_colour_url",
+      "label": "Select Copper Page"
+    },
+    {
+      "type": "url",
+      "id": "gunmetal_colour_url",
+      "label": "Select Gunmetal Page"
+    },
+    {
+      "type": "url",
+      "id": "brass_gold_colour_url",
+      "label": "Select Brass Gold Page"
     }
   ],
   "blocks": [

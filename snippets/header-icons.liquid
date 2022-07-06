@@ -8,13 +8,17 @@
 <div class="site-nav">
   <div class="site-nav__icons">
     <a href="{{ routes.search_url }}" class="site-nav__link site-nav__link--icon js-search-header{% if nav_position == 'below' %} medium-up--hide{% endif %} js-no-transition">
-      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"/></svg>
+      <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22.7813 22.7812L17.6934 17.7188M19.8956 12.0572C19.8956 13.6075 19.4359 15.123 18.5746 16.412C17.7133 17.701 16.4891 18.7057 15.0568 19.299C13.6245 19.8922 12.0485 20.0475 10.528 19.745C9.00748 19.4426 7.6108 18.696 6.51458 17.5998C5.41835 16.5036 4.67181 15.1069 4.36937 13.5864C4.06692 12.0659 4.22215 10.4898 4.81542 9.05755C5.40869 7.62526 6.41336 6.40106 7.70239 5.53976C8.99141 4.67847 10.5069 4.21875 12.0572 4.21875C13.0865 4.21875 14.1058 4.4215 15.0568 4.81542C16.0078 5.20933 16.8719 5.78671 17.5998 6.51458C18.3277 7.24244 18.905 8.10654 19.299 9.05755C19.6929 10.0086 19.8956 11.0278 19.8956 12.0572V12.0572Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
+      </svg>
       <span class="icon__fallback-text">{{ 'general.search.title' | t }}</span>
     </a>
 
     {%- if shop.customer_accounts_enabled -%}
       <a class="site-nav__link site-nav__link--icon small--hide site-nav__link--icon-user" href="{{ routes.account_url }}">
-        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-user" viewBox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M35 39.84v-2.53c3.3-1.91 6-6.66 6-11.42 0-7.63 0-13.82-9-13.82s-9 6.19-9 13.82c0 4.76 2.7 9.51 6 11.42v2.53c-10.18.85-18 6-18 12.16h42c0-6.19-7.82-11.31-18-12.16z"/></svg>
+        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14.7656 16.8073V15.7399C16.1578 14.9341 17.2969 12.9302 17.2969 10.9221C17.2969 7.7032 17.2969 5.0918 13.5 5.0918C9.70312 5.0918 9.70312 7.7032 9.70312 10.9221C9.70312 12.9302 10.8422 14.9341 12.2344 15.7399V16.8073C7.93969 17.1659 4.64062 19.3385 4.64062 21.9373H22.3594C22.3594 19.3259 19.0603 17.1659 14.7656 16.8073Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
+        </svg>
         <span class="site-nav__icon-label small--hide{% if hide_icon_labels %} icon__fallback-text{% endif %}">
           {{ 'layout.customer.account' | t }}
         </span>

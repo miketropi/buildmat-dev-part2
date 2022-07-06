@@ -2,7 +2,7 @@
 {% assign subItems1 = 'Small Laundry Tubs : /collections/single-bowl-sinks, Large Laundry Tubs : /collections/large-laundry-tubs, With Tap Landings : /collections/tap-landing-sinks' | split: ", " %}
 
 {% assign headItem2 = 'Laundry mixers : /collections/laundry-mixers : /#' | split: " : " %}
-{% assign subItems2 = 'Pull Out Mixer : /collections/pull-out-laundry-mixer, Dual Spray Mixer : /collections/dual-spray-laundry-mixers, All Laundry Mixers : /collections/laundry-mixers' | split: ", " %}
+{% assign subItems2 = 'Pull Out Mixer : /collections/pull-out-laundry-mixer, Dual Spray Mixer : /collections/dual-spray-laundry-mixers, All Laundry Mixers : /collections/laundry-mixers, Washing Machine Stops : /collections/washing-machine-stops' | split: ", " %}
 
 {% assign product = all_products[section.settings.product_2] %}
 <div class="megamenu-block__mega-inner sub-megamenu">
@@ -43,7 +43,7 @@
     {% endfor %}
   </ul>
 
-  <ul class="megamenu-block__mega-item sub-megamenu__ul sub-megamenu__item"></ul>
+  <ul class="megamenu-block__mega-item sub-megamenu__ul sub-megamenu__item"></ul> 
 
   <div class="megamenu-block__mega-extra sub-megamenu__item __inner-center-flex">
     {%- render 'product-card', section: section, product: product -%}

@@ -4,7 +4,7 @@
       assign has_logo = true
       assign header_logo_size = block.settings.desktop_logo_width | append: 'x'
       assign header_logo_size_mobile = block.settings.mobile_logo_width | append: 'x'
-    -%}
+    -%} 
 
     {%- style -%}
     .header-item--logo,
@@ -52,16 +52,28 @@
       <a
         href="{{ routes.root_url }}"
         class="site-header__logo-link{% if block.settings.logo-inverted %} logo--has-inverted{% endif %}">
-        <img
-          class="small--hide"
-          src="{{ block.settings.logo | img_url: header_logo_size }}"
-          srcset="{{ block.settings.logo | img_url: header_logo_size }} 1x, {{ block.settings.logo | img_url: header_logo_size, scale: 2 }} 2x"
-          alt="{{ block.settings.logo.alt | default: shop.name }}">
-        <img
-          class="medium-up--hide"
-          src="{{ block.settings.logo | img_url: header_logo_size_mobile }}"
-          srcset="{{ block.settings.logo | img_url: header_logo_size_mobile }} 1x, {{ block.settings.logo | img_url: header_logo_size_mobile, scale: 2 }} 2x"
-          alt="{{ block.settings.logo.alt | default: shop.name }}">
+      
+          {% if template.suffix == 'kitchen-sink-comparison' %}
+            <img
+              class="small--hide"
+              src="{{ 'logo-header--light.png' | asset_url }}"
+              alt="{{ block.settings.logo.alt | default: shop.name }}">
+            <img
+              class="medium-up--hide"
+              src="{{ 'logo-header--light.png' | asset_url }}"
+              alt="{{ block.settings.logo.alt | default: shop.name }}">
+          {% else %}
+            <img
+              class="small--hide"
+              src="{{ block.settings.logo | img_url: header_logo_size }}"
+              srcset="{{ block.settings.logo | img_url: header_logo_size }} 1x, {{ block.settings.logo | img_url: header_logo_size, scale: 2 }} 2x"
+              alt="{{ block.settings.logo.alt | default: shop.name }}">
+            <img
+              class="medium-up--hide"
+              src="{{ block.settings.logo | img_url: header_logo_size_mobile }}"
+              srcset="{{ block.settings.logo | img_url: header_logo_size_mobile }} 1x, {{ block.settings.logo | img_url: header_logo_size_mobile, scale: 2 }} 2x"
+              alt="{{ block.settings.logo.alt | default: shop.name }}">
+          {% endif %}
       </a>
       {%- if block.settings.logo-inverted -%}
         <a
