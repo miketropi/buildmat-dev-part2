@@ -59,11 +59,12 @@
         <div class="p-price-result">{{ product.price | money_without_trailing_zeros }}</div>
         {% render 'product-stock-status' | product: product %}
       </td>
-      <td class="p-action" style="text-align: right;">
+      <td class="p-action">
         <form action="/cart/add" method="post">
           <input type="hidden" name="id" value="{{ product.variants.first.id }}"/>
           <button class="btn" type="submit" value="BUY DIRECT">Add To Cart</button>
         </form>
+        <a href="{{ product.url }}" class="view-more-link">View more</a>
       </td>
     </tr>
     {% endfor %}

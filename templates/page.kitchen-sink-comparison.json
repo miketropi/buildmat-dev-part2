@@ -118,56 +118,101 @@
         "a884adaa-7ab6-4962-8fec-bf9a1e5d7bfd"
       ]
     },
-    "1644802926c4b54e98": {
-      "type": "logo-list",
+    "partner-brand-images": {
+      "type": "partner-brand", 
+      "settings": {
+        "ss_label": "Available on:"
+      },
       "blocks": {
-        "16448029263866975c-0": {
-          "type": "logo_image",
+        "brand1": {
+          "type": "brand_image_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_22_96caabc2-4eba-49e5-96b3-9103f5aefcc6.png",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/partner-brand-amazon.png",
+            "direct_url": ""
           }
         },
-        "16448029263866975c-1": {
-          "type": "logo_image",
+        "brand2": {
+          "type": "brand_image_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_19_3177a4e7-1d0f-4341-b7f8-29d62d8bdb09.png",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/partner-brand-ebay.png",
+            "direct_url": ""
           }
         },
-        "16448029263866975c-2": {
-          "type": "logo_image",
+        "brand3": {
+          "type": "brand_image_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Temple_Webster_7ad66e22-7325-409c-bf48-6a5f71755bf4.png",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/partner-brand-temple-webster.png",
+            "direct_url": ""
           }
         },
-        "16448029263866975c-3": {
-          "type": "logo_image",
+        "brand4": {
+          "type": "brand_image_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Catchoftheday_99895dcd-3bd7-477a-b40e-869af2dc9c63.png",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/partner-brand-catch.png",
+            "direct_url": ""
           }
         },
-        "16448029263866975c-4": {
-          "type": "logo_image",
+        "brand5": {
+          "type": "brand_image_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Kogan_439db5ee-bdb6-4ecf-800d-1cb69f95ca1e.jpg",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/partner-brand-kogan.png",
+            "direct_url": ""
           }
         }
       },
       "block_order": [
-        "16448029263866975c-0",
-        "16448029263866975c-1",
-        "16448029263866975c-2",
-        "16448029263866975c-3",
-        "16448029263866975c-4"
-      ],
+        "brand1", 
+        "brand2",
+        "brand3",
+        "brand4",
+        "brand5"
+      ]
+    },
+    "why-people-choose": {
+      "type": "content-center", 
       "settings": {
-        "title": "Also Available on",
-        "divider": false
-      }
+        "content_width": 800,
+        "space_top": 112,
+        "space_bottom": 112,
+        "background_color": "#ECEFF0",
+        "custom_class": "section-why-people-choose-container"
+      },
+      "blocks": {
+        "heading-bed55b0a-fdd3-11ec-b939-0242ac120002": {
+          "type": "heading-text",
+          "settings": {
+            "heading_text": "Why people choose Buildmat Sinks",
+            "space_bottom": 64
+          }
+        },
+        "image-content-vertical-4ff5d0e2-fdd4-11ec-b939-0242ac120002": { 
+          "type": "image-content-vertical",
+          "settings": {
+            "title": "1.5mm Premium Thickness",
+            "description": "<p>Steel Thickness is important because it helps increase durability and sound absorption. The thickness of kitchen sinks plays an important part to the quality and durability. The thicker the steel used to make the sink it means you get more sink. The reason why it's important is because it becomes a sturdier and more solid sink, you'll notice it when you start putting pots and pans down.</p>"
+          }
+        },
+        "image-content-vertical-9def0020-fdd4-11ec-b939-0242ac120002": { 
+          "type": "image-content-vertical",
+          "settings": {
+            "title": "Precision Made Sinks",
+            "description": "<p>Our Precision Handmade sinks means that there are people actually welding the sink together instead of a machine just pressing on a sheet of metal. It means that the each corner is carefully crafted and that each wall of the sink is a true 1.5mm thick stainless steel instead of a sheet of metal being stretched by a large machine press into shape.</p>"
+          }
+        },
+        "image-content-vertical-b9e280fe-fdd4-11ec-b939-0242ac120002": {
+          "type": "image-content-vertical",
+          "settings": {
+            "title": "Innovative Award Winning Sinks",
+            "description": "<p>Buildmat is the winner of the international Product Design Award in the 2020 Architecture Masterprize. At Buildmat we are constantly updating and improving our product range and designs and it has shown this year by winning a product design award in the kitchen category of a global competition.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading-bed55b0a-fdd3-11ec-b939-0242ac120002",
+        "image-content-vertical-4ff5d0e2-fdd4-11ec-b939-0242ac120002",
+        "image-content-vertical-9def0020-fdd4-11ec-b939-0242ac120002",
+        "image-content-vertical-b9e280fe-fdd4-11ec-b939-0242ac120002"
+      ]
     },
     "product-specifications": {
       "type": "product-specifications",
@@ -507,7 +552,8 @@
   "order": [
     "main",
     "page-landing-products",
-    "1644802926c4b54e98",
+    "partner-brand-images",
+    "why-people-choose",
     "product-specifications",
     "1644803022a08299de",
     "16448030616e7c381f",

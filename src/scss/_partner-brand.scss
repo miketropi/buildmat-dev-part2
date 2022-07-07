@@ -1,0 +1,64 @@
+.ss-partner-brand {
+  margin-bottom: 80px;
+
+  @media(max-width:768px) {
+    margin-bottom: 32px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+
+    @media(max-width:768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__label {
+    width: 108px;
+    font-weight: 300 !important;
+  }
+
+  &__image-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: calc(100% - 108px);
+
+    .brand-image-block-item {
+      width: calc(100% / 5);
+      padding: 0 4px;
+      margin: 4px 0;
+      box-sizing: border-box;
+    }
+
+    @media(max-width:768px) {
+      width: 100%;
+      justify-content: center;
+
+      .brand-image-block-item {
+        width: calc(100% / 3);
+      }
+    }
+  }
+}
+
+.brand-image-block-item {
+
+  &__inner {
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 58px;
+    }
+
+    img {
+      max-width: 100%;
+      width: auto;
+    }
+  }
+}

@@ -36,3 +36,14 @@ body, html {
 		}
 	}
 }
+
+body.template--kitchen-sink-comparison {
+	background: white;
+}
+
+.ss-content-center {
+
+	&__inner {
+		margin: 0 auto;
+	}
+}

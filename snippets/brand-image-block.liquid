@@ -1,0 +1,22 @@
+{% if block.settings.direct_url %}
+  {% assign directUrl = block.settings.direct_url %}
+{% else %}
+  {% assign directUrl = '#!' %}
+{% endif %}
+<div class="brand-image-block-item">
+  <div class="brand-image-block-item__inner">
+    <a href="{{ directUrl }}" class="logo-bar__link" aria-label="{{ block.settings.image.alt }}">
+      {%- if block.settings.image != blank -%}
+        {%- assign img_url = block.settings.image | img_url: 'grande' -%}
+        <img class="logo-bar__image lazyload"
+            data-src="{{ img_url }}"
+            data-widths="[360, 540, 720, 1020]"
+            data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+            data-sizes="auto"
+            alt="{{ block.settings.image.alt }}">
+      {%- else -%}
+        {{ 'logo' | placeholder_svg_tag: 'placeholder-svg placeholder-svg--no-padding' }}
+      {%- endif -%}
+    </a>
+  </div>
+</div> 

@@ -37,6 +37,14 @@ body, html {
   }
 }
 
+body.template--kitchen-sink-comparison {
+  background: white;
+}
+
+.ss-content-center__inner {
+  margin: 0 auto;
+}
+
 #shopify-section-header-megamenu {
   position: -webkit-sticky;
   position: sticky;
@@ -138,6 +146,7 @@ body, html {
   padding: 0;
   transform: translateY(20px);
   -webkit-transform: translateY(20px);
+  box-shadow: 0 8px 10px -6PX rgba(1, 1, 1, 0.1);
 }
 
 .sub-megamenu {
@@ -442,6 +451,14 @@ body, html {
   padding: 10px 0;
 }
 
+.page-products_list {
+  margin-bottom: 80px;
+}
+@media (max-width: 768px) {
+  .page-products_list {
+    margin-bottom: 32px;
+  }
+}
 .page-products_list table {
   background: initial !important;
   border-collapse: collapse;
@@ -734,12 +751,20 @@ select#ProductFilterColourField {
 .filter-by-colour-list li {
   list-style: none;
   margin: 6px;
+  line-height: 0;
+}
+.filter-by-colour-list li a {
+  display: block;
+  border-radius: 30px;
 }
 .filter-by-colour-list li .__icon-class {
   display: inline-block;
   width: 32px;
   height: 32px;
   border-radius: 32px;
+}
+.filter-by-colour-list li.__active a {
+  box-shadow: 0 0 0 3px #006875;
 }
 
 .filter-by-colour-list__label {
@@ -845,8 +870,12 @@ select#ProductFilterColourField {
   background: linear-gradient(180deg, #EDE4BC 0%, #B5A773 100%);
 }
 
+table.product-list-table thead th {
+  background: none;
+}
 table.product-list-table tbody td {
   vertical-align: top;
+  background: none;
 }
 
 .product-list-table {
@@ -911,6 +940,7 @@ table.product-list-table tbody td {
 }
 .product-list-table__item .p-action {
   padding-right: 0;
+  text-align: center;
 }
 .product-list-table__item .p-action form button[type=submit] {
   background: #006875;
@@ -921,9 +951,18 @@ table.product-list-table tbody td {
   letter-spacing: 2px;
   border-radius: 4px;
   font-weight: normal;
+  width: 100%;
 }
 .product-list-table__item .p-action form button[type=submit]:hover {
   opacity: 0.7;
+}
+.product-list-table__item .p-action .view-more-link {
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #C2C2C2;
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-top: 12px;
 }
 
 .p-meta-list {
@@ -970,8 +1009,24 @@ table.product-list-table tbody td {
   table.product-list-table tbody.product-list-container tr.product-list-table__item > td:last-child {
     padding-bottom: 30px;
   }
+  table.product-list-table tbody.product-list-container tr.product-list-table__item > td.p-price {
+    width: 50%;
+    display: inline-block;
+  }
   table.product-list-table tbody.product-list-container tr.product-list-table__item > td.p-action {
-    text-align: left !important;
+    width: 49%;
+    display: inline-block;
+    padding-top: 10%;
+  }
+}
+@media (max-width: 768px) and (max-width: 430px) {
+  table.product-list-table tbody.product-list-container tr.product-list-table__item > td.p-action {
+    padding-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  table.product-list-table tbody.product-list-container tr.product-list-table__item > td.p-action .view-more-link {
+    display: none;
   }
 }
 body.template--kitchen-sink-comparison div#shopify-section-toolbar {
@@ -1014,4 +1069,60 @@ body.template--kitchen-sink-comparison div#HeaderMegamenuWrapper .header-megamen
 }
 body.template--kitchen-sink-comparison div#HeaderMegamenuWrapper .icon-hamburger {
   color: #444C53;
+}
+
+.ss-partner-brand {
+  margin-bottom: 80px;
+}
+@media (max-width: 768px) {
+  .ss-partner-brand {
+    margin-bottom: 32px;
+  }
+}
+.ss-partner-brand__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .ss-partner-brand__inner {
+    flex-direction: column;
+  }
+}
+.ss-partner-brand__label {
+  width: 108px;
+  font-weight: 300 !important;
+}
+.ss-partner-brand__image-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: calc(100% - 108px);
+}
+.ss-partner-brand__image-container .brand-image-block-item {
+  width: 20%;
+  padding: 0 4px;
+  margin: 4px 0;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .ss-partner-brand__image-container {
+    width: 100%;
+    justify-content: center;
+  }
+  .ss-partner-brand__image-container .brand-image-block-item {
+    width: 33.3333333333%;
+  }
+}
+
+.brand-image-block-item__inner a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 58px;
+}
+.brand-image-block-item__inner img {
+  max-width: 100%;
+  width: auto;
 }

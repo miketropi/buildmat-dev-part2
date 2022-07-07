@@ -1,4 +1,10 @@
 .page-products_list {
+	margin-bottom: 80px;
+
+	@media(max-width:768px) {
+    margin-bottom: 32px;
+  }
+
 	table {
 		background: initial !important;
 		border-collapse: collapse;
@@ -323,12 +329,25 @@ select#ProductFilterColourField {
 	li {
 		list-style: none;
 		margin: 6px;
+		line-height: 0;
+
+		a {
+			display: block;
+			border-radius: 30px;
+		}
 
 		.__icon-class {
 			display: inline-block;
 			width: 32px;
 			height: 32px;
 			border-radius: 32px;
+		}
+
+		&.__active {
+
+			a {
+				box-shadow: 0 0 0 3px #006875;
+			}
 		}
 	}
 }

@@ -1,0 +1,86 @@
+<section 
+  class="page-section ss-content-center {{ section.settings.custom_class }}" 
+  style="background-color: {{ section.settings.background_color }}; padding: {{ section.settings.space_top }}px 0 {{ section.settings.space_bottom }}px 0;">
+  <div 
+    class="ss-content-center__inner" 
+    style="width: {{ section.settings.content_width }}px;">
+    {{ section.settings | json }}
+    {{ section.blocks[1].settings | json }}
+  </div>
+</section> <!-- .ss-content-center -->
+
+{% schema %}
+{
+  "name": "Content Center",
+  "settings": [
+    {
+      "type": "number",
+      "id": "content_width",
+      "label": "Content Width",
+      "default": 800
+    }, 
+    {
+      "type": "number",
+      "id": "space_top",
+      "label": "Space Top",
+      "default": 112
+    }, 
+    {
+      "type": "number",
+      "id": "space_bottom",
+      "label": "Space Bottom",
+      "default": 112
+    }, 
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#ECEFF0"
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading-text",
+      "name": "Heading Text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading_text",
+          "label": "Heading"
+        },
+        {
+          "type": "number",
+          "id": "space_bottom",
+          "label": "Space Bottom"
+        }
+      ]
+    },
+    {
+      "type": "image-content-vertical",
+      "name": "Image & Content Vertical", 
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Content"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

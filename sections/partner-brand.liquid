@@ -1,0 +1,47 @@
+<section class="page-section ss-partner-brand"> 
+  <div class="page-width">
+    <div class="ss-partner-brand__inner">
+      <label class="ss-partner-brand__label">{{ section.settings.ss_label }}</label>
+      <div class="ss-partner-brand__image-container">
+        {%- if section.blocks.size > 0 -%}
+        {%- for block in section.blocks -%}
+          {% render 'brand-image-block' | block: block | section: section %} 
+        {%- endfor -%}
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>  
+
+{% schema %}
+{
+  "name": "Partner Brand Image",
+  "settings": [ 
+    {
+      "type": "text",
+      "id": "ss_label",
+      "label": "Label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "brand_image_block",
+      "name": "Brand Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Select Image",
+          "info": "Add alt text for better SEO with 'Edit' button above"
+        },
+        {
+          "type": "url",
+          "id": "direct_url",
+          "label": "Url",
+          "info": "Optional"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
