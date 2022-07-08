@@ -69,10 +69,49 @@ import { getQueryUrl } from './lib/helpers';
     });
   }
 
+  const thicknessProgressBarPreviewAminate = () => {
+    const elems = document.querySelectorAll('.thickness-progress-bar-preview__do-aminate');
+    if(elems.length == 0) return;
+
+    const _itemsTriggerScroll = [];
+
+    [...elems].forEach((wrap) => {
+      let items = wrap.querySelectorAll('.thickness-progress-bar-preview__item');
+      [...items].forEach(_item => {
+
+        // reset width
+        _item.querySelector('.thickness-progress-bar-preview__item-bar-inner').style.width = '0%';
+
+        _itemsTriggerScroll.push(_item);
+      })
+    })
+
+    if(!_itemsTriggerScroll.length) return;
+    let wHeight = w.innerHeight;
+
+    w.addEventListener('scroll', e => {
+      wHeight = w.innerHeight;
+      if(_itemsTriggerScroll.length == 0) return;
+
+      _itemsTriggerScroll.forEach((el, _index) => {
+        const { top } = el.getBoundingClientRect();
+        if(wHeight > top + 100) {
+          el.classList.add('__trigger-scroll-active');
+          let innerBar = el.querySelector('.thickness-progress-bar-preview__item-bar-inner');
+          let percent = innerBar.dataset.percent;
+
+          el.querySelector('.thickness-progress-bar-preview__item-bar-inner').style.width = `${ percent }%`;
+          _itemsTriggerScroll.splice(_index, 1);
+        } 
+      })
+    })
+  }
+
   const ready = () => {
     new MegaMenuHandle($('#HeaderMegamenuWrapper')); 
     productGoApecificationsSection();
-    applyCustomSelectUIProductFilterColour();
+    // applyCustomSelectUIProductFilterColour();
+    thicknessProgressBarPreviewAminate();
   }
 
   /**

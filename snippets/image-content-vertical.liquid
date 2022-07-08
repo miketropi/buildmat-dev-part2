@@ -1,0 +1,22 @@
+{% liquid 
+  if block.settings.bottom_line == true
+    assign bottomLineClass = 'image-content-vertical-block--bottom-line'
+  else
+    assign bottomLineClass = ''
+  endif
+%}
+<div class="image-content-vertical-block {{ bottomLineClass }}">
+  <div class="image-content-vertical-block__inner">
+    {%- if block.settings.image != blank -%}
+      {%- assign img_url = block.settings.image | img_url: 'grande' -%}
+      <img 
+        class="image-content-vertical-block__image lazyload"
+        data-src="{{ img_url }}"
+        data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+        data-sizes="auto"
+        alt="{{ block.settings.image.alt }}">
+    {%- endif -%}
+    <h4 class="image-content-vertical-block__title">{{ block.settings.title }}</h4>
+    <div class="image-content-vertical-block__desc">{{ block.settings.description }}</div>
+  </div>
+</div>

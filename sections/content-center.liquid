@@ -4,8 +4,28 @@
   <div 
     class="ss-content-center__inner" 
     style="width: {{ section.settings.content_width }}px;">
-    {{ section.settings | json }}
-    {{ section.blocks[1].settings | json }}
+    {% liquid 
+    if section.blocks.size 
+      for block in section.blocks
+        assign blockType = block.type
+        case blockType
+          when 'heading-text'
+            render 'heading-text', block: block, section: section
+          when 'image-content-vertical'
+            render 'image-content-vertical', block: block, section: section
+          when 'thickness-preview'
+            render 'thickness-progress-bar-preview', block: block, section: section
+          when 'grid-open'
+            render 'content-center-grid-container', block: block, section: section, type: 'open'
+          when 'grid-close'
+            render 'content-center-grid-container', block: block, section: section, type: 'close'
+          when 'specs-item'
+            render 'specs-item', block: block, section: section
+          when '@app'
+            render block
+        endcase
+      endfor
+    endif %}
   </div>
 </section> <!-- .ss-content-center -->
 
@@ -67,7 +87,7 @@
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image"
+          "label": "Image" 
         },
         {
           "type": "text",
@@ -76,10 +96,76 @@
         },
         {
           "type": "richtext",
-          "id": "description",
+          "id": "description", 
           "label": "Content"
+        },
+        { 
+          "type": "checkbox",
+          "id": "bottom_line",
+          "label": "Enable Bottom Line"
         }
       ]
+    }, 
+    {
+      "type": "thickness-preview",
+      "name": "Thickness Preview",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "background_image",
+          "label": "Background Image"
+        }
+      ] 
+    },
+    {
+      "type": "grid-open",
+      "name": "Grid Open",
+      "settings": [
+        {
+          "type": "select",
+          "id": "grid_columns",
+          "label": "Grid Columns",
+          "options": [
+            {
+              "value": "3",
+              "label": "3"
+            },
+            {
+              "value": "4",
+              "label": "4"
+            }
+          ],
+          "default": "3"
+        }
+      ] 
+    },
+    {
+      "type": "grid-close",
+      "name": "Grid Close"
+    },
+    {
+      "type": "specs-item",
+      "name": "Specs Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    },
+    {
+      "type": "@app"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Apps"
     }
   ]
 }

@@ -185,140 +185,197 @@
             "space_bottom": 64
           }
         },
+        "thickness-preview-4dd2fe7c-fe68-11ec-b939-0242ac120002": {
+          "type": "thickness-preview",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/premium-thickness.png"
+          }
+        },
         "image-content-vertical-4ff5d0e2-fdd4-11ec-b939-0242ac120002": { 
           "type": "image-content-vertical",
           "settings": {
             "title": "1.5mm Premium Thickness",
-            "description": "<p>Steel Thickness is important because it helps increase durability and sound absorption. The thickness of kitchen sinks plays an important part to the quality and durability. The thicker the steel used to make the sink it means you get more sink. The reason why it's important is because it becomes a sturdier and more solid sink, you'll notice it when you start putting pots and pans down.</p>"
+            "description": "<p>Steel Thickness is important because it helps increase durability and sound absorption. The thickness of kitchen sinks plays an important part to the quality and durability. The thicker the steel used to make the sink it means you get more sink. The reason why it's important is because it becomes a sturdier and more solid sink, you'll notice it when you start putting pots and pans down.</p>",
+            "bottom_line": true
           }
         },
         "image-content-vertical-9def0020-fdd4-11ec-b939-0242ac120002": { 
           "type": "image-content-vertical",
           "settings": {
+            "image": "shopify:\/\/shop_images\/precision-made-sinks.png",
             "title": "Precision Made Sinks",
-            "description": "<p>Our Precision Handmade sinks means that there are people actually welding the sink together instead of a machine just pressing on a sheet of metal. It means that the each corner is carefully crafted and that each wall of the sink is a true 1.5mm thick stainless steel instead of a sheet of metal being stretched by a large machine press into shape.</p>"
-          }
+            "description": "<p>Our Precision Handmade sinks means that there are people actually welding the sink together instead of a machine just pressing on a sheet of metal. It means that the each corner is carefully crafted and that each wall of the sink is a true 1.5mm thick stainless steel instead of a sheet of metal being stretched by a large machine press into shape.</p>",
+            "bottom_line": true
+          } 
         },
         "image-content-vertical-b9e280fe-fdd4-11ec-b939-0242ac120002": {
           "type": "image-content-vertical",
           "settings": {
+            "image": "shopify:\/\/shop_images\/innovative-award-winning-sinks.png",
             "title": "Innovative Award Winning Sinks",
-            "description": "<p>Buildmat is the winner of the international Product Design Award in the 2020 Architecture Masterprize. At Buildmat we are constantly updating and improving our product range and designs and it has shown this year by winning a product design award in the kitchen category of a global competition.</p>"
+            "description": "<p>Buildmat is the winner of the international Product Design Award in the 2020 Architecture Masterprize. At Buildmat we are constantly updating and improving our product range and designs and it has shown this year by winning a product design award in the kitchen category of a global competition.</p>",
+            "bottom_line": false
           }
         }
       },
       "block_order": [
         "heading-bed55b0a-fdd3-11ec-b939-0242ac120002",
+        "thickness-preview-4dd2fe7c-fe68-11ec-b939-0242ac120002",
         "image-content-vertical-4ff5d0e2-fdd4-11ec-b939-0242ac120002",
         "image-content-vertical-9def0020-fdd4-11ec-b939-0242ac120002",
         "image-content-vertical-b9e280fe-fdd4-11ec-b939-0242ac120002"
       ]
     },
-    "product-specifications": {
-      "type": "product-specifications",
+    "section-product-specifications": {
+      "type": "content-center", 
+      "settings": {
+        "content_width": 800,
+        "space_top": 104,
+        "space_bottom": 104,
+        "background_color": "#ECEFF0",
+        "custom_class": "section-product-specifications"
+      },
       "blocks": {
-        "dab90339-af16-49f5-baea-1564fb9263ee": {
-          "type": "block",
+        "heading-031dc002-fe8f-11ec-b939-0242ac120002": {
+          "type": "heading-text",
           "settings": {
-            "block_title": "Thickness",
-            "block_text": "1.5mm Stainless Steel"
+            "heading_text": "Product Specifications",
+            "space_bottom": 40
           }
         },
-        "7aa0d2d8-d7f7-4bb6-b59f-b8355c84a3c6": {
-          "type": "block",
+        "grid-open-99864376-fe93-11ec-b939-0242ac120002": {
+          "type": "grid-open",
           "settings": {
-            "block_title": "Warranty",
-            "block_text": "25 Years Structural"
+            "grid_columns": "3"
           }
         },
-        "483203d1-8b3f-4396-bca6-48a60706a252": {
-          "type": "block",
+        "specs-item-d303e47c-fe94-11ec-b939-0242ac120002": {
+          "type": "specs-item",
           "settings": {
-            "block_title": "Stainless Steel Grade",
-            "block_text": "Hardwearing 304"
+            "label": "Thickness",
+            "description": "<p>1.5mm Stainless Steel</p>"
           }
         },
-        "b68f2de7-7741-42ad-998a-31c8ab354cd6": {
-          "type": "block",
+        "specs-item-06130c30-fe94-11ec-b939-0242ac120002": {
+          "type": "specs-item",
           "settings": {
-            "block_title": "Mounting Options",
-            "block_text": "Undermount, Topmount or Flushmount"
+            "label": "Warranty",
+            "description": "<p>25 Years Structural</p>"
           }
         },
-        "19bd50c9-0c8b-4ac2-9257-b08aad6a5878": {
-          "type": "block",
+        "specs-item-28ba6224-fe94-11ec-b939-0242ac120002": {
+          "type": "specs-item",
           "settings": {
-            "block_title": "Inner Radius",
-            "block_text": "Sleek R10 round edges"
+            "label": "Stainless Steel Grade",
+            "description": "<p>Hardwearing 304</p>"
           }
         },
-        "cb0f1b80-e5a0-433b-8ddd-4e06fd5a000b": {
-          "type": "block",
+        "specs-item-55004ef2-fe94-11ec-b939-0242ac120002": {
+          "type": "specs-item",
           "settings": {
-            "block_title": "Finish",
-            "block_text": "Matte Satin with hairline brushed finish"
+            "label": "Mounting Options",
+            "description": "<p>Undermount, Topmount or Flushmount</p>"
           }
         },
-        "88ae6a26-933a-473f-b902-89699102f2dd": {
-          "type": "block",
+        "specs-item-6f166e02-fe94-11ec-b939-0242ac120002": {
+          "type": "specs-item",
           "settings": {
-            "block_title": "Coatings",
-            "block_text": "Anti Rust &amp; Anti Corrosion"
+            "label": "Inner Radius",
+            "description": "<p>Sleek R10 round edges</p>"
           }
         },
-        "c6fc43d8-5bf3-49f0-afef-006668712a98": {
-          "type": "block",
+        "specs-item-86f8b43a-fe94-11ec-b939-0242ac120002": {
+          "type": "specs-item",
           "settings": {
-            "block_title": "Thickness",
-            "block_text": "90mm strainer included"
+            "label": "Finish",
+            "description": "<p>Matte Satin with hairline brushed finish</p>"
           }
         },
-        "cc034ea2-d11a-462d-a69d-0fc65458a60e": {
-          "type": "block",
+        "specs-item-9ffd5d1e-fe94-11ec-b939-0242ac120002": {
+          "type": "specs-item",
           "settings": {
-            "block_title": "Flume Design",
-            "block_text": "X-shaped"
+            "label": "Coatings",
+            "description": "<p>Anti Rust & Anti Corrosion</p>"
           }
         },
-        "b39f7027-27fc-44d5-836f-d2eb22ce38b3": {
-          "type": "block",
+        "specs-item-b462c2b2-fe94-11ec-b939-0242ac120002": {
+          "type": "specs-item",
           "settings": {
-            "block_title": "Usage",
-            "block_text": "Popular choice for both kitchen &amp; laundry"
+            "label": "Thickness",
+            "description": "<p>90mm strainer included</p>"
           }
         },
-        "ed23cdff-36ad-4e51-a036-227a7d89bba5": {
-          "type": "block",
+        "specs-item-ce330ecc-fe94-11ec-b939-0242ac120002": {
+          "type": "specs-item",
           "settings": {
-            "block_title": "Certificates",
-            "block_text": "- Fit for Australian standards\n- UPC cerified"
+            "label": "Flume Design",
+            "description": "<p>X-shaped</p>"
           }
         },
-        "1dd2dee1-f287-4995-872d-43ab064d3df2": {
-          "type": "block",
+        "specs-item-e4848bc4-fe94-11ec-b939-0242ac120002": {
+          "type": "specs-item",
           "settings": {
-            "block_title": "Method",
-            "block_text": "Bent, welded, grinded, polished and packed by hand"
+            "label": "Usage",
+            "description": "<p>Popular choice for both kitchen & laundry</p>"
           }
+        },
+        "specs-item-fd7ace90-fe94-11ec-b939-0242ac120002": {
+          "type": "specs-item",
+          "settings": {
+            "label": "Certificates",
+            "description": "<p>Fit for Australian standards - UPC cerified Method</p>"
+          }
+        },
+        "specs-item-15898a08-fe96-11ec-b939-0242ac120002": {
+          "type": "specs-item",
+          "settings": {
+            "label": "Method",
+            "description": "<p>Bent, welded, grinded, polished and packed by hand</p>"
+          }
+        },
+        "grid-close-a4868b50-fe93-11ec-b939-0242ac120002": {
+          "type": "grid-close"
         }
       },
       "block_order": [
-        "dab90339-af16-49f5-baea-1564fb9263ee",
-        "7aa0d2d8-d7f7-4bb6-b59f-b8355c84a3c6",
-        "483203d1-8b3f-4396-bca6-48a60706a252",
-        "b68f2de7-7741-42ad-998a-31c8ab354cd6",
-        "19bd50c9-0c8b-4ac2-9257-b08aad6a5878",
-        "cb0f1b80-e5a0-433b-8ddd-4e06fd5a000b",
-        "88ae6a26-933a-473f-b902-89699102f2dd",
-        "c6fc43d8-5bf3-49f0-afef-006668712a98",
-        "cc034ea2-d11a-462d-a69d-0fc65458a60e",
-        "b39f7027-27fc-44d5-836f-d2eb22ce38b3",
-        "ed23cdff-36ad-4e51-a036-227a7d89bba5",
-        "1dd2dee1-f287-4995-872d-43ab064d3df2"
-      ],
+        "heading-031dc002-fe8f-11ec-b939-0242ac120002",
+        "grid-open-99864376-fe93-11ec-b939-0242ac120002",
+        "specs-item-d303e47c-fe94-11ec-b939-0242ac120002",
+        "specs-item-06130c30-fe94-11ec-b939-0242ac120002",
+        "specs-item-28ba6224-fe94-11ec-b939-0242ac120002",
+        "specs-item-55004ef2-fe94-11ec-b939-0242ac120002",
+        "specs-item-6f166e02-fe94-11ec-b939-0242ac120002",
+        "specs-item-86f8b43a-fe94-11ec-b939-0242ac120002",
+        "specs-item-9ffd5d1e-fe94-11ec-b939-0242ac120002",
+        "specs-item-b462c2b2-fe94-11ec-b939-0242ac120002",
+        "specs-item-ce330ecc-fe94-11ec-b939-0242ac120002",
+        "specs-item-e4848bc4-fe94-11ec-b939-0242ac120002",
+        "specs-item-fd7ace90-fe94-11ec-b939-0242ac120002",
+        "specs-item-15898a08-fe96-11ec-b939-0242ac120002",
+        "grid-close-a4868b50-fe93-11ec-b939-0242ac120002"
+      ]
+    },
+    "customers-speak": {
+      "type": "content-center", 
       "settings": {
-        "title": "Product Specifications"
-      }
+        "content_width": 800,
+        "space_top": 104,
+        "space_bottom": 104,
+        "background_color": "#ECEFF0",
+        "custom_class": "section-customers-speak"
+      },
+      "blocks": {
+        "f0b44f13-fa7d-4198-a82a-9cb0fc215ca2": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 2000,
+            "show_header": true
+          }
+        }  
+      },
+      "block_order": [
+        "f0b44f13-fa7d-4198-a82a-9cb0fc215ca2"
+      ]
     },
     "1644803022a08299de": {
       "type": "apps",
@@ -554,7 +611,8 @@
     "page-landing-products",
     "partner-brand-images",
     "why-people-choose",
-    "product-specifications",
+    "section-product-specifications", 
+    "customers-speak",
     "1644803022a08299de",
     "16448030616e7c381f",
     "164480312297fbdc5e",

@@ -307,10 +307,49 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     });
   };
 
+  var thicknessProgressBarPreviewAminate = function thicknessProgressBarPreviewAminate() {
+    var elems = document.querySelectorAll('.thickness-progress-bar-preview__do-aminate');
+    if (elems.length == 0) return;
+    var _itemsTriggerScroll = [];
+
+    _toConsumableArray(elems).forEach(function (wrap) {
+      var items = wrap.querySelectorAll('.thickness-progress-bar-preview__item');
+
+      _toConsumableArray(items).forEach(function (_item) {
+        // reset width
+        _item.querySelector('.thickness-progress-bar-preview__item-bar-inner').style.width = '0%';
+
+        _itemsTriggerScroll.push(_item);
+      });
+    });
+
+    if (!_itemsTriggerScroll.length) return;
+    var wHeight = w.innerHeight;
+    w.addEventListener('scroll', function (e) {
+      wHeight = w.innerHeight;
+      if (_itemsTriggerScroll.length == 0) return;
+
+      _itemsTriggerScroll.forEach(function (el, _index) {
+        var _el$getBoundingClient = el.getBoundingClientRect(),
+            top = _el$getBoundingClient.top;
+
+        if (wHeight > top + 100) {
+          el.classList.add('__trigger-scroll-active');
+          var innerBar = el.querySelector('.thickness-progress-bar-preview__item-bar-inner');
+          var percent = innerBar.dataset.percent;
+          el.querySelector('.thickness-progress-bar-preview__item-bar-inner').style.width = "".concat(percent, "%");
+
+          _itemsTriggerScroll.splice(_index, 1);
+        }
+      });
+    });
+  };
+
   var ready = function ready() {
     new _megaMenu__WEBPACK_IMPORTED_MODULE_0__["default"]($('#HeaderMegamenuWrapper'));
-    productGoApecificationsSection();
-    applyCustomSelectUIProductFilterColour();
+    productGoApecificationsSection(); // applyCustomSelectUIProductFilterColour();
+
+    thicknessProgressBarPreviewAminate();
   };
   /**
   * DOM Ready

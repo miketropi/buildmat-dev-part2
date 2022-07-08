@@ -45,6 +45,165 @@ body.template--kitchen-sink-comparison {
   margin: 0 auto;
 }
 
+.heading-text-block__text-center {
+  text-align: center;
+}
+.heading-text-block__text {
+  font-weight: bold;
+  font-size: 40px;
+  color: #333;
+  font-family: "Sofia Pro";
+}
+
+.image-content-vertical-block {
+  padding: 32px 0;
+}
+.image-content-vertical-block--bottom-line {
+  border-bottom: solid 1px #DBE1E5;
+}
+.image-content-vertical-block__image {
+  margin-bottom: 32px;
+  border-radius: 4px;
+}
+.image-content-vertical-block__title {
+  font-size: 20px;
+  color: #333;
+  font-family: "Sofia Pro";
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+.image-content-vertical-block__desc {
+  color: #333;
+}
+
+.thickness-progress-bar-preview__inner {
+  border-radius: 4px;
+  padding: 48px 58px;
+}
+.thickness-progress-bar-preview__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.thickness-progress-bar-preview__item.__st-1 {
+  transition-delay: 0.1s;
+}
+.thickness-progress-bar-preview__item.__st-1 .thickness-progress-bar-preview__item-bar {
+  width: 300px;
+  height: 12px;
+}
+.thickness-progress-bar-preview__item.__st-1 .thickness-progress-bar-preview__item-bar-label span:nth-child(1) {
+  line-height: 34px;
+  margin-right: 3px;
+}
+.thickness-progress-bar-preview__item.__st-1 .thickness-progress-bar-preview__item-bar-label span:nth-child(2) {
+  line-height: 20px;
+}
+.thickness-progress-bar-preview__item.__st-2 {
+  transition-delay: 0.2s;
+}
+.thickness-progress-bar-preview__item.__st-2 .thickness-progress-bar-preview__item-bar {
+  width: 240px;
+  height: 12px;
+}
+.thickness-progress-bar-preview__item.__st-2 .thickness-progress-bar-preview__item-bar-label span:nth-child(1) {
+  line-height: 20px;
+}
+.thickness-progress-bar-preview__item.__st-3 {
+  transition-delay: 0.3s;
+}
+.thickness-progress-bar-preview__item.__st-3 .thickness-progress-bar-preview__item-bar {
+  width: 200px;
+  height: 10px;
+}
+.thickness-progress-bar-preview__item.__st-3 .thickness-progress-bar-preview__item-bar-label span:nth-child(1) {
+  line-height: 20px;
+}
+.thickness-progress-bar-preview__item.__st-4 {
+  transition-delay: 0.4s;
+}
+.thickness-progress-bar-preview__item.__st-4 .thickness-progress-bar-preview__item-bar {
+  width: 160px;
+  height: 8px;
+}
+.thickness-progress-bar-preview__item.__st-4 .thickness-progress-bar-preview__item-bar-label span:nth-child(1) {
+  line-height: 20px;
+}
+.thickness-progress-bar-preview__item-bar-wrap {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 12px;
+}
+.thickness-progress-bar-preview__item-bar {
+  margin-right: 11px;
+  border-radius: 2px;
+  background: #CDCDCD;
+}
+.thickness-progress-bar-preview__item-bar-inner {
+  background: #006875;
+  position: relative;
+  width: 0%;
+  height: 100%;
+  border-radius: 4px;
+  transition: 0.8s ease;
+  -webkit-transition: 0.8s ease;
+}
+.thickness-progress-bar-preview__item-bar-label {
+  display: flex;
+  align-items: flex-end;
+}
+.thickness-progress-bar-preview__item-desc {
+  color: #666;
+}
+.thickness-progress-bar-preview .__accent-color {
+  color: #006875;
+}
+.thickness-progress-bar-preview .__fsize-large {
+  font-size: 40px;
+}
+.thickness-progress-bar-preview .__fsize-medium {
+  font-size: 24px;
+}
+.thickness-progress-bar-preview .__fbold {
+  font-weight: bold;
+}
+.thickness-progress-bar-preview__do-aminate .thickness-progress-bar-preview__item {
+  opacity: 0;
+  transition: 0.6s ease;
+  transform: translateY(50px);
+}
+.thickness-progress-bar-preview__do-aminate .thickness-progress-bar-preview__item.__trigger-scroll-active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.content-center-grid-container__inner {
+  overflow: hidden;
+}
+.content-center-grid-container .__grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -40px;
+}
+.content-center-grid-container .__grid.__grid-3-columns > * {
+  width: 33.3333333333%;
+}
+.content-center-grid-container .__grid.__grid-4-columns > * {
+  width: 25%;
+}
+.content-center-grid-container .__grid > * {
+  box-sizing: border-box;
+  padding: 0 40px;
+  margin-bottom: 23px;
+}
+
+.specs-item__label {
+  font-weight: 300;
+  color: #333;
+}
+.specs-item__desc {
+  color: #333;
+  font-weight: bold;
+}
+
 #shopify-section-header-megamenu {
   position: -webkit-sticky;
   position: sticky;

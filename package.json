@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/miketropi/buildmat-dev-part2#readme",
   "dependencies": {
+    "autoprefixer": "10.4.5",
     "laravel-mix": "^6.0.49"
   },
   "devDependencies": {

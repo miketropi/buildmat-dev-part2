@@ -1,0 +1,11 @@
+{% assign gridType = type %}
+
+{% if gridType == 'open' %}
+<div class="content-center-grid-container">
+  <div class="content-center-grid-container__inner __grid __grid-{{ block.settings.grid_columns }}-columns">
+{% endif %}
+
+{% if gridType == 'close' %}
+  </div> <!-- .content-center-grid-container__inner -->
+</div> <!-- .content-center-grid-container -->
+{% endif %}
