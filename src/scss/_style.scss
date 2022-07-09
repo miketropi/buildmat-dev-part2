@@ -282,3 +282,147 @@ body.template--kitchen-sink-comparison {
 		font-weight: bold;
 	}
 }
+
+.section-customers-speak {
+
+	#shopify-block-f0b44f13-fa7d-4198-a82a-9cb0fc215ca2 {
+		margin: 0 -50px;
+	}
+
+	.jdgm-carousel__right-arrow, .jdgm-carousel__left-arrow {
+		border-width: 1px;
+    width: 15px;
+    height: 15px;
+	}
+
+	.jdgm-carousel-wrapper {
+		margin: 0;
+    width: 100%;
+    padding: 0;
+
+		.jdgm-carousel-title {
+			font-weight: bold;
+			font-size: 40px;
+			color: #333;
+			font-family: 'Sofia Pro';
+			margin-bottom: 8px;
+		}
+
+		.jdgm-carousel-number-of-reviews {
+			font-size: 14px;
+		}
+
+		.jdgm-carousel-title-and-link {
+			margin-bottom: 40px;
+		}
+
+		.jdgm-star {
+			padding-right: 8px !important;
+
+			&:last-child {
+				padding-right: 0 !important;
+			}
+		}
+
+		.jdgm-carousel-item {
+			vertical-align: top;
+			padding: 0 8px;
+
+			> * {
+				background: white;
+				padding-left: 16px;
+				padding-right: 16px;
+				box-sizing: border-box;
+				width: 100%;
+				display: block;
+				text-align: left;
+
+				&:first-child {
+					padding-top: 19px;
+					border-radius: 4px 4px 0 0;
+				}
+
+				&:last-child {
+					padding-bottom: 19px;
+					border-radius: 0 0 4px 4px;
+				}
+			}
+
+			.jdgm-carousel-item__reviewer-name-wrapper {
+				margin: 0;
+				padding-top: 13px;
+				padding-bottom: 13px;
+				display: flex;
+				align-items: center;
+
+				.jdgm-carousel-item__reviewer-name {
+					margin-right: 8px;
+					color: #646464;
+					opacity: 1;
+				}
+			}
+
+			.jdgm-carousel-item__product-title {
+
+			}
+			
+			.jdgm-carousel-item__product,
+			.jdgm-carousel-item__review {
+				height: auto;
+			}
+
+			.jdgm-carousel-item__review-rating {
+				font-size: 10px;
+				margin-bottom: 13px;
+
+				.jdgm-star {
+					padding-right: 5px;
+				}
+			}
+
+			.jdgm-carousel-item__review-title {
+				font-size: 18px;
+				margin-bottom: 13px;
+			}
+
+			.jdgm-carousel-item__review-body {
+				font-size: 14px;
+				font-weight: 300; 
+			}
+
+			.jdgm-carousel-item__product-image {
+				margin-bottom: 18px;
+			}
+
+			.jdgm-carousel-item__product-title {
+				font-size: 12px;
+				color: #333333;
+				padding: 8px;
+				border-top: solid 1px #eceff0;
+				font-weight: bold;
+			}
+
+			a.jdgm-carousel-item__product {
+				position: relative;
+				padding-top: 16px;
+
+				> * {
+					position: relative;
+					z-index: 3;
+				}
+
+				&:after {
+					content: "";
+					z-index: 0;
+					background: #F9F9F9;
+					border: 1px solid #ECEFF0;
+					position: absolute;
+					width: calc(100% - 32px);
+					height: calc(100% - 19px);
+					left: 16px;
+					top: 0;
+				}
+			}
+		}
+	}
+}

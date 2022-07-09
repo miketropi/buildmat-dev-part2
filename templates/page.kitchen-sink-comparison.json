@@ -360,7 +360,7 @@
       "settings": {
         "content_width": 800,
         "space_top": 104,
-        "space_bottom": 104,
+        "space_bottom": 54,
         "background_color": "#ECEFF0",
         "custom_class": "section-customers-speak"
       },
@@ -376,59 +376,6 @@
       "block_order": [
         "f0b44f13-fa7d-4198-a82a-9cb0fc215ca2"
       ]
-    },
-    "1644803022a08299de": {
-      "type": "apps",
-      "blocks": {
-        "f0b44f13-fa7d-4198-a82a-9cb0fc215ca2": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "maxwidth": 2000,
-            "show_header": true
-          }
-        }
-      },
-      "block_order": [
-        "f0b44f13-fa7d-4198-a82a-9cb0fc215ca2"
-      ],
-      "settings": {
-        "full_width": true,
-        "space_around": false
-      }
-    },
-    "16448030616e7c381f": {
-      "type": "text-and-image",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Premium_Thickness_Durability_bd2d2beb-b77b-4b86-a24d-1c73326b041c.png",
-        "image_width": 700,
-        "subtitle": "",
-        "title": "1.5mm Premium Thickness",
-        "text": "<p><strong>Steel Thickness is important because it helps increase durability and sound absorption.<\/strong><\/p><p><\/p><p>The thickness of kitchen sinks plays an important part to the quality and durability. The thicker the steel used to make the sink it means you get more sink. The reason why it’s important is because it becomes a sturdier and more solid sink, you’ll notice it when you start putting pots and pans down.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "layout": "left",
-        "color_scheme": "none",
-        "divider": false
-      }
-    },
-    "164480312297fbdc5e": {
-      "type": "text-and-image",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Precision_Made_c2d09e3f-d98b-45d7-be70-d1f8a9a5ef94.jpg",
-        "image_width": 700,
-        "subtitle": "",
-        "title": "Precision Made Sinks",
-        "text": "<p>Our Precision Handmade sinks means that there are people actually welding the sink together instead of a machine just pressing on a sheet of metal. It means that the each corner is carefully crafted and that each wall of the sink is a true 1.5mm thick stainless steel instead of a sheet of metal being stretched by a large machine press into shape.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "layout": "right",
-        "color_scheme": "none",
-        "divider": false
-      }
     },
     "design-slideshow": {
       "type": "design-slideshow",
@@ -613,9 +560,6 @@
     "why-people-choose",
     "section-product-specifications", 
     "customers-speak",
-    "1644803022a08299de",
-    "16448030616e7c381f",
-    "164480312297fbdc5e",
     "design-slideshow",
     "whychoose",
     "164480338261e43e9c"
