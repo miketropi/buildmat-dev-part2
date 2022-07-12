@@ -367,6 +367,10 @@ body.template--kitchen-sink-comparison {
 			color: #333;
 			font-family: 'Sofia Pro';
 			margin-bottom: 8px;
+
+			@media (max-width: 562px) {
+				font-size: 28px;
+			}
 		}
 
 		.jdgm-carousel-number-of-reviews {
@@ -491,13 +495,13 @@ body.template--kitchen-sink-comparison {
 .content-center-accordion-container {
 
 	.accordion-item {
-		border-bottom: 1px solid #CCD2D5;
 
 		&__heading {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 			cursor: pointer;
+			border-bottom: 1px solid #CCD2D5;
 
 			h4 {
 				font-family: "Sofia Pro";
@@ -551,5 +555,24 @@ body.template--kitchen-sink-comparison {
 		color: #5F5F5F;
 		margin-top: 14px;
 		letter-spacing: 0;
+
+		@media(max-width: 672px) {
+			font-size: 14px;
+		}
+	}
+}
+
+.section-design-options {
+
+	@media(max-width: 672px) {
+
+		.__grid  {
+			margin: 0 -8px;
+	
+			> * {
+				padding: 0 8px;
+				margin-bottom: 16px;
+			}
+		}
 	}
 }

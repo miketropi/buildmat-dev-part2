@@ -292,6 +292,11 @@ body.template--kitchen-sink-comparison {
   font-family: "Sofia Pro";
   margin-bottom: 8px;
 }
+@media (max-width: 562px) {
+  .section-customers-speak .jdgm-carousel-wrapper .jdgm-carousel-title {
+    font-size: 28px;
+  }
+}
 .section-customers-speak .jdgm-carousel-wrapper .jdgm-carousel-number-of-reviews {
   font-size: 14px;
 }
@@ -386,14 +391,12 @@ body.template--kitchen-sink-comparison {
   top: 0;
 }
 
-.content-center-accordion-container .accordion-item {
-  border-bottom: 1px solid #CCD2D5;
-}
 .content-center-accordion-container .accordion-item__heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  border-bottom: 1px solid #CCD2D5;
 }
 .content-center-accordion-container .accordion-item__heading h4 {
   font-family: "Sofia Pro";
@@ -437,6 +440,21 @@ body.template--kitchen-sink-comparison {
   color: #5F5F5F;
   margin-top: 14px;
   letter-spacing: 0;
+}
+@media (max-width: 672px) {
+  .image-box-item__text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 672px) {
+  .section-design-options .__grid {
+    margin: 0 -8px;
+  }
+  .section-design-options .__grid > * {
+    padding: 0 8px;
+    margin-bottom: 16px;
+  }
 }
 
 #shopify-section-header-megamenu {
