@@ -107,11 +107,46 @@ import { getQueryUrl } from './lib/helpers';
     })
   }
 
+  const accordionHandle = () => {
+    const accordionElems = document.querySelectorAll('.accordion-target-js');
+    if(accordionElems.length == 0) return;
+
+    [...accordionElems].forEach((el, _accIndex) => {
+      let items = el.querySelectorAll('.accordion-item');
+      let activeItem = el.dataset.activeItemDefault;
+
+      if(items.length == 0) return; // check items exists
+
+      [...items].forEach((item, _itemIndex) => {
+        let heading = item.querySelector('.accordion-item__heading');
+        let content = item.querySelector('.accordion-item__content');
+
+        if((_itemIndex + 1) == activeItem) {
+          item.classList.add('__active');
+          $(content).slideDown('slow')
+        }
+
+        heading.addEventListener('click', e => {
+          e.preventDefault();
+
+          if($(item).hasClass('__active')) {
+            $(content).stop(true, true).slideUp('slow')
+            $(item).removeClass('__active')
+          } else {
+            $(content).stop(true, true).slideDown('slow')
+            $(item).addClass('__active')
+          }
+        })
+      })
+    })
+  }
+
   const ready = () => {
     new MegaMenuHandle($('#HeaderMegamenuWrapper')); 
     productGoApecificationsSection();
     // applyCustomSelectUIProductFilterColour();
     thicknessProgressBarPreviewAminate();
+    accordionHandle();
   }
 
   /**

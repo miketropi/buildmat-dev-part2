@@ -216,7 +216,7 @@
             "description": "<p>Buildmat is the winner of the international Product Design Award in the 2020 Architecture Masterprize. At Buildmat we are constantly updating and improving our product range and designs and it has shown this year by winning a product design award in the kitchen category of a global competition.</p>",
             "bottom_line": false
           }
-        }
+        } 
       },
       "block_order": [
         "heading-bed55b0a-fdd3-11ec-b939-0242ac120002",
@@ -246,7 +246,9 @@
         "grid-open-99864376-fe93-11ec-b939-0242ac120002": {
           "type": "grid-open",
           "settings": {
-            "grid_columns": "3"
+            "grid_columns": "3",
+            "gap_horizontal": 80,
+            "gap_vertical": 23
           }
         },
         "specs-item-d303e47c-fe94-11ec-b939-0242ac120002": {
@@ -377,180 +379,177 @@
         "f0b44f13-fa7d-4198-a82a-9cb0fc215ca2"
       ]
     },
-    "design-slideshow": {
-      "type": "design-slideshow",
+    "faq-accordion": {
+      "type": "content-center",
+      "settings": {
+        "content_width": 800,
+        "space_top": 108,
+        "space_bottom": 108,
+        "background_color": "#ECEFF0",
+        "custom_class": "section-faq-accordion"
+      },
       "blocks": {
-        "a16ef85d-1151-49e9-bf84-f6efe7a77985": {
-          "type": "button",
+        "heading-230a4378-0181-11ed-b939-0242ac120002": {
+          "type": "heading-text",
           "settings": {
-            "d_image": "shopify:\/\/shop_images\/700x450_Single_Bowl_Sink_Laundry_cb1e5be5-db0d-4569-a438-f6bab43589a8.png",
-            "d_title": "Undermount Single Bowl Kitchen"
+            "heading_text": "FAQs",
+            "space_bottom": 44
           }
         },
-        "86fd49e4-3a92-4332-b254-a695d4183f44": {
-          "type": "button",
+        "accordion-open-bfb1d1d0-0188-11ed-b939-0242ac120002": {
+          "type": "accordion-open",
           "settings": {
-            "d_image": "shopify:\/\/shop_images\/SNA01013_Topmounted_Double_Bowl_Sink_775x450_3974fcc9-b288-4c15-90d6-bed977efdb2c.jpg",
-            "d_title": "Double Bowl Kitchen Layout"
+            "active_item_default": 1 
           }
         },
-        "fffa893b-737c-484a-a568-4c6d9a88645a": {
-          "type": "button",
+        "accordion-item-10515b4c-0189-11ed-b939-0242ac120002": {
+          "type": "accordion-item",
           "settings": {
-            "d_image": "shopify:\/\/shop_images\/775_Kitchen_Sink_bfe82f34-922c-4a4d-9c5e-c28a0afd4aa2.png",
-            "d_title": "Island Bench Kitchen"
+            "heading": "Should I get a sink with a Drainboard?",
+            "text": "<p>Buildmat is the winner of the international Product Design Award in the 2020 Architecture Masterprize.<br /> At Buildmat we are constantly updating and improving our product range and designs and it has shown this year by winning a product design award in the kitchen category of a global competition.</p>"
           }
         },
-        "18114308-9fb9-443e-ba64-c8311cab8e59": {
-          "type": "button",
+        "accordion-item-361dc4d2-0189-11ed-b939-0242ac120002": {
+          "type": "accordion-item",
           "settings": {
-            "d_image": "shopify:\/\/shop_images\/1125x450_Double_bowl_Sink_with_Drainboard_25f57432-60aa-454c-a5b2-2ffab0dcec6d.png",
-            "d_title": "Kitchens Built For Functionality"
+            "heading": "Should I Undermount or Overmount?",
+            "text": "<p>This really depends on your budget and whether you've decided on your benchtop or not. The short answer is undermount if your budget allows for it, especially if you're looking at getting a stone bench. Unless you really don't want to be extra careful in the kitchen, if you know you're a clutz or you're always quickly trying to clean to get out of the kitchen as soon as possible then undermount might not be for you because over time the exposed benchtop can chip. If you're getting laminate or timber bench then you should most likely consider topmounting your sink.</p>"
           }
         },
-        "3e314672-f186-4f6e-ad6a-70fde19a8cdf": {
-          "type": "button",
+        "accordion-item-6a4836e8-0189-11ed-b939-0242ac120002": {
+          "type": "accordion-item",
           "settings": {
-            "d_image": "shopify:\/\/shop_images\/Apron_Stainless_Steel_Farmhouse_Sink_Belfast_10690675-0600-44e2-b141-c1276e4aa054.png",
-            "d_title": "Stainless Steel Farmhouse Sink"
+            "heading": "Why Should I get a Sink with Thicker Steel?",
+            "text": "<p>You should get a thicker steel sink because they are more durable and last longer, as well as assist in lowering noise caused to read more of the benefits click on our article: Kitchen Sinks Made of Thick Stainless Steel</p>"
           }
         },
-        "5f6cfa86-6e7c-4383-8677-de213c9248ed": {
-          "type": "button",
+        "accordion-item-906c74ce-0189-11ed-b939-0242ac120002": {
+          "type": "accordion-item",
           "settings": {
-            "d_image": "shopify:\/\/shop_images\/Single_Bowl_Sink_Laundry_or_Kitchen_Sink_6662212a-bbd8-447a-ade5-3ca8376f4eff.png",
-            "d_title": "Wooden Bench Designs"
+            "heading": "Have more questions?",
+            "text": "<p>If you have any more questions, please feel free to ask us via sending an email to <a href=\"mailto:sales@buildmat.com.au\">sales@buildmat.com.au</a></p>"
           }
         },
-        "be9e3a76-82a1-4871-95a9-e2dd59cd9247": {
-          "type": "button",
-          "settings": {
-            "d_image": "shopify:\/\/shop_images\/SNCOR016_Ella_Corner_Sink_in_Window_0bb7942c-a682-45c1-8390-b1148ba5f11e.png",
-            "d_title": "Corner Sink"
-          }
-        },
-        "973d4921-f977-42cd-965d-aba67bd1145b": {
-          "type": "button",
-          "settings": {
-            "d_image": "shopify:\/\/shop_images\/SNCOR016_Buildmat_Ella_Kitchen_Sink_df47e57a-8b23-40d8-abac-339586688176.png",
-            "d_title": "Corner Sink On L Island"
-          }
-        },
-        "8c669873-2bc1-4603-9691-8520b2000a8a": {
-          "type": "button",
-          "settings": {
-            "d_image": "shopify:\/\/shop_images\/700_x450_undermount_sink_880b71d1-b5e8-4649-b89b-b43a1235dd9c.jpg",
-            "d_title": "Clean Crisp Laundry Layout"
-          }
+        "accordion-close-5c476e70-0188-11ed-b939-0242ac120002": {
+          "type": "accordion-close"
         }
       },
       "block_order": [
-        "a16ef85d-1151-49e9-bf84-f6efe7a77985",
-        "86fd49e4-3a92-4332-b254-a695d4183f44",
-        "fffa893b-737c-484a-a568-4c6d9a88645a",
-        "18114308-9fb9-443e-ba64-c8311cab8e59",
-        "3e314672-f186-4f6e-ad6a-70fde19a8cdf",
-        "5f6cfa86-6e7c-4383-8677-de213c9248ed",
-        "be9e3a76-82a1-4871-95a9-e2dd59cd9247",
-        "973d4921-f977-42cd-965d-aba67bd1145b",
-        "8c669873-2bc1-4603-9691-8520b2000a8a"
-      ],
-      "settings": {
-        "title": "A broad range of design options for your kitchen"
-      }
+        "heading-230a4378-0181-11ed-b939-0242ac120002",
+        "accordion-open-bfb1d1d0-0188-11ed-b939-0242ac120002",
+        "accordion-item-10515b4c-0189-11ed-b939-0242ac120002",
+        "accordion-item-361dc4d2-0189-11ed-b939-0242ac120002",
+        "accordion-item-6a4836e8-0189-11ed-b939-0242ac120002",
+        "accordion-item-906c74ce-0189-11ed-b939-0242ac120002",
+        "accordion-close-5c476e70-0188-11ed-b939-0242ac120002"
+      ]
     },
-    "whychoose": {
-      "type": "whychoose",
+    "design-options": {
+      "type": "content-center",
+      "settings": {
+        "content_width": 800,
+        "space_top": 128,
+        "space_bottom": 128,
+        "background_color": "#ECEFF0",
+        "custom_class": "section-design-options"
+      },
       "blocks": {
-        "cc9a53d8-1d4c-4b91-8e88-5b8116ec02e5": {
-          "type": "imagebox",
+        "heading-4678fd7a-01b5-11ed-b939-0242ac120002": {
+          "type": "heading-text",
           "settings": {
-            "box_image": "shopify:\/\/shop_images\/Frame_31_1_1acc9344-83e2-4b67-a97d-5cc979d2a019.png",
-            "box_text": "Australian owned Company"
+            "heading_text": "A broad range of design options for your kitchen",
+            "space_bottom": 61
           }
         },
-        "00822955-754f-4b49-be0f-abf42b5615a8": {
-          "type": "imagebox",
+        "grid-open-a681ac6c-fe93-11ec-b939-0242ac120002": {
+          "type": "grid-open",
           "settings": {
-            "box_image": "shopify:\/\/shop_images\/Frame_32_1_ab1a45e3-052e-47da-ac82-80fa6074175f.png",
-            "box_text": "Local Stock, Pickup Welcome"
+            "grid_columns": "3",
+            "gap_horizontal": 32,
+            "gap_vertical": 32
           }
         },
-        "6c037591-24aa-44c4-80b9-5eca99feb018": {
-          "type": "imagebox",
+        "image-box-2a28527a-01b9-11ed-b939-0242ac120002": {
+          "type": "image-box",
           "settings": {
-            "box_image": "shopify:\/\/shop_images\/Frame_33_1_412783ee-f61f-4d44-9f69-eca89da4addb.png",
-            "box_text": "Same day dispatch"
+            "image": "shopify:\/\/shop_images\/image-box-1.png",
+            "description": "Kitchen Build for Functionality"
           }
         },
-        "b79b4f8a-c4ea-44ad-b7d0-bb1a7adbe863": {
-          "type": "imagebox",
+        "image-box-ec9cb152-01b9-11ed-b939-0242ac120002": {
+          "type": "image-box",
           "settings": {
-            "box_image": "shopify:\/\/shop_images\/Frame_34_1_154e492f-2e58-4fdb-a5b4-7feefe5aea1f.png",
-            "box_text": "25 year structural warranty"
+            "image": "shopify:\/\/shop_images\/image-box-2.png",
+            "description": "Stainless Steel Farmhouse Sink"
           }
         },
-        "94538c3b-e9d0-4229-b1a8-ec12a3a68365": {
-          "type": "imagebox",
+        "image-box-fdf9a4aa-01b9-11ed-b939-0242ac120002": {
+          "type": "image-box",
           "settings": {
-            "box_image": "shopify:\/\/shop_images\/Frame_35_1_fe1ca17d-4fcd-47f2-a207-82c8e74f0fd9.png",
-            "box_text": "Trade Enquiries Welcome"
+            "image": "shopify:\/\/shop_images\/image-box-3.png",
+            "description": "Wooden Bench Designs"
           }
+        },
+        "image-box-0ba8ff9c-01ba-11ed-b939-0242ac120002": {
+          "type": "image-box",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image-box-4.png",
+            "description": "Corner Sink"
+          }
+        },
+        "image-box-1a4b82ea-01ba-11ed-b939-0242ac120002": {
+          "type": "image-box",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image-box-5.png",
+            "description": "Corner Sink On L Island"
+          }
+        },
+        "image-box-2ccb0f26-01ba-11ed-b939-0242ac120002": {
+          "type": "image-box",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image-box-6.png",
+            "description": "Clean Crisp Laundry Layout"
+          }
+        },
+        "image-box-38773d72-01ba-11ed-b939-0242ac120002": {
+          "type": "image-box",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image-box-7.png",
+            "description": "Undermount Single Bowl Kitchen"
+          }
+        },
+        "image-box-43a580be-01ba-11ed-b939-0242ac120002": {
+          "type": "image-box",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image-box-8.png",
+            "description": "Double Bowl Kitchen Layout"
+          }
+        },
+        "image-box-50f32938-01ba-11ed-b939-0242ac120002": {
+          "type": "image-box",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image-box-9.png",
+            "description": "Island Bench Kitchen"
+          }
+        },
+        "grid-close-b22f385e-01b5-11ed-b939-0242ac120002": {
+          "type": "grid-close"
         }
       },
       "block_order": [
-        "cc9a53d8-1d4c-4b91-8e88-5b8116ec02e5",
-        "00822955-754f-4b49-be0f-abf42b5615a8",
-        "6c037591-24aa-44c4-80b9-5eca99feb018",
-        "b79b4f8a-c4ea-44ad-b7d0-bb1a7adbe863",
-        "94538c3b-e9d0-4229-b1a8-ec12a3a68365"
-      ],
-      "settings": {
-        "title": "Why choose Buildmat?",
-        "description": "Our Aim is to source, design and create the best building materials internationally and bring them you locally."
-      }
-    },
-    "164480338261e43e9c": {
-      "type": "faq",
-      "blocks": {
-        "1644803382c0afd6aa-0": {
-          "type": "question",
-          "settings": {
-            "title": "Should I get a sink with a Drainboard?",
-            "text": "<p>A question that we always get asked a lot is whether or not you should get a drainboard on your sink, we would usually say if you prefer to have beautiful kitchen then we would advise not to get a drainboard, so that you can show off more of your beautiful bench. Whereas if you'd prefer functionality then we would advise to get a drainboard because a lot of people find it hard to figure out whether to dry their dishes, pots and pans without a drainboard. Alternatively we've also designed a portable drainboard which you can put away in the cupboard if you don't want to use it. To read more about what others saying visit our blog post: Do I need a Draining Board with my Kitchen Sink?<\/p>"
-          }
-        },
-        "1644803382c0afd6aa-1": {
-          "type": "question",
-          "settings": {
-            "title": "Should I Undermount or Overmount?",
-            "text": "<p>This really depends on your budget and whether you've decided on your benchtop or not. The short answer is undermount if your budget allows for it, especially if you're looking at getting a stone bench. Unless you really don't want to be extra careful in the kitchen, if you know you're a clutz or you're always quickly trying to clean to get out of the kitchen as soon as possible then undermount might not be for you because over time the exposed benchtop can chip. If you're getting laminate or timber bench then you should most likely consider topmounting your sink.<\/p>"
-          }
-        },
-        "81d67df6-143a-489e-8899-e521aae73767": {
-          "type": "question",
-          "settings": {
-            "title": "Why Should I get a Sink with Thicker Steel?",
-            "text": "<p>You should get a thicker steel sink because they are more durable and last longer, as well as assist in lowering noise caused to read more of the benefits click on our article: Kitchen Sinks Made of Thick Stainless Steel<\/p>"
-          }
-        },
-        "99ba2cf4-c4dd-4684-ab31-88465d48364f": {
-          "type": "question",
-          "settings": {
-            "title": "Have more questions?",
-            "text": "<p>If you have any more questions, please feel free to ask us via sending an email to <a href=\"mailto:sales@buildmat.com.au\" title=\"mailto:sales@buildmat.com.au\">sales@buildmat.com.au<\/a><\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1644803382c0afd6aa-0",
-        "1644803382c0afd6aa-1",
-        "81d67df6-143a-489e-8899-e521aae73767",
-        "99ba2cf4-c4dd-4684-ab31-88465d48364f"
-      ],
-      "settings": {
-        "title": "FAQs"
-      }
+        "heading-4678fd7a-01b5-11ed-b939-0242ac120002",
+        "grid-open-a681ac6c-fe93-11ec-b939-0242ac120002",
+        "image-box-2a28527a-01b9-11ed-b939-0242ac120002",
+        "image-box-ec9cb152-01b9-11ed-b939-0242ac120002",
+        "image-box-fdf9a4aa-01b9-11ed-b939-0242ac120002",
+        "image-box-0ba8ff9c-01ba-11ed-b939-0242ac120002",
+        "image-box-1a4b82ea-01ba-11ed-b939-0242ac120002",
+        "image-box-2ccb0f26-01ba-11ed-b939-0242ac120002",
+        "image-box-38773d72-01ba-11ed-b939-0242ac120002",
+        "image-box-43a580be-01ba-11ed-b939-0242ac120002",
+        "image-box-50f32938-01ba-11ed-b939-0242ac120002",
+        "grid-close-b22f385e-01b5-11ed-b939-0242ac120002"
+      ]
     }
   },
   "order": [
@@ -560,8 +559,7 @@
     "why-people-choose",
     "section-product-specifications", 
     "customers-speak",
-    "design-slideshow",
-    "whychoose",
-    "164480338261e43e9c"
+    "faq-accordion",
+    "design-options"
   ]
 }

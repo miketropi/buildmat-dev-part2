@@ -1,0 +1,13 @@
+{% assign accType = type %}
+
+{% if accType == 'open' %}
+<div class="content-center-accordion-container">
+  <div 
+    class="content-center-accordion-container__inner __accordion accordion-target-js" 
+    data-active-item-default="{{ block.settings.active_item_default }}">
+{% endif %}
+
+{% if accType == 'close' %}
+  </div> <!-- .content-center-accordion-container__inner -->
+</div> <!-- .content-center-accordion-container -->
+{% endif %}

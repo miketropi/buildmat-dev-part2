@@ -1,0 +1,14 @@
+<div class="image-box-item">
+  <div class="image-box-item__inner">
+    {%- if block.settings.image != blank -%}
+      {%- assign img_url = block.settings.image | img_url: 'grande' -%}
+      <img 
+        class="image-box-item__image lazyload"
+        data-src="{{ img_url }}"
+        data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+        data-sizes="auto"
+        alt="{{ block.settings.image.alt }}">
+    {%- endif -%}
+    <div class="image-box-item__text">{{ block.settings.description }}</div>
+  </div>
+</div>

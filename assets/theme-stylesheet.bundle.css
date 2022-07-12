@@ -43,6 +43,7 @@ body.template--kitchen-sink-comparison {
 
 .ss-content-center__inner {
   margin: 0 auto;
+  max-width: calc(100% - 30px);
 }
 
 .heading-text-block__text-center {
@@ -53,6 +54,12 @@ body.template--kitchen-sink-comparison {
   font-size: 40px;
   color: #333;
   font-family: "Sofia Pro";
+}
+@media (max-width: 562px) {
+  .heading-text-block__text {
+    font-size: 28px;
+    margin-bottom: 32px !important;
+  }
 }
 
 .image-content-vertical-block {
@@ -80,6 +87,11 @@ body.template--kitchen-sink-comparison {
   border-radius: 4px;
   padding: 48px 58px;
 }
+@media (max-width: 672px) {
+  .thickness-progress-bar-preview__inner {
+    padding: 28px 20px;
+  }
+}
 .thickness-progress-bar-preview__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -90,6 +102,11 @@ body.template--kitchen-sink-comparison {
   width: 300px;
   height: 12px;
 }
+@media (max-width: 672px) {
+  .thickness-progress-bar-preview__item.__st-1 .thickness-progress-bar-preview__item-bar {
+    width: 55%;
+  }
+}
 .thickness-progress-bar-preview__item.__st-1 .thickness-progress-bar-preview__item-bar-label span:nth-child(1) {
   line-height: 34px;
   margin-right: 3px;
@@ -97,12 +114,23 @@ body.template--kitchen-sink-comparison {
 .thickness-progress-bar-preview__item.__st-1 .thickness-progress-bar-preview__item-bar-label span:nth-child(2) {
   line-height: 20px;
 }
+@media (max-width: 672px) {
+  .thickness-progress-bar-preview__item.__st-1 .thickness-progress-bar-preview__item-bar-label span {
+    font-size: 16px;
+    line-height: 14px !important;
+  }
+}
 .thickness-progress-bar-preview__item.__st-2 {
   transition-delay: 0.2s;
 }
 .thickness-progress-bar-preview__item.__st-2 .thickness-progress-bar-preview__item-bar {
   width: 240px;
   height: 12px;
+}
+@media (max-width: 672px) {
+  .thickness-progress-bar-preview__item.__st-2 .thickness-progress-bar-preview__item-bar {
+    width: 45%;
+  }
 }
 .thickness-progress-bar-preview__item.__st-2 .thickness-progress-bar-preview__item-bar-label span:nth-child(1) {
   line-height: 20px;
@@ -114,6 +142,11 @@ body.template--kitchen-sink-comparison {
   width: 200px;
   height: 10px;
 }
+@media (max-width: 672px) {
+  .thickness-progress-bar-preview__item.__st-3 .thickness-progress-bar-preview__item-bar {
+    width: 38%;
+  }
+}
 .thickness-progress-bar-preview__item.__st-3 .thickness-progress-bar-preview__item-bar-label span:nth-child(1) {
   line-height: 20px;
 }
@@ -123,6 +156,11 @@ body.template--kitchen-sink-comparison {
 .thickness-progress-bar-preview__item.__st-4 .thickness-progress-bar-preview__item-bar {
   width: 160px;
   height: 8px;
+}
+@media (max-width: 672px) {
+  .thickness-progress-bar-preview__item.__st-4 .thickness-progress-bar-preview__item-bar {
+    width: 32%;
+  }
 }
 .thickness-progress-bar-preview__item.__st-4 .thickness-progress-bar-preview__item-bar-label span:nth-child(1) {
   line-height: 20px;
@@ -175,24 +213,49 @@ body.template--kitchen-sink-comparison {
   transform: translateY(0px);
 }
 
-.content-center-grid-container__inner {
+.content-center-grid-container {
   overflow: hidden;
 }
 .content-center-grid-container .__grid {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -40px;
+  margin: 0 calc(var(--grid-gap-horizontal) / 2 * -1);
 }
 .content-center-grid-container .__grid.__grid-3-columns > * {
   width: 33.3333333333%;
 }
+@media (max-width: 595px) {
+  .content-center-grid-container .__grid.__grid-3-columns > * {
+    width: 50%;
+  }
+}
+@media (max-width: 375px) {
+  .content-center-grid-container .__grid.__grid-3-columns > * {
+    width: 100%;
+  }
+}
 .content-center-grid-container .__grid.__grid-4-columns > * {
   width: 25%;
 }
+@media (max-width: 768px) {
+  .content-center-grid-container .__grid.__grid-4-columns > * {
+    width: 33.3333333333%;
+  }
+}
+@media (max-width: 595px) {
+  .content-center-grid-container .__grid.__grid-4-columns > * {
+    width: 50%;
+  }
+}
+@media (max-width: 375px) {
+  .content-center-grid-container .__grid.__grid-4-columns > * {
+    width: 100%;
+  }
+}
 .content-center-grid-container .__grid > * {
   box-sizing: border-box;
-  padding: 0 40px;
-  margin-bottom: 23px;
+  padding: 0 calc(var(--grid-gap-horizontal) / 2);
+  margin-bottom: var(--grid-gap-vertical);
 }
 
 .specs-item__label {
@@ -206,6 +269,11 @@ body.template--kitchen-sink-comparison {
 
 .section-customers-speak #shopify-block-f0b44f13-fa7d-4198-a82a-9cb0fc215ca2 {
   margin: 0 -50px;
+}
+@media (max-width: 768px) {
+  .section-customers-speak #shopify-block-f0b44f13-fa7d-4198-a82a-9cb0fc215ca2 {
+    margin: 0;
+  }
 }
 .section-customers-speak .jdgm-carousel__right-arrow, .section-customers-speak .jdgm-carousel__left-arrow {
   border-width: 1px;
@@ -316,6 +384,59 @@ body.template--kitchen-sink-comparison {
   height: calc(100% - 19px);
   left: 16px;
   top: 0;
+}
+
+.content-center-accordion-container .accordion-item {
+  border-bottom: 1px solid #CCD2D5;
+}
+.content-center-accordion-container .accordion-item__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.content-center-accordion-container .accordion-item__heading h4 {
+  font-family: "Sofia Pro";
+  font-size: 24px;
+  font-weight: 600;
+  margin: 16px 0;
+  color: #333;
+}
+@media (max-width: 425px) {
+  .content-center-accordion-container .accordion-item__heading h4 {
+    font-size: 18px;
+  }
+}
+.content-center-accordion-container .accordion-item__heading .__arrow-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+}
+.content-center-accordion-container .accordion-item__content {
+  margin: 24px 0;
+  font-size: 20px;
+  font-weight: 300;
+  color: #333;
+  display: none;
+}
+@media (max-width: 425px) {
+  .content-center-accordion-container .accordion-item__content {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 672px) {
+  .ss-content-center {
+    padding: 40px 0 !important;
+  }
+}
+
+.image-box-item__text {
+  font-size: 16px;
+  color: #5F5F5F;
+  margin-top: 14px;
+  letter-spacing: 0;
 }
 
 #shopify-section-header-megamenu {

@@ -23,6 +23,14 @@
             render 'specs-item', block: block, section: section
           when '@app'
             render block
+          when 'accordion-open'
+            render 'content-center-accordion-container', block: block, section: section, type: 'open'
+          when 'accordion-close'
+            render 'content-center-accordion-container', block: block, section: section, type: 'close'
+          when 'accordion-item'
+            render 'content-center-accordion-item', block: block, section: section
+          when 'image-box'
+            render 'content-center-image-box', block: block, section: section
         endcase
       endfor
     endif %}
@@ -136,6 +144,18 @@
             }
           ],
           "default": "3"
+        },
+        {
+          "type": "number",
+          "id": "gap_horizontal",
+          "label": "Gap Horizontal",
+          "default": 32
+        },
+        {
+          "type": "number",
+          "id": "gap_vertical",
+          "label": "Gap Vertical",
+          "default": 32
         }
       ] 
     },
@@ -161,6 +181,54 @@
     },
     {
       "type": "@app"
+    }, 
+    {
+      "type": "accordion-open",
+      "name": "Accordion Open",
+      "settings": [
+        {
+          "type": "number",
+          "id": "active_item_default",
+          "label": "Active Item Default",
+          "default": 1
+        }
+      ] 
+    },
+    {
+      "type": "accordion-close",
+      "name": "Accordion Close"
+    },
+    {
+      "type": "accordion-item",
+      "name": "Accordion Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "image-box",
+      "name": "Image Box",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Select Image"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
     }
   ],
   "presets": [

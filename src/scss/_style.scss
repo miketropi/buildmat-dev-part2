@@ -45,6 +45,7 @@ body.template--kitchen-sink-comparison {
 
 	&__inner {
 		margin: 0 auto;
+		max-width: calc(100% - 30px);
 	}
 }
 
@@ -59,6 +60,11 @@ body.template--kitchen-sink-comparison {
 		font-size: 40px;
 		color: #333;
 		font-family: 'Sofia Pro';
+
+		@media(max-width: 562px) {
+			font-size: 28px;
+			margin-bottom: 32px !important;
+		}
 	}
 }
 
@@ -96,6 +102,10 @@ body.template--kitchen-sink-comparison {
 	&__inner {
 		border-radius: 4px;
 		padding: 48px 58px;
+
+		@media(max-width: 672px) {
+			padding: 28px 20px;
+		}
 	}
 
 	&__item {
@@ -110,6 +120,10 @@ body.template--kitchen-sink-comparison {
 			.thickness-progress-bar-preview__item-bar {
 				width: 300px;
 				height: 12px;
+				
+				@media(max-width: 672px) { 
+					width: 55%;
+				}
 			}
 
 			.thickness-progress-bar-preview__item-bar-label {
@@ -122,6 +136,14 @@ body.template--kitchen-sink-comparison {
 				span:nth-child(2) {
 					line-height: 20px;
 				}
+
+				@media(max-width: 672px) {
+					
+					span {
+						font-size: 16px;
+						line-height: 14px !important;
+					}
+				} 
 			}
 		}
 
@@ -131,6 +153,10 @@ body.template--kitchen-sink-comparison {
 			.thickness-progress-bar-preview__item-bar {
 				width: 240px;
 				height: 12px;
+
+				@media(max-width: 672px) { 
+					width: 45%;
+				}
 			}
 
 			.thickness-progress-bar-preview__item-bar-label {
@@ -146,6 +172,10 @@ body.template--kitchen-sink-comparison {
 			.thickness-progress-bar-preview__item-bar {
 				width: 200px;
 				height: 10px;
+
+				@media(max-width: 672px) { 
+					width: 38%;
+				}
 			}
 
 			.thickness-progress-bar-preview__item-bar-label {
@@ -161,6 +191,10 @@ body.template--kitchen-sink-comparison {
 			.thickness-progress-bar-preview__item-bar {
 				width: 160px;
 				height: 8px;
+
+				@media(max-width: 672px) { 
+					width: 32%;
+				}
 			}
 
 			.thickness-progress-bar-preview__item-bar-label {
@@ -234,20 +268,30 @@ body.template--kitchen-sink-comparison {
 }
 
 .content-center-grid-container {
+	overflow: hidden;
 
 	&__inner {
-		overflow: hidden;
+		
 	}
 
 	.__grid {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 0 -40px;
+		// margin: 0 -40px;
+		margin: 0 calc(var(--grid-gap-horizontal) / 2 * -1);
 
 		&.__grid-3-columns {
 
 			> * {
 				width: calc(100% / 3);
+
+				@media(max-width: 595px) {
+					width: calc(100% / 2);
+				}
+
+				@media(max-width: 375px) {
+					width: calc(100% / 1);
+				}
 			}
 		}
 
@@ -255,13 +299,26 @@ body.template--kitchen-sink-comparison {
 
 			> * {
 				width: calc(100% / 4);
+
+				@media(max-width: 768px) {
+					width: calc(100% / 3);
+				}
+
+				@media(max-width: 595px) {
+					width: calc(100% / 2);
+				}
+
+				@media(max-width: 375px) {
+					width: calc(100% / 1);
+				}
 			}
 		}
 
 		> * {
 			box-sizing: border-box;
-			padding: 0 40px;
-			margin-bottom: 23px;
+			// padding: 0 40px;
+			padding: 0 calc(var(--grid-gap-horizontal) / 2);
+			margin-bottom: var(--grid-gap-vertical);
 		}
 	}
 }
@@ -287,6 +344,10 @@ body.template--kitchen-sink-comparison {
 
 	#shopify-block-f0b44f13-fa7d-4198-a82a-9cb0fc215ca2 {
 		margin: 0 -50px;
+
+		@media(max-width: 768px) {
+			margin: 0;
+		}
 	}
 
 	.jdgm-carousel__right-arrow, .jdgm-carousel__left-arrow {
@@ -424,5 +485,71 @@ body.template--kitchen-sink-comparison {
 				}
 			}
 		}
+	}
+}
+
+.content-center-accordion-container {
+
+	.accordion-item {
+		border-bottom: 1px solid #CCD2D5;
+
+		&__heading {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			cursor: pointer;
+
+			h4 {
+				font-family: "Sofia Pro";
+				font-size: 24px;
+				font-weight: 600;
+				margin: 16px 0;
+				color: #333;
+
+				@media(max-width: 425px) {
+					font-size: 18px;
+				}
+			}
+
+			.__arrow-icon {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 48px;
+			}
+		}
+
+		&__content {
+			margin: 24px 0;
+			font-size: 20px;
+			font-weight: 300;
+			color: #333;
+			display: none;
+
+			@media(max-width: 425px) {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+.ss-content-center {
+	
+	@media(max-width: 672px) {
+		padding: 40px 0 !important;
+	}
+}
+
+.image-box-item {
+
+	&__inner {
+	
+	}
+
+	&__text {
+		font-size: 16px;
+		color: #5F5F5F;
+		margin-top: 14px;
+		letter-spacing: 0;
 	}
 }

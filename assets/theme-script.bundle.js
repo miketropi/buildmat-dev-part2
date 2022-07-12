@@ -345,11 +345,45 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     });
   };
 
+  var accordionHandle = function accordionHandle() {
+    var accordionElems = document.querySelectorAll('.accordion-target-js');
+    if (accordionElems.length == 0) return;
+
+    _toConsumableArray(accordionElems).forEach(function (el, _accIndex) {
+      var items = el.querySelectorAll('.accordion-item');
+      var activeItem = el.dataset.activeItemDefault;
+      if (items.length == 0) return; // check items exists
+
+      _toConsumableArray(items).forEach(function (item, _itemIndex) {
+        var heading = item.querySelector('.accordion-item__heading');
+        var content = item.querySelector('.accordion-item__content');
+
+        if (_itemIndex + 1 == activeItem) {
+          item.classList.add('__active');
+          $(content).slideDown('slow');
+        }
+
+        heading.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          if ($(item).hasClass('__active')) {
+            $(content).stop(true, true).slideUp('slow');
+            $(item).removeClass('__active');
+          } else {
+            $(content).stop(true, true).slideDown('slow');
+            $(item).addClass('__active');
+          }
+        });
+      });
+    });
+  };
+
   var ready = function ready() {
     new _megaMenu__WEBPACK_IMPORTED_MODULE_0__["default"]($('#HeaderMegamenuWrapper'));
     productGoApecificationsSection(); // applyCustomSelectUIProductFilterColour();
 
     thicknessProgressBarPreviewAminate();
+    accordionHandle();
   };
   /**
   * DOM Ready

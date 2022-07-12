@@ -2,7 +2,9 @@
 
 {% if gridType == 'open' %}
 <div class="content-center-grid-container">
-  <div class="content-center-grid-container__inner __grid __grid-{{ block.settings.grid_columns }}-columns">
+  <div 
+    class="content-center-grid-container__inner __grid __grid-{{ block.settings.grid_columns }}-columns" 
+    style="--grid-gap-horizontal: {{ block.settings.gap_horizontal }}px; --grid-gap-vertical: {{ block.settings.gap_vertical }}px; ">
 {% endif %}
 
 {% if gridType == 'close' %}
